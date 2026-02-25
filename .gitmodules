@@ -1,0 +1,3 @@
+[submodule "Qwen3-TTS"]
+	path = Qwen3-TTS
+	url = https://github.com/QwenLM/Qwen3-TTS.git
