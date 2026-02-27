@@ -1,3 +1,7 @@
 huggingface_hub[cli]
 qwen-tts
 jupyterlab
+numpy
+soundfile
+pandas
+pyarrow
