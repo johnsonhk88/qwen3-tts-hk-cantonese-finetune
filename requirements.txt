@@ -5,3 +5,4 @@ numpy
 soundfile
 pandas
 pyarrow
+pydub
