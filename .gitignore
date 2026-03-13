@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 
 
+Dataset-Cantonese-Training/Qwen3-TTS-12Hz-0.6B-Base/
+Dataset-Cantonese-Training/output/
 # data files
 *.parquet
 

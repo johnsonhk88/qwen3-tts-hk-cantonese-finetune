@@ -1,500 +1,500 @@
-{"audio": "./audio/0.wav", "text": "你知唔知今日嘅temperature會落到低至10度，一定要著厚d嘅clothes啊！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/1.wav", "text": "我check咗天氣app，佢話今日會有thunderstorm，最好唔好去戶外行嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/2.wav", "text": "飛機已經被grounded喇，因為typhoon signal已經升到No.8嚟啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/3.wav", "text": "周圍都有well-developed霧，嚴重limit我哋嘅visibility，開車嘅時候要小心啲！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/4.wav", "text": "Forecast話晚上嘅weather會變得好cold，會降到freezing point，甚至可能會有snow喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/5.wav", "text": "感覺到今晚嘅breeze都好舒服，temperature剛剛好，真係一個perfect night去郊遊。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/6.wav", "text": "你有冇見過咁震撼嘅sunset? 天氣真係好perfect，可以坐下嚟慢慢欣賞。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/7.wav", "text": "睇嚟weekend嘅weather會比較unstable，可能會有rain shower，最好做好準備。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/8.wav", "text": "地鐵公告話因為暴雨嚟襲，好多routes都被flooded，需要改行其他routes返屋企。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/9.wav", "text": "咁嘅Humidity真係令人好難受，幸好有air conditioning可以調節。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/10.wav", "text": "我個人好like去金鐘嘅food court，因為嗰度嘅選擇好wide，應有盡有。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/11.wav", "text": "台灣嘅bubble tea真係太addictive，任何時間我都有mood去飲。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/12.wav", "text": "我對港式嘅dim sum好有passion，特別係燒賣和鳳爪，簡直係heavenly good!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/13.wav", "text": "如果你想去食最authentic嘅港式燒臘，我會推薦你去中環嗰間燒鵝店，太best了!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/14.wav", "text": "每次去旺角，我都會去嗰間甜品店，佢地嘅芝麻糊同腐竹滑得like silky smooth一樣，令我忍唔住要多食幾碗。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/15.wav", "text": "喺黃埔嗰間日本餐廳嘅sushi, sashimi都新鮮之餘，presentation都好on point，好worth it!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/16.wav", "text": "我個人好enjoy嚟自美國嘅fast food culture，對我嚟講，大快朵頤一頓漢堡加薯條係牛冚匸象嘅simple pleasure。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/17.wav", "text": "我個兄弟好鍾意去添馬公園果度嘅餃子店,佢話果度啲餃子juicy滿分，讚唔絕口。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/18.wav", "text": "打邊爐就係我冬天嘅favourite comfort food，我鍾意邊食邊同friend嗑嗑牙，攞嚟驅寒實在冇得頂。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/19.wav", "text": "意大利麵係我anytime嘅go-to meal，不論係carbonara定係bolognese我都鍾意，都好easy & quick！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/20.wav", "text": "真想好快可以plan一個trip，去新嘅destination，嘆吓新鮮air，好enjoyable呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/21.wav", "text": "每次行過airport嘅duty free shop我就会feel excited，一覺去咗另一個world。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/22.wav", "text": "如果去Japan，我一定會想去disneyland，淨係想諗都好happy！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/23.wav", "text": "希望下次可以去Africa做一個safari tour, 去見下wildlife，好adventurous!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/24.wav", "text": "我好鐘意去historical city，睇吓嗰啲historic buildings，學下嗰度嘅history.", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/25.wav", "text": "下一個dream destination係New York，我想去times square countdown，感覺好fantastic嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/26.wav", "text": "夏天既時候去Australia就最好，去beach玩水好cool，又可以BBQ，好爽啊！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/27.wav", "text": "下次travel我想去themed hotel入住，話晒每次出行都想試人哋experience嘅新嘅喇！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/28.wav", "text": "我想去名菜館嘗試吓佢哋嘅signature dishes，食到我心滿意足，好comforting 啊！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/29.wav", "text": "一定要試下去tropical island snorkeling，見下靚嘅coral reef 同 colourful fish，感覺好relaxing！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/30.wav", "text": "我好享受去shopping mall玩嘅時候，好多品牌我都可以選，仲可以試新出嘅trendy clothes。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/31.wav", "text": "我個weekend去睇咗'The Avengers'嘅movie，電影咁intense，真係我今年睇過最好嘅show。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/32.wav", "text": "我對fitness有好大嘅passion，每次去gym都好happy，感覺自己越來越fit。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/33.wav", "text": "我鍾意用我部smartphone玩mobile games，個graphic好sharp，我最鍾意'PUBG'。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/34.wav", "text": "我最近開始追韓劇'Crash Landing On You'，個plot好intriguing，每集都令我excited。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/35.wav", "text": "我love唱K，每次都唱pop songs，我朋友話我嘅vocal skills唔錯。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/36.wav", "text": "我喺Instagram嘅influencer都影響咗我嘅lifestyle，佢地post嘅photos都好inspiring。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/37.wav", "text": "我同我朋友去咗一間新開嘅bar，嗰度cocktails好優質，係一個chill嘅地方。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/38.wav", "text": "每次跑完marathon後，我都feel到全身筋骨舒暢，真係好rewarding！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/39.wav", "text": "我哋每個禮拜都會做一次yoga，對於relieve壓力同提高concentration好有幫助呢。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/40.wav", "text": "我哋嘅basketball team今次比賽表現得好good，大家都play得好努力，我好感動呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/41.wav", "text": "呢個weekend，我哋有釣魚plan，雖然我唔係好擅長，但都well prepared，期待有一個fun and relaxing day。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/42.wav", "text": "我平時prefer做gym好過outdoor activities，可以專注咁train肌肉，又可以avoid曬太陽呢。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/43.wav", "text": "我對於呢個football season好excited，好期待我最鐘意嘅隊伍有出色嘅表現喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/44.wav", "text": "即使我唔係一個professional swimmer，但每次我游泳都feel到好refreshed，享受到water嘅cool感覺。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/45.wav", "text": "我鐘意去hike, 喺山上面可以enjoy到nature，同時都可以達到keep fit嘅效果。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/46.wav", "text": "做yoga嘅時候我們會play一啲輕柔嘅音樂，可以幫助我們relax同集中精神。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/47.wav", "text": "跑障礙賽(course)係一種挑戰自己嘅運動，過程雖然tough，但真係好有fun呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/48.wav", "text": "我見到報導話佢哋準備implement新嘅rent control policy，我覺得咁樣好保護住住客，但都怕有negative side effects喺房東身上。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/49.wav", "text": "一直以嚟，我哋嘅教育system有好多疑問，最近嘅DSE reform plan可以解決部分問題，但又有啲人質疑呢個改變會唔會太rushed?", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/50.wav", "text": "嗰日我聽到政府落嘅新減排target，我認為呢個step forward真係好crucial，對抗climate change我哋需要全部人齊心協力。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/51.wav", "text": "我見到新聞嘅headline話廣告牌嘅管理問題，我覺得呢個problem要迅速咁解決，避免任何potential hazards。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/52.wav", "text": "近排有一本新書出咗黎，講緊香港國家安全法嘅legal effects，我準備去買本黎看下，掌握最新嘅knowledge。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/53.wav", "text": "聽落新一輪既公屋allocations有啲problem，我覺得呢個唔係個長期solution，政府要有sustainable嘅住房policy。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/54.wav", "text": "我記得剛才聽新聞話，佢哋提出新建商業district嘅proposal，我覺得呢個可行，可以boost本地經濟。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/55.wav", "text": "見到佢哋議論低工資工人嘅minimum wage，我認為政府需要balance企業嘅需要同保護labour rights嘅重要性。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/56.wav", "text": "我鐘意喺weekend去designer boutique睇新款clothes，可以keep up with fashion trends，好有fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/57.wav", "text": "我喺家中browse online stores，好方便，我可以輕鬆買到我鐘意嘅make-up product。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/58.wav", "text": "我喺holiday鐘意去outlet購物，可以買到打折嘅branded goods，價格吓人，甚至可以買到half price，又可以save money。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/59.wav", "text": "我喺free time去bookstore，可以一邊enjoy browsing好多books，一邊可以喺café飲杯coffee，真係relax。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/60.wav", "text": "我喺weekend去supermarket shopping，可以prepare whole week嘅meal，好organised同埋good for health。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/61.wav", "text": "我每個月都會去health & beauty store買個skin care product，想keep my skin healthy 同glowing，真係值得invest。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/62.wav", "text": "我鐘意去electronics store，可以keep up with最新嘅gadgets，又可以enhance my lifestyle，好interesting。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/63.wav", "text": "我喺online shopping買home decor items，可以自己裝飾屋企，又可以show my personal style，真係creative同埋fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/64.wav", "text": "我喺online買sports equipment，因為我可以喺家中練習，又keep fit，真係好方便。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/65.wav", "text": "我經常喺flea market買vintage items，佢哋有special嘅charm同埋可以add到我個collection，真係好exciting。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/66.wav", "text": "我覺得網上course好helpful，可以喺自己嘅時間學習新嘅skills。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/67.wav", "text": "話說返黎，學習唔係只有喺school先得，life本身就係一個大學堂。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/68.wav", "text": "喺呢個digital era，學coding變得好重要，我唔想miss out呢個opportunity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/69.wav", "text": "我鍾意閱讀，因為books可以帶我去到不同嘅world，學識新嘅思維方式。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/70.wav", "text": "學習一種新嘅language可以open up新嘅opportunities，我現在正在學西班牙文， 真係有趣。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/71.wav", "text": "呢個weekend我要去attend一個workshop，針對音樂製作，真係好期待。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/72.wav", "text": "我最近開始學習瑜伽，呢個practice令我感到好relaxed，同時亦係身心嘅exercise。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/73.wav", "text": "我發覺每日take out一啲時間做自我review真係好critical喺學習嘅process。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/74.wav", "text": "學會咗新嘅skill，例如programming，為我嘅career開啓新嘅doors。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/75.wav", "text": "學習係一個never-ending journey，我相信學無止境，喺呢個ever-changing世界要保持curiosity以學到新嘅知識。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/76.wav", "text": "我每日都需要check email，跟進咗我嘅工作，確保我嘅performance保持在一個好嘅level。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/77.wav", "text": "當你喺一個project做緊lead嘅時候，你需要有一個clear vision，冇咗嗰個，就好難drive你嘅team向前發展。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/78.wav", "text": "雖然sometimes deadline 係好tight, 但係我哋都唔可以cut corners，質量一定要保證。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/79.wav", "text": "喺workplace裡面，respect同埋trust傾嘅係最重要，如果大家無呢啲，就好難cooperate effectively。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/80.wav", "text": "如果你喺工作中遇到了一個big challenge，你需要保持calm，然後develop一個有效嘅strategy嚟解決。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/81.wav", "text": "喺一個新嘅job position，我哋需要有一個open mind，ready咗去學習新嘅skills同face新嘅挑戰。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/82.wav", "text": "如果你覺得你嘅career stagnant咗，就要去找新嘅opportunities或者提升自己嘅技能，唔可以just settle down。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/83.wav", "text": "我每天都set咗一個to-do list，咁樣我先可以manage我嘅時間，做到最efficient嘅工作。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/84.wav", "text": "我好贊同flexible working hours，咁樣可以更好嘅balance我嘅工作同生活。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/85.wav", "text": "喺我嘅career development中，continuous learning係非常重要，無論係新技術、新知識抑或係新trends，我都要keep up with。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/86.wav", "text": "喺天氣app度睇到今晚可能會有heavy rain，大家出門記得帶umbrella呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/87.wav", "text": "我哋下個week有可能會遇到一次強烈嘅cold front，so多著d衫啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/88.wav", "text": "今晚可能會有strong wind，記住唔好去海邊嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/89.wav", "text": "我嘅weather forecast話明晚會drop到0度，記住打開heater呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/90.wav", "text": "今日好hot，大家記住帶sunscreen唔好中曬喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/91.wav", "text": "我check咗weather app，佢話下星期有chance下snow，咁步出門時就要带d雪鞋喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/92.wav", "text": "頭致天氣報告say嗰個hurricane會影響我哋呢度，大家一定要小心保重。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/93.wav", "text": "我啱啱睇天氣報告話下個月可能會有typhoon，我哋要做好萬全嘅準備。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/94.wav", "text": "畀我check下weather app，原來今日會好foggy，出門時記住開fog light喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/95.wav", "text": "今晚氣溫可能會drop落好low，大家出門要記住帶scarf同hat呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/96.wav", "text": "我好love上環嘅street food，每次都會食到我well satisfied咁。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/97.wav", "text": "你試過廟街嘅煎鱈魚嗎？佢嘅taste真係超級amazing！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/98.wav", "text": "週末嘅brunch time，去欣圖書嘅cafe飲一杯coffee,食個eggs benedict，真係好relaxing呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/99.wav", "text": "啲麵包店嘅croissant好crispy嘅，我totally fall in love住咗！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/100.wav", "text": "啲意大利麵嘅sauce個taste好rich，真係惹味到不得了。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/101.wav", "text": "party time食pizza真係好fun，尤其係嗰啲薄底嘅，taste非常authentic！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/102.wav", "text": "小籠包裏面嘅肉汁好juicy，每次一咬就會流出嚟，簡直係mouthwatering！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/103.wav", "text": "日本料理嘅presentation真係好impressive，就算係飯團sushi，都會令你一試難以忘懷。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/104.wav", "text": "我好喜歡番茄海鮮湯嘅flavour，做得好，酸辣恰到好處！fiction", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/105.wav", "text": "牛油果shrimp salad好划算，又健康！食完feel自己好healthy同energized！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/106.wav", "text": "我哋下次去Thailand，一定要try佢哋嘅local food，聽講超好食呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/107.wav", "text": "有冇諗過去Australia睇睇當地嘅wildlife，一定好exciting架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/108.wav", "text": "我好想買個backpack，走一轉Europe，去好多個museums同historical sites就好啦！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/109.wav", "text": "聽講去U.S.A.round trip要花好多時間，不過如果有機會我都想試下，應該好unforgettable架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/110.wav", "text": "我下個goal係想去Africa做volunteering，貢獻少少力量都好，我覺得好meaningful！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/111.wav", "text": "去New Zealand搭個campervan一路drive一路玩，咁樣嘅旅行計劃一定好relaxing！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/112.wav", "text": "我哋下次一齊去Italy嘅wine tour啦，試吓佢地嘅紅酒，一定好enjoyable！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/113.wav", "text": "France嘅cuisine大家都識，但如果當地嘅cooking class就未必咁簡單，但我想嘗試下，肯定好fun架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/114.wav", "text": "我想我會plan一個solo trip去Canada，享受一下自由同獨處嘅樂趣，一定好special嘅experience!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/115.wav", "text": "日本嘅cherry blossom season我一直都好想見識下，對我嚟講，應該好charming架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/116.wav", "text": "我每個weekend都會去movie theatre睇新上映嘅films，我鍾意各種genre嘅movies，例如action, comedy同sci-fi等等。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/117.wav", "text": "我周圍嘅mates都好鍾意聽我講ghost stories，我係個很大嘅horror fan，我鍾意嘅horror fix都唔係單單限制於書同film。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/118.wav", "text": "我好鍾意去karaoke同朋友唱歌，每次去都唔覺得boring，我同我朋友們都有好多fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/119.wav", "text": "我鍾意用我部iPad睇Netflix或者Disney+，我覺得我每個月payment都好值得，因為我可以睇到好多我鍾意嘅series同movie。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/120.wav", "text": "我每日都會睇youtube，我其中一個favorite嘅youtuber就係Pewdiepie，我鍾意佢嘅gameplay videos同meme reviews。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/121.wav", "text": "我係個音樂lover，我喺spotify上有好多嘅playlist，我嘅music taste包括pop, rock同classical等等。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/122.wav", "text": "我唔單止鍾意喺gaming console上玩video games，我都好鍾意喺arcade玩，我覺得咁樣會有個好嘅social experience。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/123.wav", "text": "我鍾意睇Netflix嘅drama series，例如'Stranger Things'同'The Crown'，我覺得喺家睇係一個好relax嘅娛樂方式。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/124.wav", "text": "我每個month都好look forward到嗰個新comic book day，我會去我最鍾意嘅comic shop揀選我最期待嘅new releases。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/125.wav", "text": "每年嘅summer我都會去參加music festival，我覺得呢種體驗好enjoyable，可以聽到我最鍾意嘅樂團live performance。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/126.wav", "text": "見到Lionel Messi玩足球，簡直係masterpiece，佢嘅技巧真係outstanding！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/127.wav", "text": "我下個月要去參加yoga class，一直都想體驗下，希望我可以fit入去。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/128.wav", "text": "雖然我嘅swimming technique仲有好多需要提升的地方，但係我絕對唔會放棄，practice makes perfect！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/129.wav", "text": "我每個星期都會去gym做workout，健康身體真係well invested。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/130.wav", "text": "我哋今晚要去睇basketball game，已經買咗飲品同小食ready to enjoy。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/131.wav", "text": "我嘅朋友一向鍾意玩badminton，雖然我之前冇試過，但係我已經準備好箍住玩。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/132.wav", "text": "我鍾意跑步嘅原因,之一就係feel到風吹過嚟，完全係nature's gift啊。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/133.wav", "text": "下次我哋可以試下hiking，頂到噉既環境，一定feel到超級relaxing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/134.wav", "text": "今日好適合做outdoor exercises，天氣好好，我ready好水樽就要去公園啦。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/135.wav", "text": "我覺得做運動唔單止keep fit，佢對於精神上都有好大嘅help。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/136.wav", "text": "我覺得點解政府未有implement一個有效嘅交通system，以resolve香港嘅交通擠塞問題。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/137.wav", "text": "我睇到佢哋打算開始更改教育嘅curriculum，但我喺咁嘅情況之下，我諗佢哋應該先focus喺學生嘅心理健康上面。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/138.wav", "text": "疫症keep going，廣大市民嘅生活變得越來越困難，而政府嘅support就變得相當critical。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/139.wav", "text": "佢哋嘅廢物管理真係improve咗喎，但係都仲未到我哋想象中嘅level，我哋還要重加努力去achieve噉嘅目標。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/140.wav", "text": "有關於食物waste，我諗呢個問題唔單止需要大家嘅collective effort，仲要政府要果斷take action。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/141.wav", "text": "地方政府打算開launch咗更嚴厲嘅規定去控制smoking，但係我感到有啲憂慮呢個嘅implementation。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/142.wav", "text": "最近嘅real estate嘅價格上升，可能導致我哋啲年輕人買不起house，因此我哋需要一個更fair嘅市場。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/143.wav", "text": "依家香港嘅經濟狀況真係擔心，因為無咩野可以create jobs，政府必須即刻take action。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/144.wav", "text": "我諗緊本地大學應該更focus培訓啲技術高superior嘅學生，先至可以handle未來社會嘅挑戰。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/145.wav", "text": "政府呢個round嘅市區重建plan有啲問題，大家覺得未必可行，需要進一步行review。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/146.wav", "text": "我鐘意去boutique shopping，買一啲unique嘅clothes，又可以express my fashion sense，真係amazing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/147.wav", "text": "我仲鐘意喺online stores 買fashion accessories，帶埋我嘅outfits，feel more stylish同埋fashionable。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/148.wav", "text": "我成日去department stores，可以一次過買齊所有需要嘅goods，真係convenient。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/149.wav", "text": "我鐘意喺朋友嘅recommendations後，去試新嘅cosmetics products，可以improve my skin care routine，感覺好refreshing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/150.wav", "text": "我成日去bookstores，透過買新書去enhance my knowledge，同時間又可以enjoy the peaceful atmosphere，好relaxing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/151.wav", "text": "我鐘意喺同朋友一齊去shopping malls，透過買貨散心同埋share our interests，好fun同埋enjoyable。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/152.wav", "text": "我常去outlet malls，用抵價嘅價錢買到我鐘意嘅brands，感覺好satisfying同埋exciting。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/153.wav", "text": "喺Christmas sales期間，我會買一大堆禮物送比朋友家人，真係joyful同埋fulfilling。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/154.wav", "text": "我會喺online platform bid二手物品，可以買到rare items，真係thrilling同埋rewarding。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/155.wav", "text": "我鐘意逛市集，可以睇到一啲handmade crafts，可以support local artists，真係meaningful。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/156.wav", "text": "我嘅學習style係透過online courses同實際練習相結合，我認為，互聯網提供咗好多學習resources，真係好方便。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/157.wav", "text": "剛開始學習新嘅事物時，我有時會feel overwhelmed，但我相信perseverance係最重要嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/158.wav", "text": "我相信唔論我哋學嘅知識level有幾高，到頭來都要keep learning, 因為學習真係一個lifelong journey。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/159.wav", "text": "我真係好enjoy學新嘅語言，係一個操縱words嘅fun process，絕對增加咗我嘅cultural understanding。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/160.wav", "text": "喺呢個digital age，所有嘅information就喺我哋fingertips，我哋只要search，就可以find嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/161.wav", "text": "讀book真係學習嘅好方法，但我覺得實際行動同practice亦都係好重要。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/162.wav", "text": "我相信學習嘅journey並唔會smooth一路順風，但就算挫折困難，我哋都唔可以give up，其實呢啲都係part of the learning process。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/163.wav", "text": "要學好coding，就需要大量嘅time同practice，而且永遠都有新嘅programming languages要學。\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/164.wav", "text": "我覺得學英文唔單止可以提升我們嘅communication skills，仲可以認識新嘅culture。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/165.wav", "text": "當學習變成一個habit，我哋就會更加enjoy學習嘅journey，無論係學習啲咩硬skills或者是soft skills。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/166.wav", "text": "對於work performance，我哋應該要有continuous improvement嘅心態，始終唔可以satisfied with mediocrity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/167.wav", "text": "喺workplace裡面，我哋需要promote open communication，促使每個人都能夠express opinion freely。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/168.wav", "text": "如果你做嘅project fail咗，就唔需要過於disappointed，失敗係成功之媽，學識learning from mistakes更加重要。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/169.wav", "text": "喺你嘅career journey之中，唔可以忽視personal development，你嘅professional skills同personal attributes都要balance嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/170.wav", "text": "工作唔係just about earning money，更加係實現自己嘅value，所以我哋需要在work中find passion。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/171.wav", "text": "喺困難面前，唔可以放棄，要有perseverance去克服challenges，因為這樣你就會更強大。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/172.wav", "text": "我哋嘅goal唔係為咗贏過第二名，而係去提升自己嘅performance，唔可以把focus放在beat others上面。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/173.wav", "text": "有時你可能會覺得當下嘅work唔係你想要做嘅，但你仍然要keep going，因為呢件事情可能會將你帶去未來嘅opportunity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/174.wav", "text": "有時候work會變得tough，但記住唔可以give up easily，有determination係必要嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/175.wav", "text": "喺teamwork中，我哋需要透過effective communication達到consensus，係喺理解同尊重each other的基礎上進行嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/176.wav", "text": "今日好sunny，可以去出去玩下，唔好浪費左咁好天氣噶。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/177.wav", "text": "天氣預報話會有heavy rain，出門前記得carry傘喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/178.wav", "text": "下雨就算喇，有咁個nice weather，去park行下圈啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/179.wav", "text": "今日會好cold，記得穿多件sweater出門啊。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/180.wav", "text": "下午好hot噶，要小心heat stroke，去到outdoor飲多啲水喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/181.wav", "text": "我睇吓weather report，話聽日會有big storm，要小心啲喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/182.wav", "text": "今日天氣真係perfect，好適合去beach enjoy下曬太陽。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/183.wav", "text": "呢幾日天氣變得好unstable，要成日keep住睇天氣預報喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/184.wav", "text": "天氣預報話投朝會有snowfall，記得戴好beanie出門。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/185.wav", "text": "據天氣預報，今天會thunderstorm，記得唔好行出去玩喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/186.wav", "text": "紅燒牛肉麵個noodles真係好al dente，搭配個beef香味好rich，好享受啊！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/187.wav", "text": "嗰啲芒果布甸滑滑哋，超juicy嘅，真係one of a kind！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/188.wav", "text": "食番堆焗蝦仔蘿蔔糕，嗰啲蝦仔香香crispy，好有texture，每一口都full of surprises！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/189.wav", "text": "食燒賣個yu yee好springy，完全係一個perfect dim sum experience！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/190.wav", "text": "快d食台灣牛肉麵，個noodles亦都有光滑滑嘅mouthfeel，一啖咬落去就wonderful！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/191.wav", "text": "嗰個日本生魚片刺身，好新鮮，滑過口，嗰啲sashimi paradise呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/192.wav", "text": "我真係好鍾意川味擔擔麵，個peppery kick係簡直irresistible！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/193.wav", "text": "試試啲豬扒飯，個pork chop香煎至crispy golden brown，喺口中感覺just right！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/194.wav", "text": "食咗嗰個煎蠔餅，crusty outside and juicy inside，飽滿嘅fresh蠔味，真係個must try！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/195.wav", "text": "嗰啲烤章魚丸應該有獎架，嗰個skin crispy chewy，咬落去就有及呢flavor burst, simply the best！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/196.wav", "text": "我打算去Thailand潛水，大佬你有冇recommendation嫁?", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/197.wav", "text": "我剛剛完成咗去Japan嘅solo trip，感覺真係極之refreshing！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/198.wav", "text": "我計劃喺Australia過迎新年，去佢哋嘅beach party定好架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/199.wav", "text": "我鍾意去France嘅vineyards，嘆杯好wine超抵玩！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/200.wav", "text": "我好鍾意去Italy road trip，見下佢哋嘅beautiful countryside，係一種treat自己嘅方式！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/201.wav", "text": "冇事做嘅時候我最鍾意去Singapore shopping，買下designer brands好過癮！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/202.wav", "text": "我計劃去Canada滑雪，挑戰自己，試下新嘢好投入喎！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/203.wav", "text": "我十分期待去Brazil欣賞嘅carnival，應該會係一個unforgettable experience！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/204.wav", "text": "呢個summer我打算去Spain同Portugal backpacking，感受下佢哋嘅local culture同食物！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/205.wav", "text": "我好想去India做yoga retreat，淨化下自己嘅mind同body，對身心健康都好有幫助呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/206.wav", "text": "周末我去睇左場concert，當個singer一出場，全場即刻high翻天，真係無比excited！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/207.wav", "text": "我同朋友就去玩game，選擇咗最新嘅PlayStation5，揸住控制器我哋都覺得超爽嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/208.wav", "text": "我最喜歡就係去book store買咗本新出版嘅novel，每次睇書都可以放鬆自己，好enjoy呢種feel。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/209.wav", "text": "我每年都會去Comic Con，因為可以買到好多獨立artist嘅cool merchandise，我真係好support佢哋。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/210.wav", "text": "我買咗個新drone去玩，飛哂個天，我真係覺得超有fun！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/211.wav", "text": "我成日都會去dance club跳舞，每次去都dancing all night long，我覺得好relaxing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/212.wav", "text": "我去睇咗場football比賽，喺stadium熱血沸騰，真係完全get into the game。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/213.wav", "text": "我同我朋友們都鍾意去bowling，每次都玩友誼賽，真係好competitive但都好有fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/214.wav", "text": "我小時候最鍾意去theme park，玩過山車，每次都覺得scream out loud，真係超exciting。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/215.wav", "text": "我家裏有份Theater subscription，所以我每個月都會去睇Play，真是一直享受在art的世界裡溜達。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/216.wav", "text": "我哋早上先做咗一個warm up，然後開始我哋嘅marathon training。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/217.wav", "text": "你哋知唔知道做yoga可以幫助reduce stress同埋improve flexibility呀？", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/218.wav", "text": "我將會去睇下一場MMA比賽，我真係 well-prepared 並且 well-equipped, 所以我 full of confidence。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/219.wav", "text": "我覺得swimming好攰人，但係總比較好過去做gym weights training。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/220.wav", "text": "我返工之後會跑running, 做下運動有助於relieve stress。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/221.wav", "text": "我嘅朋友推薦我試下kick boxing, 佢話可以幫助保持active lifestyle。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/222.wav", "text": "我個鍾前做完cycling, 好翻啲啦，但仲要recover energy。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/223.wav", "text": "我哋今個weekend預咗去hiking, 我已經做咗充足嘅preparation，包括水飲同食物。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/224.wav", "text": "做下outdoor sports, 可以接觸番大自然，有種freedom感覺。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/225.wav", "text": "最近嘅air pollution問題愈來愈嚴重，政府需要實施更多green policy去對抗呢個問題。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/226.wav", "text": "我哋嘅教育system仲有好多問題需要解決，政府是否考慮過進行一次comprehensive嘅review?", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/227.wav", "text": "Covid-19病毒嘅疫苗計劃下，政府應該確保所有人嘅vaccination process係公平嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/228.wav", "text": "我哋嘅食水供應問題，需要一個可以持續久遠嘅solution，唔係一次過解決就算。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/229.wav", "text": "最近central嘅交通距疾日日塞車，需要進一步改進嘅traffic management措施。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/230.wav", "text": "政府預留嘅土地用於commercial development，但我哋嘅社區需要更多public space，包括playground，公園至等。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/231.wav", "text": "公立醫院嘅排班system出現問題，令到好多病人等唔到醫生診症，呢個問題需要immediate嘅解決方案。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/232.wav", "text": "政府分配資源嘅fairness受到質疑，好多人認為佢偏愛大企業，我哋需要一個公平的distribution system。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/233.wav", "text": "我哋對於廢物management嘅方案似乎唔夠有效，需要引入更多再生能源technologies去幫助處理廢物。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/234.wav", "text": "醫療保健services哋等侯時間愈來愈長，我哋需要一個更有效率嘅系統去確保所有人都可以及時得到照顧。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/235.wav", "text": "我鐘意去online shopping，方便，隨時隨地都可以買嘢，真係好enjoyable同埋convenient。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/236.wav", "text": "我最like嘅一個活動就係每年black Friday sales，可以用最抵價錢買到最高質素嘅goods，真係超爽！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/237.wav", "text": "我想買一部新smartphone，我已經做左好多research，好excited我接下來可以去哪個shop揀選。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/238.wav", "text": "我一向都喜歡去舊街市去hunt for bargains，感覺好rewarding同埋entertaining。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/239.wav", "text": "我好喜歡去luxury brands嘅outlets去shopping，有時候可以買到好值嘅items，真係好thrilling。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/240.wav", "text": "我常喺online platforms搵discount codes同cashback offers，咁就可以更加save money當我shopping，真係smart同埋practical。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/241.wav", "text": "我最近好鐘意去vintage shops 搵unique嘅pieces，好fun和creative。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/242.wav", "text": "我下個weekend要去一個big shopping spree，好期待可以買到我一直想買嘅items，感覺真係好exciting。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/243.wav", "text": "每次我收到我喺online買嘅嘢嘅parcel，我都會好excited開佢，總係一種happy surprise。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/244.wav", "text": "我此刻正在做preparation去迎接今年嘅summer sales，預計會買好多新衫同鞋，好期待同埋fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/245.wav", "text": "如果汝想improve自己嘅學習能力，就需要培養讀書嘅interest和習慣咯。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/246.wav", "text": "學習嘅journey並唔係一蹴可幾，而係需要持續嘅effort和patience。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/247.wav", "text": "注重學習嘅process,唔好只追求results，呢樣對於長遠嘅self-improvement更加有助。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/248.wav", "text": "當你遇到學習嘅difficulty，唔好put off。反而，嘗試多啲different strategies，去overcome佢。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/249.wav", "text": "創新思維係學習嘅一部分，係咪我哋需要嘅是一個開放嘅mindset？", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/250.wav", "text": "落力嘅學習唔代表要放棄leisure time，適度嘅休息可以增加效率。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/251.wav", "text": "每日allocate一定嘅時間去學習，培養regular嘅學習習慣，可以幫助保持focus同improve performance。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/252.wav", "text": "學識appreciate失敗嘅value，對於學習來講好重要。因為失敗係咪喺road to success上面一條重要嘅步驟。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/253.wav", "text": "喺學習既過程中，喺面對challenges嘅時候展示resilience，係一種向前嘅態度。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/254.wav", "text": "喺學習既過程中，要開始Develop critical thinking skills，可以幫助think outside the box。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/255.wav", "text": "每日去返工嘅路上，我哋應該要持續進修，keep learning新嘅技能以提升自己嘅productivity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/256.wav", "text": "唔論係做緊咩嘅project，communication skills都好重要，要識得express自己嘅ideas同理解人哋嘅needs。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/257.wav", "text": "即使遇到困難，都要keep up the good spirit，始終work是about overcoming challenges。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/258.wav", "text": "我哋唔可以settle for less，我哋要追求career growth，並且為此持續努力。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/259.wav", "text": "除咗工作，work-life balance都好重要，我哋需要時刻保持自己嘅physical and mental health。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/260.wav", "text": "工作唔係只需要hard work，efficient工作方式同樣重要，否則可能會out of energy。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/261.wav", "text": "有時候，優秀嘅teamwork比任何一個individual contribution都重要，同事間嘅harmony唔可以忽視。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/262.wav", "text": "工作時我哋需要set clear objectives，只有goals明確，咪可以measure我哋嘅performance。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/263.wav", "text": "唔好怕failure，因為每一次嘅失敗都係experience gained，我哋嘅career path需要嘅，就係呢啲lessons learned。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/264.wav", "text": "認識accept criticism同埋feedback會幫助我哋做beta嘅improvements，呢啲都係career development嘅重要步驟。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/265.wav", "text": "周末會有heavy rain，記得帶著你的umbrella出門。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/266.wav", "text": "明天會well sunny，就放假去beach enjoy吧。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/267.wav", "text": "hike玩要留意wet floor，今日有thunderstorm的預報。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/268.wav", "text": "今晚好chilly，開下heater記得不要讓baby catch cold。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/269.wav", "text": "感覺會有hailstorm，車子park喺garage入面會比較保險。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/270.wav", "text": "Forecast話今晚有meteor shower，找個好位位stargazing吧。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/271.wav", "text": "天氣轉快會去tropical，出門前記得擦好sunscreen。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/272.wav", "text": "近日好low pressure，可能會有typhoon，記得check新聞頻道的weather update。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/273.wav", "text": "明朝早晨會有fog，drive時要注意road visibility。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/274.wav", "text": "溜狗要留意，話說會有mudslide因為連日rains。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/275.wav", "text": "我每次去Yum cha都會點流心奶黃包，該custard filling真係滑咁滑，美味到爆呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/276.wav", "text": "禮拜五晚我食了壽司，嗰個tuna真係好新鮮，不過我覺得拖羅同鰻魚更加outstanding！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/277.wav", "text": "我剛剛嘗試了個新開嘅Vietnamese restaurant，嗰個Pho味道rich同濃郁，真係很impressive！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/278.wav", "text": "我個媽咪嘅自家煮嘅糖醋排骨，好甜好酸，balance得很perfect！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/279.wav", "text": "我去咗個Italy小館，嗰個Spaghetti真係再al dente入面唔得，整個Italian cuisine experience入面，佢絕對係star！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/280.wav", "text": "食咗一個bomboloni，嗰個custard爆出嚟嘅moment，我直頭到food heaven呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/281.wav", "text": "我嘅朋友帶我去食嘅Korean BBQ，烤肉咁juicy，而且side dishes都很yummy，係一個true feast！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/282.wav", "text": "食完嗰個lemon tart，我唯一妄得係refreshing，真係完美sum up我嘅dessert experience!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/283.wav", "text": "昨日晚我試咗個Burger joint，肉扒juicy配上cheese，一啖落去簡直係heavenly！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/284.wav", "text": "上星期試食一間新嘅Mexican Restaurant，食完嗰個tacos後，我已經in love咗！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/285.wav", "text": "我老公煮嘅fried beehoon超級delicious，好食到我想睇佢埋廚神秘境界同佢學science咁！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/286.wav", "text": "我揾到一个好的deal去Japan ski，冬天来个snow adventure真係好刺激呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/287.wav", "text": "我plan去France学cooking，學下點煮好味嘅French cuisine好正呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/288.wav", "text": "下个月我想去Bali滑浪，享受下tropical paradise嘅feel呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/289.wav", "text": "我即刻book左去Italy落Rome同Venice旅行，去欣赏下嘅historic sites及culture呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/290.wav", "text": "我馬上去South Africa做safari trip，期待見到wild animals呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/291.wav", "text": "我諗緊喺Canada欣賞fall foliage，紅葉好靚，等我攝个足夠嘅Instagram photos呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/292.wav", "text": "我夏天有計劃去Greece喺beach上太陽浴，享受下嘅blue water和white sand呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/293.wav", "text": "我想去New Zealand做hiking trip，觀賞佢哋嘅amazing landscapes呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/294.wav", "text": "我喺Spain做road trip，要去嘅cities同beaches都太many呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/295.wav", "text": "我決定去Brazil落Rio Carnival，感受下嘅vibrant culture同festival atmosphere呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/296.wav", "text": "禮拜五晚上我哋鍾意去karaoke，麥克風揸住手裏，我就覺得我自己做咗個superstar。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/297.wav", "text": "我打機時間都用嚟玩online game，連接實世界嘅朋友，可以一齊玩得開心過吓添。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/298.wav", "text": "去過一次動漫展，好厲害嘅cosplay，個個都似乎具備超human嘅能力咁。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/299.wav", "text": "我訓覺前都會睇下Netflix，看看美國最新嘅series，至於香港drama就同老豆老母一齊睇啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/300.wav", "text": "我成日都會聽下音樂，無論係Canto-pop還係英國band，都係我嘅favourites。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/301.wav", "text": "上網都鍾意surf嚟surf去，check下最新嘅gadgets或者睇d tech news。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/302.wav", "text": "我哋聚會嘅時候，有時都會一齊玩board game，感覺好似背嚟小時候咁無憂無慮。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/303.wav", "text": "我recently開始去gym做健身，鍛鍊身體之餘，都係一種好relax嘅娛樂方式。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/304.wav", "text": "我喺office返到好焗，返到屋企就係玩吓video game，最緊要自己愉快就得嘞。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/305.wav", "text": "我學廣東武術，每次practise都好享受，真係好好嘅娛樂活動同埋運動方式。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/306.wav", "text": "我鍾意跑步，啲runner's high感覺真係唔錯。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/307.wav", "text": "我最近加入咗一個gym，每日都會去做strength training。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/308.wav", "text": "我個朋友教咗我啲basketball技巧，我最鍾意嘅就係3 point shot。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/309.wav", "text": "周末我會同朋友去hiking，嗰種與nature間的bonding真係好relaxing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/310.wav", "text": "我鍾意做yoga，佢唔單止幫助身體flexibility，仲可以幫助meditate。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/311.wav", "text": "冬季我會去skiing，滑雪可以提升我嘅coordination同埋balance能力。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/312.wav", "text": "我training嘅時候會輪流用elliptical machine同埋treadmill，咁就可以全身workout。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/313.wav", "text": "我嘅swimming coach教咗我啲breathing techniques，依家我嘅swim speed已經提升咗。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/314.wav", "text": "我鍾意每週去做兩次pilates，係一個好方法去strengthen我嘅core muscles。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/315.wav", "text": "我嘅朋友話他鍾意去做武術課（martial arts class），佢話呢啲可以提升discipline同埋self-confidence。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/316.wav", "text": "新型肺炎疫情令全球經濟受壓，我哋需要政府提供更多financial support去挽救疲弱的經濟。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/317.wav", "text": "本地藝術和文化發展得好慢，希望政府可以allocate more resources涌入creative industry，令香港嘅藝術文化更有競爭力。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/318.wav", "text": "近年嘅property prices好高，住屋問題愈來愈嚴重。我哋需要政府建多啲affordable housing給市民。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/319.wav", "text": "疫情下，好多餐廳企業經營艱難，政府需要提供種specific financial scheme去支援他們。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/320.wav", "text": "很多學生因為school closure受到影響，政府需要建立a better online learning system，以保障學生嘅學習權益。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/321.wav", "text": "空氣污染問題越來越嚴重，希望政府可以implement stricter environmental regulations for control。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/322.wav", "text": "嚴重嘅交通堵塞問題令市民生活嚴重受影響，我哋嘅城市需要更有效嘅public transport system。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/323.wav", "text": "食物浪費係一個嚴重問題，我哋政府需要建立一個comprehensive food recycling program去處理冇用嘅食物。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/324.wav", "text": "政府應當invest more in healthcare，尤其是疫情之下，醫療資源十分短缺。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/325.wav", "text": "政府在youth development嘅投資不足，需要提供更多opportunities for young people，包括再教育、就業等等。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/326.wav", "text": "我今日就去一個大sale，想買個brand new嘅handbag，好期待呢！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/327.wav", "text": "我喺department store見到一件好靚嘅dress，但我覺得價錢有啲expensive，邊款比較值得買呢？", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/328.wav", "text": "我鐘意個feel嘅vintage cloths，所以我經常去二手店逛逛，好多有趣嘅findings喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/329.wav", "text": "我睇到個discount code，可以馬上去網上買啲我之前想買但覺得太貴嘅品牌服裝，真係太lucky啦！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/330.wav", "text": "我見到好個好deal，買一送一嘅shoes，質素又好look又comfortable，我覺得好值嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/331.wav", "text": "我媽媽話，我今次去outlet購物，可以幫我買個新嘅laptop，我真係太high啦！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/332.wav", "text": "我去市場買緊groceries，發現新鮮嘅fruits同vegetables好平，我就買多咗啲回屋企。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/333.wav", "text": "我想買個最新款嘅smartphone，但我先check下review同比價，之後先決定應唔應該買。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/334.wav", "text": "一齊set goals同monitor progress，學習嘅效果就會大大提升啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/335.wav", "text": "要利用online resources助你解答難題，便於你自主學習嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/336.wav", "text": "每日都需要reserve出一啲時間用上study，堅持係一種好重要嘅success factor喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/337.wav", "text": "唔要覺得自己學不到，唔好easy give up，其實我哋每個都有自己嘅potential去學會新嘢嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/338.wav", "text": "develop一個好嘅study habit，一日無做都會覺得唔舒服架。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/339.wav", "text": "學習就好似workout一樣，需要去遍practice and revise，先會進步喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/340.wav", "text": "engage喺學習嘅過程中好重要，咁先能full understand學到嘅東西。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/341.wav", "text": "學識學嘢唔只係讀書，還要learn from experience啦，這種事好common架。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/342.wav", "text": "用heart去學嘢，你就會感受到學習的joy和satisfaction架。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/343.wav", "text": "揀咗自己喜歡同interested嘅野去學，學習嘅過程就會smooth多咗。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/344.wav", "text": "即使平時duty好忙，都需要抽空去做啲self-reflection，睇下自己喺工作嘅performance點樣。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/345.wav", "text": "有時，要去adapt新嘅work environment同workflow，尤其喺疫情下，我哋都要学习去accept new normal。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/346.wav", "text": "喺工作嘅同時，都好重要去保持工作生活嘅balance，咁先可以sustain long term嘅performance。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/347.wav", "text": "喺追求career success嘅路上，critical thinking同problem solving skills都好重要，咁可以face 嚟自各方面嘅挑戰。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/348.wav", "text": "我哋喺工作嘅同時，都要maintain好嘅professionalism同ethics，咁先可以assume更大嘅responsibilities。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/349.wav", "text": "喺團隊工作中，cooperation同teamwork勁重要，大家都要識得互相support同respect。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/350.wav", "text": "將來，我哋都應該要追求更大嘅career opportunities，透過continuous learning同upgrading嘅skill sets。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/351.wav", "text": "咁樣喺高壓嘅situations下都識得保持cool同calm，對工作有好大嘅help。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/352.wav", "text": "千祈唔好玩失去嘅curiosity，困難嘅時候唔好怕問question，咁先可以不断嘅improve自己。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/353.wav", "text": "每日都要set新嘅goals，並keep track嘅progress，咁先可以開展自己嘅potential。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/354.wav", "text": "超calm的一个morning，最好gaai個時tanning啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/355.wav", "text": "瞓覺前記得check下天气，话说可能会有overnight frost喔。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/356.wav", "text": "晚餐後一家人去喺rooftop enjoy下個breeze，天气好好呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/357.wav", "text": "大人少儿要小心，白天話會extremely hot嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/358.wav", "text": "Dinner後可以去海边，預計會有一個perfect sunset呢。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/359.wav", "text": "走前前要remember帶把umbrella，预报話可能會下雨。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/360.wav", "text": "去迎接快要arrive嘅spring吧，花应该准备再bloom喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/361.wav", "text": "唔好忘咗帶sunscreen出街啊，話說uv index會好高呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/362.wav", "text": "记得带多piece sweater，晚上話会变得quite chilly。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/363.wav", "text": "如果你计划出去hiking，记得check下weather forecast，话畀你听可能会有thunderstorms。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/364.wav", "text": "我最鍾意嘅大排檔有一道black pepper beef，醬汁rich同juicy，好real authentic!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/365.wav", "text": "Dinner我一定煮番杯雞蛋炒飯，simplicity之餘又富有飽足感，得心應手到唔得了!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/366.wav", "text": "我真係無法resist落個cafe飲個freshly brewed的咖啡，啱啱好嘅bitterness實在太captivating!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/367.wav", "text": "海鮮豐富嘅西班牙paella真係worth every penny，每一粒滿是flavour嘅飯粒都令我欲罷不能!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/368.wav", "text": "驚喜下，我今日lunch time決定食個fusion sushi roll，你唔會相信原來raw fish可以咁delicious!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/369.wav", "text": "我總會joyful咁飲杯bubble tea，嗰pearls chewy得嚟smooth，喺口入面就像跳舞一樣,simply irresistible!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/370.wav", "text": "早餐我鐘意食個smashed avocado toast，捧住嗰刻fruity taste, 真係heavenly!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/371.wav", "text": "食完嗰個belgian waffle，我唯一想話係, 'Having this is truly a bless!'\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/372.wav", "text": "嚟個fall in love with chocolate lava cake，每次看到嗰melted chocolate流出嚟時，我感到極度satisfying!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/373.wav", "text": "今日lunch我去咗食個salad，雖然我怕肥緊節食，但fruit and nut combination真係surprisingly tasty!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/374.wav", "text": "我准备喺Summer去日本嘅Kyoto，欣赏下花火festival嘅魅力啦!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/375.wav", "text": "橫琴岛嘅温泉真系super relaxing，我一定要再去一次咋!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/376.wav", "text": "返工太累啦，我想去Maldives躺沙滩，感受一下beach life嘅乐趣。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/377.wav", "text": "New Year假期我洗准备去London shopping，唔好再讲我shopaholic啦!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/378.wav", "text": "我打算十一黄金周去Australia嘅Sydney海边BBQ，好似好有fun哦!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/379.wav", "text": "来喇Christmas假期，我决定去New York嘅Times Square，體驗下countdown嘅狂热气氛!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/380.wav", "text": "下个星期我要去深圳Bay Park玩，欣赏下嘅modern city view。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/381.wav", "text": "今年我又想去Thailand潜水，尽情享受下underwater world嘅美丽。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/382.wav", "text": "我想去法国嘅Paris，去Eiffel Tower度度新年，似乎好romantic呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/383.wav", "text": "我打算去台湾租一个露营车，体验下road trip嘅乐趣啦!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/384.wav", "text": "我好鍾意玩video game，最近剛買咗一部新嘅PS5，真係非常exciting！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/385.wav", "text": "週末我同朋友去咗邊度唱K，叫咗幾個pizza配埋幾罐beer，真係非常happy呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/386.wav", "text": "我鍾意去追星，尤其係Kpop團體，每次看到佢地演出，心都會beat得好快！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/387.wav", "text": "我最喜歡嘅movie係‘阿凡達’，佢嘅特效同story line都係完全top-notch，每次看都唔會膩！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/388.wav", "text": "我平時鍾意聽R&B同Hip-hop music，尤其係當我感到down嘅時候，聽下music真係可以幫到好多。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/389.wav", "text": "我鍾意去concert享受live嘅音樂，無論係本土band定係international stars, 都可以令我感到非常high！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/390.wav", "text": "我最鍾意嘅TV show係‘Friends’，因為裡面嘅jokes都好搞笑，每次睇都會laugh out loud！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/391.wav", "text": "我每逢假期就會去迪士尼度玩，喺度ride各種各樣嘅rides，玩得好高興同過癮！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/392.wav", "text": "我鍾意去夜店跳舞，特別係當DJ播我最愛的EDM時，真係令我感到非常pumped up！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/393.wav", "text": "我每逢新一季嘅'Game of Thrones'出嚟，就會同friend開個watching party，感覺真係非常cool!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/394.wav", "text": "我每日都會去gym做運動，維持healthy lifestyle真係好important。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/395.wav", "text": "我喺basketball court度打波，感覺自己好似NBA嘅star一樣。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/396.wav", "text": "Playing soccer唔單止係比賽，同時都係一種teamwork嘅練習。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/397.wav", "text": "當我de-stress嘅時候就會去打羽毛球，由心出發就好enjoyable。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/398.wav", "text": "我每周都會去swim，喺水中感覺好係freedom。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/399.wav", "text": "我之前參加咗一次marathon，成個過程都好challenging但係結果真係好satisfying。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/400.wav", "text": "被隊友pass嘅rugby球，我會揸得好tight並且全力以赴嘅跑。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/401.wav", "text": "喺tennis court上，每次打返嚟球都需要full concentration。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/402.wav", "text": "雖然單車行山有時quite tough，但係其實好足本 enjoy 其中的nature。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/403.wav", "text": "瑜伽唔單可以提升我們嘅flexibility，仲可以幫助peace of mind。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/404.wav", "text": "交通問題嚴重，我地需要government推行public transportation improvements去改善現況。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/405.wav", "text": "空氣污染對我哋健康嘅影響好大，政府需要implement強制性嘅emission standards。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/406.wav", "text": "經濟發展唔係犧牲環保嘅代價，我哋需要進行sustainable development。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/407.wav", "text": "新冠病毒打亂我哋嘅生活，政府需要確保有充足嘅COVID-19 vaccines供應市民接種。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/408.wav", "text": "我哋嘅長者搵唔到工作，政府需要提供更多支援，包括job training programs。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/409.wav", "text": "青少年情緒困擾問題變嚴重，我哋需要提供足夠mental health resources。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/410.wav", "text": "越來越多人无屋可住，我地需要建立一個comprehensive homelessness prevention program。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/411.wav", "text": "美食地圖令香港成為美食之都，但係同時都導致咗food waste問題嚴重，政府需要加大力度處理。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/412.wav", "text": "近年嚟嘅性骚扰問題令人擔憂，我哋應該跟嚟新嘅laws派對去處理呢啲錯行為。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/413.wav", "text": "教育改革必須支持我哋嘅年青一代，政府需要投資於innovative learning strategies。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/414.wav", "text": "我昨日去咗個shopping mall，好多brands都係做緊sales，我果然係right time去購物嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/415.wav", "text": "我一直都鐘意呢對sneakers，但都覺得佢啲價錢太高，所以我就等佢打折先買，果然有patience真係會有reward喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/416.wav", "text": "Shopping online真係好方便，隨時隨地都可以睇到新款，仲可以直接比價，真係too good to be true咁嘅experience。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/417.wav", "text": "我見到呢件blouse，真喺好喜歡佢嘅design，但好unluckily佢哋已經賣晒我嘅size，只能等佢哋再stock up啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/418.wav", "text": "我諗我已經形成咗個holiday shopping嘅tradition，每年聖誕節都會去買一大堆嘅禮物送比朋友，其實都是一種happiness喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/419.wav", "text": "去outlet shopping好似打寶一樣，有時會突然搵到好平嘅designer items，精神上真係好fulfilling。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/420.wav", "text": "我見到呢個brand新出嘅collection，袋同鞋都好match，我決定要invest喺佢哋嘅產品上，我覺得我make a good decision啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/421.wav", "text": "我都好想要呢對earrings，但實在太over budget，可能要等到優惠先至可以afford。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/422.wav", "text": "我係網上見到個fashion blogger著緊我睇中嘅裙，所以我即刻去網店搵，lucky咁，呢個裙仲有得買，真係超happy！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/423.wav", "text": "我買咗一對vintage jeans，好岩我嘅style，就算佢cost我一筆錢，我都覺得值得，因為我真係好like呢條jeans呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/424.wav", "text": "學習冇咩shortcut，我哋要耐心keep going，一步步走向成功。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/425.wav", "text": "唔好just focus喺你嘅weakness，你都要appreciate自己的strength。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/426.wav", "text": "Failure唔係the end，它只係教我哋學習如何做得更好嘅一個part。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/427.wav", "text": "學嘅時候不妨去treat問題like a challenge，咁就可以找到更多嘅motivation去學嘅。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/428.wav", "text": "Remember，唔要怕出錯，因為mistakes係學習嘅一部分。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/429.wav", "text": "就算你feel lost，都唔好放棄，keep learning就一定可以find your way出來。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/430.wav", "text": "唔好太hard on yourself，學習唔係一個race，而係一場marathon。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/431.wav", "text": "用你嘅curiosity去學習新嘅知識，咁就可以學到更多嘅things啦。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/432.wav", "text": "學習就係about acquisition of knowledge，慢慢build up你嘅wisdom。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/433.wav", "text": "冇論學嘅是乜嘢，都要有confidence同belief in yourself，咁先可以學嘅更有效率。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/434.wav", "text": "做你想做嘅事，唔需要理別人嘅expectations，聽你自己嘅heart就好。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/435.wav", "text": "每次failure都係學習嘅機會，只要你有persistence，總會達到success嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/436.wav", "text": "朝朝暮暮嘅hard work都一定會帶嚟rewards，無謂怕辛苦，我哋要cherish每一次嘅opportunity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/437.wav", "text": "乜嘢叫真正嘅success？就係你起得開你自己love嘅job，full of passion去追求dreams。“", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/438.wav", "text": "做決定時唔好怕 make mistakes，因為dares to take risks係成功嘅一部份。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/439.wav", "text": "呢度加班好hazardous，唔正常嘅work-life balance沒法sustain長久嘅career。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/440.wav", "text": "工作唔識得communicate又點合作呢？teamwork就係要良好嘅communication skills。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/441.wav", "text": "工作唔止係諗錢，更重要嘅係你可以gain到乜嘢experience,學識乜嘢新嘅knowledge。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/442.wav", "text": "面對困難唔好放棄，只要keep going，想成功就一定會有way out。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/443.wav", "text": "喺工作嘅時候，唔好忽視自己嘅health，good health係highest wealth嘅。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/444.wav", "text": "今日嘅天气真係amazing，全日都係明朗嘅太阳。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/445.wav", "text": "繼續keep住呢种好天气就最好唔过喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/446.wav", "text": "近排嘅气温畀人感覺有啲unstable，大家千祈记得带好衣服。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/447.wav", "text": "天氣話预报tornado，大家要stay safe喔！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/448.wav", "text": "又话今朝可能有會heavy rain，唔好忘记帶伞出門。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/449.wav", "text": "暑假嘅时候通常都会变得非常hot，晒太阳咁都要注意put sunscreen防晒。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/450.wav", "text": "瞓果陣窗户记得关好，因为晚晚都会有一阵子大风blow。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/451.wav", "text": "今天可能有會thunderstorm，出门最好配备得完整一啲。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/452.wav", "text": "冬天嚟咗，寒冷天氣带来嘅snow好麻煩喔。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/453.wav", "text": "今天嘅humidity有啲high，可能会使人感觉有啲sticky咁。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/454.wav", "text": "我鍾意煮個spaghetti carbonara，夠 creamy 又唔會太肥，簡直太perfect!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/455.wav", "text": "我最鍾意嘅chocolate fudge cake, 甜膩當中帶有一絲bitter，味道unique到呆!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/456.wav", "text": "我就喜歡煮個home-made burger，堆疊嘅滋味配合到無得輸，滋味正到爆!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/457.wav", "text": "我最愛嘅steak tartare，喺raw嘅感覺同新鮮嘅taste之間做到一個完美嘅balance!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/458.wav", "text": "我一定會bake一個蘋果撻，crisp pastry同甜甜的apple filling，實在係太delicious!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/459.wav", "text": "午餐時間我都鍾意一個fresh salad，healthy又清新，真係highlight of my day!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/460.wav", "text": "我嘅ultimate comfort food就係chicken pot pie，creamy filling同flaky crust，就係一個word－satisfying!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/461.wav", "text": "我總會烤一個sourdough loaf，香噴噴的bread smell，fresh出烤箱嘅時候最吸引人!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/462.wav", "text": "當然唔少得disco fries，cheesy同crispy，夜晚食嘅時候最正!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/463.wav", "text": "最鍾意嘅零食就係popcorn，salty sweet嘅taste，追劇嘅時候最開胃!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/464.wav", "text": "我上次去咗New Zealand嘅Auckland，那边嘅自然景色真系真系好stunning，超级worth it！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/465.wav", "text": "我打算下个month就去咗France嘅Paris，去欣赏下Eiffel Tower咯！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/466.wav", "text": "我好想去Australia嘅Sydney，dive under the Great Barrier Reef，应该会系一个unforgettable experience嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/467.wav", "text": "Australia嘅Perth真系好relaxing，感觉好似走入laid-back的paradise一样。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/468.wav", "text": "去年喺Japan嘅Tokyo shopping真系玩得好过癮，今年我想再去一次咋！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/469.wav", "text": "我几想喺Winter去Finland 看看Northern Lights，应该会系个magical experience嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/470.wav", "text": "我准备喺Canada嘅Vancouver做一个road trip，沿途嘅风景应该会好美嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/471.wav", "text": "我已经计划好喺Spring 去Korea嘅Busan赏花啦，期待极啦！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/472.wav", "text": "去年喺Italy嘅Rome 玩得真系好开心，吃咗好多delicious嘅pizza和pasta，今年再去一次哈哈！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/473.wav", "text": "我特别喜欢Thai嘅Bangkok, shopping paradise啊，又便宜，又多款，最重要嘅系好好玩！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/474.wav", "text": "我真係好鍾意嘅遊戲就係‘The Legend of Zelda’,每次解puzzle都覺得自己好smart！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/475.wav", "text": "周末嘅時候，我鐘意去影院睇電影，特別係Marvel嘅superhero電影，係我嘅favourite！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/476.wav", "text": "我最鍾意嘅band就係Coldplay，而家嘅歌都好屬意，聽佢地嘅音樂會make my day！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/477.wav", "text": "我鍾意嘅舞台劇就係‘Phantom of the Opera’，當主角一唱出‘The Music of the Night’我整個人都全身chill！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/478.wav", "text": "我超鍾意追劇，尤其係Netflix出嘅韓劇，充滿suspense，令我睇得眼都冇合過！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/479.wav", "text": "我好鍾意音樂節，尤其係Coachella，那種feel真係無法比擬，每次去都好exciting！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/480.wav", "text": "我喺Instagram上面follow左好多artists，每次佢地post新嘅artworks，我都會超級exciting！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/481.wav", "text": "我超鍾意打電動，尤其係‘Overwatch’，每次都會跟隨著game的rhythm，極度投入！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/482.wav", "text": "我覺得畫畫能夠relax亦令人happy，噉我每次有空閒時都會揸起畫筆，揮灑自己嘅creativity！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/483.wav", "text": "我好鐘意睇網絡劇，尤其係YouTuber出嘅原創短片，點解呢？因為佢地嘅ideas都好unique，每次睇都會覺得好inspired！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/484.wav", "text": "即使天氣唔係咁好，我都會堅持去gym做workout，可唔可以有個fit body就睇依個persistence。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/485.wav", "text": "我每晚都会跑步keep fit，對我嚟講,有active lifestyle真係well-being嘅一部分。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/486.wav", "text": "我覺得玩badminton好有趣，唔止可以improve coordination，亦都可以boost up energy level.", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/487.wav", "text": "周末去咗攀岩嘅experience真係好exciting，我之前未試過喺這種altitude and difficulty上push自己嘅limits。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/488.wav", "text": "嚟緊想去參加一個yoga class，相信會係一個好relaxing嘅body and mind嘅exercise。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/489.wav", "text": "太陽曬個時候去游水，果種感覺真係great，同時亦都好有benefit to cardiovascular health.", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/490.wav", "text": "去踩單車唔單止可以scenery俾眼光，而且亦都可以increase stamina.", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/491.wav", "text": "我好欣賞足球嘅teamwork，每個人嘅contribution都好essential去決定比賽嘅outcome。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/492.wav", "text": "晨早跑馬拉松，果種freshness同得來嘅achievement感，人生中都難以忘記。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/493.wav", "text": "學游泳唔止可以enhance muscular strength，亦都可以學到rescue skills，真係一項好有價值嘅sport。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/494.wav", "text": "塑膠污染問題日益严重，我哋需要推行更有效嘅plastic waste management strategies。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/495.wav", "text": "公共交通費用不停上升，可以考慮introducing more fare concessions吾洗大家咁辛苦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/496.wav", "text": "本地消費物價一直上揚，我哋需要更有效嘅price control measures。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/497.wav", "text": "巿區人口密度過高，政府應考虑implement sustainable urban planning。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/498.wav", "text": "民族歧視問題仍未被完全解決，我們需要更強烈的anti-discrimination campaigns。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
-{"audio": "./audio/499.wav", "text": "食品安全问题越来越严重，我哋需要一个更透明的food quality monitoring system。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.mp3"}
+{"audio": "./audio/0.wav", "text": "你知唔知今日嘅temperature會落到低至10度，一定要著厚d嘅clothes啊！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/1.wav", "text": "我check咗天氣app，佢話今日會有thunderstorm，最好唔好去戶外行嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/2.wav", "text": "飛機已經被grounded喇，因為typhoon signal已經升到No.8嚟啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/3.wav", "text": "周圍都有well-developed霧，嚴重limit我哋嘅visibility，開車嘅時候要小心啲！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/4.wav", "text": "Forecast話晚上嘅weather會變得好cold，會降到freezing point，甚至可能會有snow喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/5.wav", "text": "感覺到今晚嘅breeze都好舒服，temperature剛剛好，真係一個perfect night去郊遊。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/6.wav", "text": "你有冇見過咁震撼嘅sunset? 天氣真係好perfect，可以坐下嚟慢慢欣賞。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/7.wav", "text": "睇嚟weekend嘅weather會比較unstable，可能會有rain shower，最好做好準備。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/8.wav", "text": "地鐵公告話因為暴雨嚟襲，好多routes都被flooded，需要改行其他routes返屋企。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/9.wav", "text": "咁嘅Humidity真係令人好難受，幸好有air conditioning可以調節。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/10.wav", "text": "我個人好like去金鐘嘅food court，因為嗰度嘅選擇好wide，應有盡有。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/11.wav", "text": "台灣嘅bubble tea真係太addictive，任何時間我都有mood去飲。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/12.wav", "text": "我對港式嘅dim sum好有passion，特別係燒賣和鳳爪，簡直係heavenly good!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/13.wav", "text": "如果你想去食最authentic嘅港式燒臘，我會推薦你去中環嗰間燒鵝店，太best了!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/14.wav", "text": "每次去旺角，我都會去嗰間甜品店，佢地嘅芝麻糊同腐竹滑得like silky smooth一樣，令我忍唔住要多食幾碗。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/15.wav", "text": "喺黃埔嗰間日本餐廳嘅sushi, sashimi都新鮮之餘，presentation都好on point，好worth it!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/16.wav", "text": "我個人好enjoy嚟自美國嘅fast food culture，對我嚟講，大快朵頤一頓漢堡加薯條係牛冚匸象嘅simple pleasure。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/17.wav", "text": "我個兄弟好鍾意去添馬公園果度嘅餃子店,佢話果度啲餃子juicy滿分，讚唔絕口。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/18.wav", "text": "打邊爐就係我冬天嘅favourite comfort food，我鍾意邊食邊同friend嗑嗑牙，攞嚟驅寒實在冇得頂。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/19.wav", "text": "意大利麵係我anytime嘅go-to meal，不論係carbonara定係bolognese我都鍾意，都好easy & quick！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/20.wav", "text": "真想好快可以plan一個trip，去新嘅destination，嘆吓新鮮air，好enjoyable呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/21.wav", "text": "每次行過airport嘅duty free shop我就会feel excited，一覺去咗另一個world。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/22.wav", "text": "如果去Japan，我一定會想去disneyland，淨係想諗都好happy！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/23.wav", "text": "希望下次可以去Africa做一個safari tour, 去見下wildlife，好adventurous!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/24.wav", "text": "我好鐘意去historical city，睇吓嗰啲historic buildings，學下嗰度嘅history.", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/25.wav", "text": "下一個dream destination係New York，我想去times square countdown，感覺好fantastic嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/26.wav", "text": "夏天既時候去Australia就最好，去beach玩水好cool，又可以BBQ，好爽啊！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/27.wav", "text": "下次travel我想去themed hotel入住，話晒每次出行都想試人哋experience嘅新嘅喇！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/28.wav", "text": "我想去名菜館嘗試吓佢哋嘅signature dishes，食到我心滿意足，好comforting 啊！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/29.wav", "text": "一定要試下去tropical island snorkeling，見下靚嘅coral reef 同 colourful fish，感覺好relaxing！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/30.wav", "text": "我好享受去shopping mall玩嘅時候，好多品牌我都可以選，仲可以試新出嘅trendy clothes。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/31.wav", "text": "我個weekend去睇咗'The Avengers'嘅movie，電影咁intense，真係我今年睇過最好嘅show。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/32.wav", "text": "我對fitness有好大嘅passion，每次去gym都好happy，感覺自己越來越fit。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/33.wav", "text": "我鍾意用我部smartphone玩mobile games，個graphic好sharp，我最鍾意'PUBG'。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/34.wav", "text": "我最近開始追韓劇'Crash Landing On You'，個plot好intriguing，每集都令我excited。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/35.wav", "text": "我love唱K，每次都唱pop songs，我朋友話我嘅vocal skills唔錯。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/36.wav", "text": "我喺Instagram嘅influencer都影響咗我嘅lifestyle，佢地post嘅photos都好inspiring。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/37.wav", "text": "我同我朋友去咗一間新開嘅bar，嗰度cocktails好優質，係一個chill嘅地方。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/38.wav", "text": "每次跑完marathon後，我都feel到全身筋骨舒暢，真係好rewarding！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/39.wav", "text": "我哋每個禮拜都會做一次yoga，對於relieve壓力同提高concentration好有幫助呢。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/40.wav", "text": "我哋嘅basketball team今次比賽表現得好good，大家都play得好努力，我好感動呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/41.wav", "text": "呢個weekend，我哋有釣魚plan，雖然我唔係好擅長，但都well prepared，期待有一個fun and relaxing day。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/42.wav", "text": "我平時prefer做gym好過outdoor activities，可以專注咁train肌肉，又可以avoid曬太陽呢。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/43.wav", "text": "我對於呢個football season好excited，好期待我最鐘意嘅隊伍有出色嘅表現喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/44.wav", "text": "即使我唔係一個professional swimmer，但每次我游泳都feel到好refreshed，享受到water嘅cool感覺。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/45.wav", "text": "我鐘意去hike, 喺山上面可以enjoy到nature，同時都可以達到keep fit嘅效果。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/46.wav", "text": "做yoga嘅時候我們會play一啲輕柔嘅音樂，可以幫助我們relax同集中精神。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/47.wav", "text": "跑障礙賽(course)係一種挑戰自己嘅運動，過程雖然tough，但真係好有fun呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/48.wav", "text": "我見到報導話佢哋準備implement新嘅rent control policy，我覺得咁樣好保護住住客，但都怕有negative side effects喺房東身上。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/49.wav", "text": "一直以嚟，我哋嘅教育system有好多疑問，最近嘅DSE reform plan可以解決部分問題，但又有啲人質疑呢個改變會唔會太rushed?", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/50.wav", "text": "嗰日我聽到政府落嘅新減排target，我認為呢個step forward真係好crucial，對抗climate change我哋需要全部人齊心協力。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/51.wav", "text": "我見到新聞嘅headline話廣告牌嘅管理問題，我覺得呢個problem要迅速咁解決，避免任何potential hazards。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/52.wav", "text": "近排有一本新書出咗黎，講緊香港國家安全法嘅legal effects，我準備去買本黎看下，掌握最新嘅knowledge。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/53.wav", "text": "聽落新一輪既公屋allocations有啲problem，我覺得呢個唔係個長期solution，政府要有sustainable嘅住房policy。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/54.wav", "text": "我記得剛才聽新聞話，佢哋提出新建商業district嘅proposal，我覺得呢個可行，可以boost本地經濟。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/55.wav", "text": "見到佢哋議論低工資工人嘅minimum wage，我認為政府需要balance企業嘅需要同保護labour rights嘅重要性。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/56.wav", "text": "我鐘意喺weekend去designer boutique睇新款clothes，可以keep up with fashion trends，好有fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/57.wav", "text": "我喺家中browse online stores，好方便，我可以輕鬆買到我鐘意嘅make-up product。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/58.wav", "text": "我喺holiday鐘意去outlet購物，可以買到打折嘅branded goods，價格吓人，甚至可以買到half price，又可以save money。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/59.wav", "text": "我喺free time去bookstore，可以一邊enjoy browsing好多books，一邊可以喺café飲杯coffee，真係relax。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/60.wav", "text": "我喺weekend去supermarket shopping，可以prepare whole week嘅meal，好organised同埋good for health。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/61.wav", "text": "我每個月都會去health & beauty store買個skin care product，想keep my skin healthy 同glowing，真係值得invest。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/62.wav", "text": "我鐘意去electronics store，可以keep up with最新嘅gadgets，又可以enhance my lifestyle，好interesting。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/63.wav", "text": "我喺online shopping買home decor items，可以自己裝飾屋企，又可以show my personal style，真係creative同埋fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/64.wav", "text": "我喺online買sports equipment，因為我可以喺家中練習，又keep fit，真係好方便。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/65.wav", "text": "我經常喺flea market買vintage items，佢哋有special嘅charm同埋可以add到我個collection，真係好exciting。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/66.wav", "text": "我覺得網上course好helpful，可以喺自己嘅時間學習新嘅skills。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/67.wav", "text": "話說返黎，學習唔係只有喺school先得，life本身就係一個大學堂。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/68.wav", "text": "喺呢個digital era，學coding變得好重要，我唔想miss out呢個opportunity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/69.wav", "text": "我鍾意閱讀，因為books可以帶我去到不同嘅world，學識新嘅思維方式。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/70.wav", "text": "學習一種新嘅language可以open up新嘅opportunities，我現在正在學西班牙文， 真係有趣。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/71.wav", "text": "呢個weekend我要去attend一個workshop，針對音樂製作，真係好期待。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/72.wav", "text": "我最近開始學習瑜伽，呢個practice令我感到好relaxed，同時亦係身心嘅exercise。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/73.wav", "text": "我發覺每日take out一啲時間做自我review真係好critical喺學習嘅process。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/74.wav", "text": "學會咗新嘅skill，例如programming，為我嘅career開啓新嘅doors。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/75.wav", "text": "學習係一個never-ending journey，我相信學無止境，喺呢個ever-changing世界要保持curiosity以學到新嘅知識。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/76.wav", "text": "我每日都需要check email，跟進咗我嘅工作，確保我嘅performance保持在一個好嘅level。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/77.wav", "text": "當你喺一個project做緊lead嘅時候，你需要有一個clear vision，冇咗嗰個，就好難drive你嘅team向前發展。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/78.wav", "text": "雖然sometimes deadline 係好tight, 但係我哋都唔可以cut corners，質量一定要保證。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/79.wav", "text": "喺workplace裡面，respect同埋trust傾嘅係最重要，如果大家無呢啲，就好難cooperate effectively。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/80.wav", "text": "如果你喺工作中遇到了一個big challenge，你需要保持calm，然後develop一個有效嘅strategy嚟解決。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/81.wav", "text": "喺一個新嘅job position，我哋需要有一個open mind，ready咗去學習新嘅skills同face新嘅挑戰。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/82.wav", "text": "如果你覺得你嘅career stagnant咗，就要去找新嘅opportunities或者提升自己嘅技能，唔可以just settle down。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/83.wav", "text": "我每天都set咗一個to-do list，咁樣我先可以manage我嘅時間，做到最efficient嘅工作。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/84.wav", "text": "我好贊同flexible working hours，咁樣可以更好嘅balance我嘅工作同生活。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/85.wav", "text": "喺我嘅career development中，continuous learning係非常重要，無論係新技術、新知識抑或係新trends，我都要keep up with。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/86.wav", "text": "喺天氣app度睇到今晚可能會有heavy rain，大家出門記得帶umbrella呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/87.wav", "text": "我哋下個week有可能會遇到一次強烈嘅cold front，so多著d衫啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/88.wav", "text": "今晚可能會有strong wind，記住唔好去海邊嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/89.wav", "text": "我嘅weather forecast話明晚會drop到0度，記住打開heater呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/90.wav", "text": "今日好hot，大家記住帶sunscreen唔好中曬喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/91.wav", "text": "我check咗weather app，佢話下星期有chance下snow，咁步出門時就要带d雪鞋喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/92.wav", "text": "頭致天氣報告say嗰個hurricane會影響我哋呢度，大家一定要小心保重。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/93.wav", "text": "我啱啱睇天氣報告話下個月可能會有typhoon，我哋要做好萬全嘅準備。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/94.wav", "text": "畀我check下weather app，原來今日會好foggy，出門時記住開fog light喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/95.wav", "text": "今晚氣溫可能會drop落好low，大家出門要記住帶scarf同hat呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/96.wav", "text": "我好love上環嘅street food，每次都會食到我well satisfied咁。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/97.wav", "text": "你試過廟街嘅煎鱈魚嗎？佢嘅taste真係超級amazing！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/98.wav", "text": "週末嘅brunch time，去欣圖書嘅cafe飲一杯coffee,食個eggs benedict，真係好relaxing呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/99.wav", "text": "啲麵包店嘅croissant好crispy嘅，我totally fall in love住咗！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/100.wav", "text": "啲意大利麵嘅sauce個taste好rich，真係惹味到不得了。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/101.wav", "text": "party time食pizza真係好fun，尤其係嗰啲薄底嘅，taste非常authentic！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/102.wav", "text": "小籠包裏面嘅肉汁好juicy，每次一咬就會流出嚟，簡直係mouthwatering！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/103.wav", "text": "日本料理嘅presentation真係好impressive，就算係飯團sushi，都會令你一試難以忘懷。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/104.wav", "text": "我好喜歡番茄海鮮湯嘅flavour，做得好，酸辣恰到好處！fiction", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/105.wav", "text": "牛油果shrimp salad好划算，又健康！食完feel自己好healthy同energized！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/106.wav", "text": "我哋下次去Thailand，一定要try佢哋嘅local food，聽講超好食呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/107.wav", "text": "有冇諗過去Australia睇睇當地嘅wildlife，一定好exciting架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/108.wav", "text": "我好想買個backpack，走一轉Europe，去好多個museums同historical sites就好啦！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/109.wav", "text": "聽講去U.S.A.round trip要花好多時間，不過如果有機會我都想試下，應該好unforgettable架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/110.wav", "text": "我下個goal係想去Africa做volunteering，貢獻少少力量都好，我覺得好meaningful！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/111.wav", "text": "去New Zealand搭個campervan一路drive一路玩，咁樣嘅旅行計劃一定好relaxing！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/112.wav", "text": "我哋下次一齊去Italy嘅wine tour啦，試吓佢地嘅紅酒，一定好enjoyable！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/113.wav", "text": "France嘅cuisine大家都識，但如果當地嘅cooking class就未必咁簡單，但我想嘗試下，肯定好fun架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/114.wav", "text": "我想我會plan一個solo trip去Canada，享受一下自由同獨處嘅樂趣，一定好special嘅experience!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/115.wav", "text": "日本嘅cherry blossom season我一直都好想見識下，對我嚟講，應該好charming架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/116.wav", "text": "我每個weekend都會去movie theatre睇新上映嘅films，我鍾意各種genre嘅movies，例如action, comedy同sci-fi等等。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/117.wav", "text": "我周圍嘅mates都好鍾意聽我講ghost stories，我係個很大嘅horror fan，我鍾意嘅horror fix都唔係單單限制於書同film。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/118.wav", "text": "我好鍾意去karaoke同朋友唱歌，每次去都唔覺得boring，我同我朋友們都有好多fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/119.wav", "text": "我鍾意用我部iPad睇Netflix或者Disney+，我覺得我每個月payment都好值得，因為我可以睇到好多我鍾意嘅series同movie。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/120.wav", "text": "我每日都會睇youtube，我其中一個favorite嘅youtuber就係Pewdiepie，我鍾意佢嘅gameplay videos同meme reviews。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/121.wav", "text": "我係個音樂lover，我喺spotify上有好多嘅playlist，我嘅music taste包括pop, rock同classical等等。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/122.wav", "text": "我唔單止鍾意喺gaming console上玩video games，我都好鍾意喺arcade玩，我覺得咁樣會有個好嘅social experience。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/123.wav", "text": "我鍾意睇Netflix嘅drama series，例如'Stranger Things'同'The Crown'，我覺得喺家睇係一個好relax嘅娛樂方式。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/124.wav", "text": "我每個month都好look forward到嗰個新comic book day，我會去我最鍾意嘅comic shop揀選我最期待嘅new releases。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/125.wav", "text": "每年嘅summer我都會去參加music festival，我覺得呢種體驗好enjoyable，可以聽到我最鍾意嘅樂團live performance。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/126.wav", "text": "見到Lionel Messi玩足球，簡直係masterpiece，佢嘅技巧真係outstanding！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/127.wav", "text": "我下個月要去參加yoga class，一直都想體驗下，希望我可以fit入去。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/128.wav", "text": "雖然我嘅swimming technique仲有好多需要提升的地方，但係我絕對唔會放棄，practice makes perfect！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/129.wav", "text": "我每個星期都會去gym做workout，健康身體真係well invested。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/130.wav", "text": "我哋今晚要去睇basketball game，已經買咗飲品同小食ready to enjoy。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/131.wav", "text": "我嘅朋友一向鍾意玩badminton，雖然我之前冇試過，但係我已經準備好箍住玩。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/132.wav", "text": "我鍾意跑步嘅原因,之一就係feel到風吹過嚟，完全係nature's gift啊。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/133.wav", "text": "下次我哋可以試下hiking，頂到噉既環境，一定feel到超級relaxing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/134.wav", "text": "今日好適合做outdoor exercises，天氣好好，我ready好水樽就要去公園啦。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/135.wav", "text": "我覺得做運動唔單止keep fit，佢對於精神上都有好大嘅help。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/136.wav", "text": "我覺得點解政府未有implement一個有效嘅交通system，以resolve香港嘅交通擠塞問題。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/137.wav", "text": "我睇到佢哋打算開始更改教育嘅curriculum，但我喺咁嘅情況之下，我諗佢哋應該先focus喺學生嘅心理健康上面。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/138.wav", "text": "疫症keep going，廣大市民嘅生活變得越來越困難，而政府嘅support就變得相當critical。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/139.wav", "text": "佢哋嘅廢物管理真係improve咗喎，但係都仲未到我哋想象中嘅level，我哋還要重加努力去achieve噉嘅目標。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/140.wav", "text": "有關於食物waste，我諗呢個問題唔單止需要大家嘅collective effort，仲要政府要果斷take action。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/141.wav", "text": "地方政府打算開launch咗更嚴厲嘅規定去控制smoking，但係我感到有啲憂慮呢個嘅implementation。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/142.wav", "text": "最近嘅real estate嘅價格上升，可能導致我哋啲年輕人買不起house，因此我哋需要一個更fair嘅市場。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/143.wav", "text": "依家香港嘅經濟狀況真係擔心，因為無咩野可以create jobs，政府必須即刻take action。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/144.wav", "text": "我諗緊本地大學應該更focus培訓啲技術高superior嘅學生，先至可以handle未來社會嘅挑戰。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/145.wav", "text": "政府呢個round嘅市區重建plan有啲問題，大家覺得未必可行，需要進一步行review。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/146.wav", "text": "我鐘意去boutique shopping，買一啲unique嘅clothes，又可以express my fashion sense，真係amazing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/147.wav", "text": "我仲鐘意喺online stores 買fashion accessories，帶埋我嘅outfits，feel more stylish同埋fashionable。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/148.wav", "text": "我成日去department stores，可以一次過買齊所有需要嘅goods，真係convenient。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/149.wav", "text": "我鐘意喺朋友嘅recommendations後，去試新嘅cosmetics products，可以improve my skin care routine，感覺好refreshing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/150.wav", "text": "我成日去bookstores，透過買新書去enhance my knowledge，同時間又可以enjoy the peaceful atmosphere，好relaxing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/151.wav", "text": "我鐘意喺同朋友一齊去shopping malls，透過買貨散心同埋share our interests，好fun同埋enjoyable。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/152.wav", "text": "我常去outlet malls，用抵價嘅價錢買到我鐘意嘅brands，感覺好satisfying同埋exciting。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/153.wav", "text": "喺Christmas sales期間，我會買一大堆禮物送比朋友家人，真係joyful同埋fulfilling。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/154.wav", "text": "我會喺online platform bid二手物品，可以買到rare items，真係thrilling同埋rewarding。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/155.wav", "text": "我鐘意逛市集，可以睇到一啲handmade crafts，可以support local artists，真係meaningful。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/156.wav", "text": "我嘅學習style係透過online courses同實際練習相結合，我認為，互聯網提供咗好多學習resources，真係好方便。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/157.wav", "text": "剛開始學習新嘅事物時，我有時會feel overwhelmed，但我相信perseverance係最重要嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/158.wav", "text": "我相信唔論我哋學嘅知識level有幾高，到頭來都要keep learning, 因為學習真係一個lifelong journey。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/159.wav", "text": "我真係好enjoy學新嘅語言，係一個操縱words嘅fun process，絕對增加咗我嘅cultural understanding。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/160.wav", "text": "喺呢個digital age，所有嘅information就喺我哋fingertips，我哋只要search，就可以find嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/161.wav", "text": "讀book真係學習嘅好方法，但我覺得實際行動同practice亦都係好重要。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/162.wav", "text": "我相信學習嘅journey並唔會smooth一路順風，但就算挫折困難，我哋都唔可以give up，其實呢啲都係part of the learning process。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/163.wav", "text": "要學好coding，就需要大量嘅time同practice，而且永遠都有新嘅programming languages要學。\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/164.wav", "text": "我覺得學英文唔單止可以提升我們嘅communication skills，仲可以認識新嘅culture。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/165.wav", "text": "當學習變成一個habit，我哋就會更加enjoy學習嘅journey，無論係學習啲咩硬skills或者是soft skills。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/166.wav", "text": "對於work performance，我哋應該要有continuous improvement嘅心態，始終唔可以satisfied with mediocrity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/167.wav", "text": "喺workplace裡面，我哋需要promote open communication，促使每個人都能夠express opinion freely。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/168.wav", "text": "如果你做嘅project fail咗，就唔需要過於disappointed，失敗係成功之媽，學識learning from mistakes更加重要。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/169.wav", "text": "喺你嘅career journey之中，唔可以忽視personal development，你嘅professional skills同personal attributes都要balance嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/170.wav", "text": "工作唔係just about earning money，更加係實現自己嘅value，所以我哋需要在work中find passion。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/171.wav", "text": "喺困難面前，唔可以放棄，要有perseverance去克服challenges，因為這樣你就會更強大。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/172.wav", "text": "我哋嘅goal唔係為咗贏過第二名，而係去提升自己嘅performance，唔可以把focus放在beat others上面。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/173.wav", "text": "有時你可能會覺得當下嘅work唔係你想要做嘅，但你仍然要keep going，因為呢件事情可能會將你帶去未來嘅opportunity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/174.wav", "text": "有時候work會變得tough，但記住唔可以give up easily，有determination係必要嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/175.wav", "text": "喺teamwork中，我哋需要透過effective communication達到consensus，係喺理解同尊重each other的基礎上進行嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/176.wav", "text": "今日好sunny，可以去出去玩下，唔好浪費左咁好天氣噶。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/177.wav", "text": "天氣預報話會有heavy rain，出門前記得carry傘喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/178.wav", "text": "下雨就算喇，有咁個nice weather，去park行下圈啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/179.wav", "text": "今日會好cold，記得穿多件sweater出門啊。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/180.wav", "text": "下午好hot噶，要小心heat stroke，去到outdoor飲多啲水喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/181.wav", "text": "我睇吓weather report，話聽日會有big storm，要小心啲喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/182.wav", "text": "今日天氣真係perfect，好適合去beach enjoy下曬太陽。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/183.wav", "text": "呢幾日天氣變得好unstable，要成日keep住睇天氣預報喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/184.wav", "text": "天氣預報話投朝會有snowfall，記得戴好beanie出門。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/185.wav", "text": "據天氣預報，今天會thunderstorm，記得唔好行出去玩喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/186.wav", "text": "紅燒牛肉麵個noodles真係好al dente，搭配個beef香味好rich，好享受啊！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/187.wav", "text": "嗰啲芒果布甸滑滑哋，超juicy嘅，真係one of a kind！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/188.wav", "text": "食番堆焗蝦仔蘿蔔糕，嗰啲蝦仔香香crispy，好有texture，每一口都full of surprises！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/189.wav", "text": "食燒賣個yu yee好springy，完全係一個perfect dim sum experience！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/190.wav", "text": "快d食台灣牛肉麵，個noodles亦都有光滑滑嘅mouthfeel，一啖咬落去就wonderful！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/191.wav", "text": "嗰個日本生魚片刺身，好新鮮，滑過口，嗰啲sashimi paradise呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/192.wav", "text": "我真係好鍾意川味擔擔麵，個peppery kick係簡直irresistible！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/193.wav", "text": "試試啲豬扒飯，個pork chop香煎至crispy golden brown，喺口中感覺just right！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/194.wav", "text": "食咗嗰個煎蠔餅，crusty outside and juicy inside，飽滿嘅fresh蠔味，真係個must try！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/195.wav", "text": "嗰啲烤章魚丸應該有獎架，嗰個skin crispy chewy，咬落去就有及呢flavor burst, simply the best！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/196.wav", "text": "我打算去Thailand潛水，大佬你有冇recommendation嫁?", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/197.wav", "text": "我剛剛完成咗去Japan嘅solo trip，感覺真係極之refreshing！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/198.wav", "text": "我計劃喺Australia過迎新年，去佢哋嘅beach party定好架！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/199.wav", "text": "我鍾意去France嘅vineyards，嘆杯好wine超抵玩！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/200.wav", "text": "我好鍾意去Italy road trip，見下佢哋嘅beautiful countryside，係一種treat自己嘅方式！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/201.wav", "text": "冇事做嘅時候我最鍾意去Singapore shopping，買下designer brands好過癮！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/202.wav", "text": "我計劃去Canada滑雪，挑戰自己，試下新嘢好投入喎！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/203.wav", "text": "我十分期待去Brazil欣賞嘅carnival，應該會係一個unforgettable experience！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/204.wav", "text": "呢個summer我打算去Spain同Portugal backpacking，感受下佢哋嘅local culture同食物！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/205.wav", "text": "我好想去India做yoga retreat，淨化下自己嘅mind同body，對身心健康都好有幫助呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/206.wav", "text": "周末我去睇左場concert，當個singer一出場，全場即刻high翻天，真係無比excited！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/207.wav", "text": "我同朋友就去玩game，選擇咗最新嘅PlayStation5，揸住控制器我哋都覺得超爽嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/208.wav", "text": "我最喜歡就係去book store買咗本新出版嘅novel，每次睇書都可以放鬆自己，好enjoy呢種feel。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/209.wav", "text": "我每年都會去Comic Con，因為可以買到好多獨立artist嘅cool merchandise，我真係好support佢哋。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/210.wav", "text": "我買咗個新drone去玩，飛哂個天，我真係覺得超有fun！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/211.wav", "text": "我成日都會去dance club跳舞，每次去都dancing all night long，我覺得好relaxing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/212.wav", "text": "我去睇咗場football比賽，喺stadium熱血沸騰，真係完全get into the game。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/213.wav", "text": "我同我朋友們都鍾意去bowling，每次都玩友誼賽，真係好competitive但都好有fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/214.wav", "text": "我小時候最鍾意去theme park，玩過山車，每次都覺得scream out loud，真係超exciting。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/215.wav", "text": "我家裏有份Theater subscription，所以我每個月都會去睇Play，真是一直享受在art的世界裡溜達。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/216.wav", "text": "我哋早上先做咗一個warm up，然後開始我哋嘅marathon training。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/217.wav", "text": "你哋知唔知道做yoga可以幫助reduce stress同埋improve flexibility呀？", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/218.wav", "text": "我將會去睇下一場MMA比賽，我真係 well-prepared 並且 well-equipped, 所以我 full of confidence。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/219.wav", "text": "我覺得swimming好攰人，但係總比較好過去做gym weights training。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/220.wav", "text": "我返工之後會跑running, 做下運動有助於relieve stress。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/221.wav", "text": "我嘅朋友推薦我試下kick boxing, 佢話可以幫助保持active lifestyle。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/222.wav", "text": "我個鍾前做完cycling, 好翻啲啦，但仲要recover energy。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/223.wav", "text": "我哋今個weekend預咗去hiking, 我已經做咗充足嘅preparation，包括水飲同食物。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/224.wav", "text": "做下outdoor sports, 可以接觸番大自然，有種freedom感覺。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/225.wav", "text": "最近嘅air pollution問題愈來愈嚴重，政府需要實施更多green policy去對抗呢個問題。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/226.wav", "text": "我哋嘅教育system仲有好多問題需要解決，政府是否考慮過進行一次comprehensive嘅review?", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/227.wav", "text": "Covid-19病毒嘅疫苗計劃下，政府應該確保所有人嘅vaccination process係公平嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/228.wav", "text": "我哋嘅食水供應問題，需要一個可以持續久遠嘅solution，唔係一次過解決就算。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/229.wav", "text": "最近central嘅交通距疾日日塞車，需要進一步改進嘅traffic management措施。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/230.wav", "text": "政府預留嘅土地用於commercial development，但我哋嘅社區需要更多public space，包括playground，公園至等。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/231.wav", "text": "公立醫院嘅排班system出現問題，令到好多病人等唔到醫生診症，呢個問題需要immediate嘅解決方案。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/232.wav", "text": "政府分配資源嘅fairness受到質疑，好多人認為佢偏愛大企業，我哋需要一個公平的distribution system。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/233.wav", "text": "我哋對於廢物management嘅方案似乎唔夠有效，需要引入更多再生能源technologies去幫助處理廢物。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/234.wav", "text": "醫療保健services哋等侯時間愈來愈長，我哋需要一個更有效率嘅系統去確保所有人都可以及時得到照顧。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/235.wav", "text": "我鐘意去online shopping，方便，隨時隨地都可以買嘢，真係好enjoyable同埋convenient。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/236.wav", "text": "我最like嘅一個活動就係每年black Friday sales，可以用最抵價錢買到最高質素嘅goods，真係超爽！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/237.wav", "text": "我想買一部新smartphone，我已經做左好多research，好excited我接下來可以去哪個shop揀選。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/238.wav", "text": "我一向都喜歡去舊街市去hunt for bargains，感覺好rewarding同埋entertaining。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/239.wav", "text": "我好喜歡去luxury brands嘅outlets去shopping，有時候可以買到好值嘅items，真係好thrilling。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/240.wav", "text": "我常喺online platforms搵discount codes同cashback offers，咁就可以更加save money當我shopping，真係smart同埋practical。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/241.wav", "text": "我最近好鐘意去vintage shops 搵unique嘅pieces，好fun和creative。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/242.wav", "text": "我下個weekend要去一個big shopping spree，好期待可以買到我一直想買嘅items，感覺真係好exciting。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/243.wav", "text": "每次我收到我喺online買嘅嘢嘅parcel，我都會好excited開佢，總係一種happy surprise。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/244.wav", "text": "我此刻正在做preparation去迎接今年嘅summer sales，預計會買好多新衫同鞋，好期待同埋fun。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/245.wav", "text": "如果汝想improve自己嘅學習能力，就需要培養讀書嘅interest和習慣咯。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/246.wav", "text": "學習嘅journey並唔係一蹴可幾，而係需要持續嘅effort和patience。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/247.wav", "text": "注重學習嘅process,唔好只追求results，呢樣對於長遠嘅self-improvement更加有助。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/248.wav", "text": "當你遇到學習嘅difficulty，唔好put off。反而，嘗試多啲different strategies，去overcome佢。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/249.wav", "text": "創新思維係學習嘅一部分，係咪我哋需要嘅是一個開放嘅mindset？", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/250.wav", "text": "落力嘅學習唔代表要放棄leisure time，適度嘅休息可以增加效率。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/251.wav", "text": "每日allocate一定嘅時間去學習，培養regular嘅學習習慣，可以幫助保持focus同improve performance。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/252.wav", "text": "學識appreciate失敗嘅value，對於學習來講好重要。因為失敗係咪喺road to success上面一條重要嘅步驟。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/253.wav", "text": "喺學習既過程中，喺面對challenges嘅時候展示resilience，係一種向前嘅態度。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/254.wav", "text": "喺學習既過程中，要開始Develop critical thinking skills，可以幫助think outside the box。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/255.wav", "text": "每日去返工嘅路上，我哋應該要持續進修，keep learning新嘅技能以提升自己嘅productivity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/256.wav", "text": "唔論係做緊咩嘅project，communication skills都好重要，要識得express自己嘅ideas同理解人哋嘅needs。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/257.wav", "text": "即使遇到困難，都要keep up the good spirit，始終work是about overcoming challenges。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/258.wav", "text": "我哋唔可以settle for less，我哋要追求career growth，並且為此持續努力。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/259.wav", "text": "除咗工作，work-life balance都好重要，我哋需要時刻保持自己嘅physical and mental health。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/260.wav", "text": "工作唔係只需要hard work，efficient工作方式同樣重要，否則可能會out of energy。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/261.wav", "text": "有時候，優秀嘅teamwork比任何一個individual contribution都重要，同事間嘅harmony唔可以忽視。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/262.wav", "text": "工作時我哋需要set clear objectives，只有goals明確，咪可以measure我哋嘅performance。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/263.wav", "text": "唔好怕failure，因為每一次嘅失敗都係experience gained，我哋嘅career path需要嘅，就係呢啲lessons learned。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/264.wav", "text": "認識accept criticism同埋feedback會幫助我哋做beta嘅improvements，呢啲都係career development嘅重要步驟。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/265.wav", "text": "周末會有heavy rain，記得帶著你的umbrella出門。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/266.wav", "text": "明天會well sunny，就放假去beach enjoy吧。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/267.wav", "text": "hike玩要留意wet floor，今日有thunderstorm的預報。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/268.wav", "text": "今晚好chilly，開下heater記得不要讓baby catch cold。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/269.wav", "text": "感覺會有hailstorm，車子park喺garage入面會比較保險。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/270.wav", "text": "Forecast話今晚有meteor shower，找個好位位stargazing吧。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/271.wav", "text": "天氣轉快會去tropical，出門前記得擦好sunscreen。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/272.wav", "text": "近日好low pressure，可能會有typhoon，記得check新聞頻道的weather update。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/273.wav", "text": "明朝早晨會有fog，drive時要注意road visibility。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/274.wav", "text": "溜狗要留意，話說會有mudslide因為連日rains。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/275.wav", "text": "我每次去Yum cha都會點流心奶黃包，該custard filling真係滑咁滑，美味到爆呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/276.wav", "text": "禮拜五晚我食了壽司，嗰個tuna真係好新鮮，不過我覺得拖羅同鰻魚更加outstanding！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/277.wav", "text": "我剛剛嘗試了個新開嘅Vietnamese restaurant，嗰個Pho味道rich同濃郁，真係很impressive！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/278.wav", "text": "我個媽咪嘅自家煮嘅糖醋排骨，好甜好酸，balance得很perfect！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/279.wav", "text": "我去咗個Italy小館，嗰個Spaghetti真係再al dente入面唔得，整個Italian cuisine experience入面，佢絕對係star！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/280.wav", "text": "食咗一個bomboloni，嗰個custard爆出嚟嘅moment，我直頭到food heaven呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/281.wav", "text": "我嘅朋友帶我去食嘅Korean BBQ，烤肉咁juicy，而且side dishes都很yummy，係一個true feast！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/282.wav", "text": "食完嗰個lemon tart，我唯一妄得係refreshing，真係完美sum up我嘅dessert experience!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/283.wav", "text": "昨日晚我試咗個Burger joint，肉扒juicy配上cheese，一啖落去簡直係heavenly！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/284.wav", "text": "上星期試食一間新嘅Mexican Restaurant，食完嗰個tacos後，我已經in love咗！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/285.wav", "text": "我老公煮嘅fried beehoon超級delicious，好食到我想睇佢埋廚神秘境界同佢學science咁！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/286.wav", "text": "我揾到一个好的deal去Japan ski，冬天来个snow adventure真係好刺激呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/287.wav", "text": "我plan去France学cooking，學下點煮好味嘅French cuisine好正呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/288.wav", "text": "下个月我想去Bali滑浪，享受下tropical paradise嘅feel呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/289.wav", "text": "我即刻book左去Italy落Rome同Venice旅行，去欣赏下嘅historic sites及culture呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/290.wav", "text": "我馬上去South Africa做safari trip，期待見到wild animals呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/291.wav", "text": "我諗緊喺Canada欣賞fall foliage，紅葉好靚，等我攝个足夠嘅Instagram photos呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/292.wav", "text": "我夏天有計劃去Greece喺beach上太陽浴，享受下嘅blue water和white sand呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/293.wav", "text": "我想去New Zealand做hiking trip，觀賞佢哋嘅amazing landscapes呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/294.wav", "text": "我喺Spain做road trip，要去嘅cities同beaches都太many呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/295.wav", "text": "我決定去Brazil落Rio Carnival，感受下嘅vibrant culture同festival atmosphere呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/296.wav", "text": "禮拜五晚上我哋鍾意去karaoke，麥克風揸住手裏，我就覺得我自己做咗個superstar。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/297.wav", "text": "我打機時間都用嚟玩online game，連接實世界嘅朋友，可以一齊玩得開心過吓添。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/298.wav", "text": "去過一次動漫展，好厲害嘅cosplay，個個都似乎具備超human嘅能力咁。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/299.wav", "text": "我訓覺前都會睇下Netflix，看看美國最新嘅series，至於香港drama就同老豆老母一齊睇啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/300.wav", "text": "我成日都會聽下音樂，無論係Canto-pop還係英國band，都係我嘅favourites。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/301.wav", "text": "上網都鍾意surf嚟surf去，check下最新嘅gadgets或者睇d tech news。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/302.wav", "text": "我哋聚會嘅時候，有時都會一齊玩board game，感覺好似背嚟小時候咁無憂無慮。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/303.wav", "text": "我recently開始去gym做健身，鍛鍊身體之餘，都係一種好relax嘅娛樂方式。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/304.wav", "text": "我喺office返到好焗，返到屋企就係玩吓video game，最緊要自己愉快就得嘞。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/305.wav", "text": "我學廣東武術，每次practise都好享受，真係好好嘅娛樂活動同埋運動方式。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/306.wav", "text": "我鍾意跑步，啲runner's high感覺真係唔錯。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/307.wav", "text": "我最近加入咗一個gym，每日都會去做strength training。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/308.wav", "text": "我個朋友教咗我啲basketball技巧，我最鍾意嘅就係3 point shot。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/309.wav", "text": "周末我會同朋友去hiking，嗰種與nature間的bonding真係好relaxing。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/310.wav", "text": "我鍾意做yoga，佢唔單止幫助身體flexibility，仲可以幫助meditate。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/311.wav", "text": "冬季我會去skiing，滑雪可以提升我嘅coordination同埋balance能力。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/312.wav", "text": "我training嘅時候會輪流用elliptical machine同埋treadmill，咁就可以全身workout。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/313.wav", "text": "我嘅swimming coach教咗我啲breathing techniques，依家我嘅swim speed已經提升咗。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/314.wav", "text": "我鍾意每週去做兩次pilates，係一個好方法去strengthen我嘅core muscles。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/315.wav", "text": "我嘅朋友話他鍾意去做武術課（martial arts class），佢話呢啲可以提升discipline同埋self-confidence。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/316.wav", "text": "新型肺炎疫情令全球經濟受壓，我哋需要政府提供更多financial support去挽救疲弱的經濟。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/317.wav", "text": "本地藝術和文化發展得好慢，希望政府可以allocate more resources涌入creative industry，令香港嘅藝術文化更有競爭力。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/318.wav", "text": "近年嘅property prices好高，住屋問題愈來愈嚴重。我哋需要政府建多啲affordable housing給市民。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/319.wav", "text": "疫情下，好多餐廳企業經營艱難，政府需要提供種specific financial scheme去支援他們。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/320.wav", "text": "很多學生因為school closure受到影響，政府需要建立a better online learning system，以保障學生嘅學習權益。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/321.wav", "text": "空氣污染問題越來越嚴重，希望政府可以implement stricter environmental regulations for control。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/322.wav", "text": "嚴重嘅交通堵塞問題令市民生活嚴重受影響，我哋嘅城市需要更有效嘅public transport system。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/323.wav", "text": "食物浪費係一個嚴重問題，我哋政府需要建立一個comprehensive food recycling program去處理冇用嘅食物。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/324.wav", "text": "政府應當invest more in healthcare，尤其是疫情之下，醫療資源十分短缺。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/325.wav", "text": "政府在youth development嘅投資不足，需要提供更多opportunities for young people，包括再教育、就業等等。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/326.wav", "text": "我今日就去一個大sale，想買個brand new嘅handbag，好期待呢！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/327.wav", "text": "我喺department store見到一件好靚嘅dress，但我覺得價錢有啲expensive，邊款比較值得買呢？", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/328.wav", "text": "我鐘意個feel嘅vintage cloths，所以我經常去二手店逛逛，好多有趣嘅findings喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/329.wav", "text": "我睇到個discount code，可以馬上去網上買啲我之前想買但覺得太貴嘅品牌服裝，真係太lucky啦！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/330.wav", "text": "我見到好個好deal，買一送一嘅shoes，質素又好look又comfortable，我覺得好值嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/331.wav", "text": "我媽媽話，我今次去outlet購物，可以幫我買個新嘅laptop，我真係太high啦！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/332.wav", "text": "我去市場買緊groceries，發現新鮮嘅fruits同vegetables好平，我就買多咗啲回屋企。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/333.wav", "text": "我想買個最新款嘅smartphone，但我先check下review同比價，之後先決定應唔應該買。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/334.wav", "text": "一齊set goals同monitor progress，學習嘅效果就會大大提升啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/335.wav", "text": "要利用online resources助你解答難題，便於你自主學習嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/336.wav", "text": "每日都需要reserve出一啲時間用上study，堅持係一種好重要嘅success factor喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/337.wav", "text": "唔要覺得自己學不到，唔好easy give up，其實我哋每個都有自己嘅potential去學會新嘢嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/338.wav", "text": "develop一個好嘅study habit，一日無做都會覺得唔舒服架。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/339.wav", "text": "學習就好似workout一樣，需要去遍practice and revise，先會進步喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/340.wav", "text": "engage喺學習嘅過程中好重要，咁先能full understand學到嘅東西。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/341.wav", "text": "學識學嘢唔只係讀書，還要learn from experience啦，這種事好common架。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/342.wav", "text": "用heart去學嘢，你就會感受到學習的joy和satisfaction架。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/343.wav", "text": "揀咗自己喜歡同interested嘅野去學，學習嘅過程就會smooth多咗。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/344.wav", "text": "即使平時duty好忙，都需要抽空去做啲self-reflection，睇下自己喺工作嘅performance點樣。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/345.wav", "text": "有時，要去adapt新嘅work environment同workflow，尤其喺疫情下，我哋都要学习去accept new normal。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/346.wav", "text": "喺工作嘅同時，都好重要去保持工作生活嘅balance，咁先可以sustain long term嘅performance。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/347.wav", "text": "喺追求career success嘅路上，critical thinking同problem solving skills都好重要，咁可以face 嚟自各方面嘅挑戰。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/348.wav", "text": "我哋喺工作嘅同時，都要maintain好嘅professionalism同ethics，咁先可以assume更大嘅responsibilities。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/349.wav", "text": "喺團隊工作中，cooperation同teamwork勁重要，大家都要識得互相support同respect。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/350.wav", "text": "將來，我哋都應該要追求更大嘅career opportunities，透過continuous learning同upgrading嘅skill sets。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/351.wav", "text": "咁樣喺高壓嘅situations下都識得保持cool同calm，對工作有好大嘅help。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/352.wav", "text": "千祈唔好玩失去嘅curiosity，困難嘅時候唔好怕問question，咁先可以不断嘅improve自己。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/353.wav", "text": "每日都要set新嘅goals，並keep track嘅progress，咁先可以開展自己嘅potential。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/354.wav", "text": "超calm的一个morning，最好gaai個時tanning啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/355.wav", "text": "瞓覺前記得check下天气，话说可能会有overnight frost喔。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/356.wav", "text": "晚餐後一家人去喺rooftop enjoy下個breeze，天气好好呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/357.wav", "text": "大人少儿要小心，白天話會extremely hot嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/358.wav", "text": "Dinner後可以去海边，預計會有一個perfect sunset呢。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/359.wav", "text": "走前前要remember帶把umbrella，预报話可能會下雨。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/360.wav", "text": "去迎接快要arrive嘅spring吧，花应该准备再bloom喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/361.wav", "text": "唔好忘咗帶sunscreen出街啊，話說uv index會好高呀。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/362.wav", "text": "记得带多piece sweater，晚上話会变得quite chilly。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/363.wav", "text": "如果你计划出去hiking，记得check下weather forecast，话畀你听可能会有thunderstorms。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/364.wav", "text": "我最鍾意嘅大排檔有一道black pepper beef，醬汁rich同juicy，好real authentic!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/365.wav", "text": "Dinner我一定煮番杯雞蛋炒飯，simplicity之餘又富有飽足感，得心應手到唔得了!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/366.wav", "text": "我真係無法resist落個cafe飲個freshly brewed的咖啡，啱啱好嘅bitterness實在太captivating!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/367.wav", "text": "海鮮豐富嘅西班牙paella真係worth every penny，每一粒滿是flavour嘅飯粒都令我欲罷不能!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/368.wav", "text": "驚喜下，我今日lunch time決定食個fusion sushi roll，你唔會相信原來raw fish可以咁delicious!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/369.wav", "text": "我總會joyful咁飲杯bubble tea，嗰pearls chewy得嚟smooth，喺口入面就像跳舞一樣,simply irresistible!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/370.wav", "text": "早餐我鐘意食個smashed avocado toast，捧住嗰刻fruity taste, 真係heavenly!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/371.wav", "text": "食完嗰個belgian waffle，我唯一想話係, 'Having this is truly a bless!'\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/372.wav", "text": "嚟個fall in love with chocolate lava cake，每次看到嗰melted chocolate流出嚟時，我感到極度satisfying!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/373.wav", "text": "今日lunch我去咗食個salad，雖然我怕肥緊節食，但fruit and nut combination真係surprisingly tasty!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/374.wav", "text": "我准备喺Summer去日本嘅Kyoto，欣赏下花火festival嘅魅力啦!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/375.wav", "text": "橫琴岛嘅温泉真系super relaxing，我一定要再去一次咋!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/376.wav", "text": "返工太累啦，我想去Maldives躺沙滩，感受一下beach life嘅乐趣。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/377.wav", "text": "New Year假期我洗准备去London shopping，唔好再讲我shopaholic啦!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/378.wav", "text": "我打算十一黄金周去Australia嘅Sydney海边BBQ，好似好有fun哦!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/379.wav", "text": "来喇Christmas假期，我决定去New York嘅Times Square，體驗下countdown嘅狂热气氛!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/380.wav", "text": "下个星期我要去深圳Bay Park玩，欣赏下嘅modern city view。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/381.wav", "text": "今年我又想去Thailand潜水，尽情享受下underwater world嘅美丽。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/382.wav", "text": "我想去法国嘅Paris，去Eiffel Tower度度新年，似乎好romantic呀!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/383.wav", "text": "我打算去台湾租一个露营车，体验下road trip嘅乐趣啦!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/384.wav", "text": "我好鍾意玩video game，最近剛買咗一部新嘅PS5，真係非常exciting！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/385.wav", "text": "週末我同朋友去咗邊度唱K，叫咗幾個pizza配埋幾罐beer，真係非常happy呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/386.wav", "text": "我鍾意去追星，尤其係Kpop團體，每次看到佢地演出，心都會beat得好快！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/387.wav", "text": "我最喜歡嘅movie係‘阿凡達’，佢嘅特效同story line都係完全top-notch，每次看都唔會膩！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/388.wav", "text": "我平時鍾意聽R&B同Hip-hop music，尤其係當我感到down嘅時候，聽下music真係可以幫到好多。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/389.wav", "text": "我鍾意去concert享受live嘅音樂，無論係本土band定係international stars, 都可以令我感到非常high！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/390.wav", "text": "我最鍾意嘅TV show係‘Friends’，因為裡面嘅jokes都好搞笑，每次睇都會laugh out loud！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/391.wav", "text": "我每逢假期就會去迪士尼度玩，喺度ride各種各樣嘅rides，玩得好高興同過癮！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/392.wav", "text": "我鍾意去夜店跳舞，特別係當DJ播我最愛的EDM時，真係令我感到非常pumped up！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/393.wav", "text": "我每逢新一季嘅'Game of Thrones'出嚟，就會同friend開個watching party，感覺真係非常cool!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/394.wav", "text": "我每日都會去gym做運動，維持healthy lifestyle真係好important。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/395.wav", "text": "我喺basketball court度打波，感覺自己好似NBA嘅star一樣。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/396.wav", "text": "Playing soccer唔單止係比賽，同時都係一種teamwork嘅練習。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/397.wav", "text": "當我de-stress嘅時候就會去打羽毛球，由心出發就好enjoyable。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/398.wav", "text": "我每周都會去swim，喺水中感覺好係freedom。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/399.wav", "text": "我之前參加咗一次marathon，成個過程都好challenging但係結果真係好satisfying。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/400.wav", "text": "被隊友pass嘅rugby球，我會揸得好tight並且全力以赴嘅跑。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/401.wav", "text": "喺tennis court上，每次打返嚟球都需要full concentration。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/402.wav", "text": "雖然單車行山有時quite tough，但係其實好足本 enjoy 其中的nature。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/403.wav", "text": "瑜伽唔單可以提升我們嘅flexibility，仲可以幫助peace of mind。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/404.wav", "text": "交通問題嚴重，我地需要government推行public transportation improvements去改善現況。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/405.wav", "text": "空氣污染對我哋健康嘅影響好大，政府需要implement強制性嘅emission standards。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/406.wav", "text": "經濟發展唔係犧牲環保嘅代價，我哋需要進行sustainable development。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/407.wav", "text": "新冠病毒打亂我哋嘅生活，政府需要確保有充足嘅COVID-19 vaccines供應市民接種。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/408.wav", "text": "我哋嘅長者搵唔到工作，政府需要提供更多支援，包括job training programs。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/409.wav", "text": "青少年情緒困擾問題變嚴重，我哋需要提供足夠mental health resources。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/410.wav", "text": "越來越多人无屋可住，我地需要建立一個comprehensive homelessness prevention program。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/411.wav", "text": "美食地圖令香港成為美食之都，但係同時都導致咗food waste問題嚴重，政府需要加大力度處理。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/412.wav", "text": "近年嚟嘅性骚扰問題令人擔憂，我哋應該跟嚟新嘅laws派對去處理呢啲錯行為。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/413.wav", "text": "教育改革必須支持我哋嘅年青一代，政府需要投資於innovative learning strategies。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/414.wav", "text": "我昨日去咗個shopping mall，好多brands都係做緊sales，我果然係right time去購物嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/415.wav", "text": "我一直都鐘意呢對sneakers，但都覺得佢啲價錢太高，所以我就等佢打折先買，果然有patience真係會有reward喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/416.wav", "text": "Shopping online真係好方便，隨時隨地都可以睇到新款，仲可以直接比價，真係too good to be true咁嘅experience。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/417.wav", "text": "我見到呢件blouse，真喺好喜歡佢嘅design，但好unluckily佢哋已經賣晒我嘅size，只能等佢哋再stock up啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/418.wav", "text": "我諗我已經形成咗個holiday shopping嘅tradition，每年聖誕節都會去買一大堆嘅禮物送比朋友，其實都是一種happiness喎。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/419.wav", "text": "去outlet shopping好似打寶一樣，有時會突然搵到好平嘅designer items，精神上真係好fulfilling。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/420.wav", "text": "我見到呢個brand新出嘅collection，袋同鞋都好match，我決定要invest喺佢哋嘅產品上，我覺得我make a good decision啦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/421.wav", "text": "我都好想要呢對earrings，但實在太over budget，可能要等到優惠先至可以afford。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/422.wav", "text": "我係網上見到個fashion blogger著緊我睇中嘅裙，所以我即刻去網店搵，lucky咁，呢個裙仲有得買，真係超happy！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/423.wav", "text": "我買咗一對vintage jeans，好岩我嘅style，就算佢cost我一筆錢，我都覺得值得，因為我真係好like呢條jeans呀！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/424.wav", "text": "學習冇咩shortcut，我哋要耐心keep going，一步步走向成功。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/425.wav", "text": "唔好just focus喺你嘅weakness，你都要appreciate自己的strength。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/426.wav", "text": "Failure唔係the end，它只係教我哋學習如何做得更好嘅一個part。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/427.wav", "text": "學嘅時候不妨去treat問題like a challenge，咁就可以找到更多嘅motivation去學嘅。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/428.wav", "text": "Remember，唔要怕出錯，因為mistakes係學習嘅一部分。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/429.wav", "text": "就算你feel lost，都唔好放棄，keep learning就一定可以find your way出來。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/430.wav", "text": "唔好太hard on yourself，學習唔係一個race，而係一場marathon。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/431.wav", "text": "用你嘅curiosity去學習新嘅知識，咁就可以學到更多嘅things啦。\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/432.wav", "text": "學習就係about acquisition of knowledge，慢慢build up你嘅wisdom。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/433.wav", "text": "冇論學嘅是乜嘢，都要有confidence同belief in yourself，咁先可以學嘅更有效率。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/434.wav", "text": "做你想做嘅事，唔需要理別人嘅expectations，聽你自己嘅heart就好。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/435.wav", "text": "每次failure都係學習嘅機會，只要你有persistence，總會達到success嘅。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/436.wav", "text": "朝朝暮暮嘅hard work都一定會帶嚟rewards，無謂怕辛苦，我哋要cherish每一次嘅opportunity。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/437.wav", "text": "乜嘢叫真正嘅success？就係你起得開你自己love嘅job，full of passion去追求dreams。“", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/438.wav", "text": "做決定時唔好怕 make mistakes，因為dares to take risks係成功嘅一部份。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/439.wav", "text": "呢度加班好hazardous，唔正常嘅work-life balance沒法sustain長久嘅career。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/440.wav", "text": "工作唔識得communicate又點合作呢？teamwork就係要良好嘅communication skills。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/441.wav", "text": "工作唔止係諗錢，更重要嘅係你可以gain到乜嘢experience,學識乜嘢新嘅knowledge。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/442.wav", "text": "面對困難唔好放棄，只要keep going，想成功就一定會有way out。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/443.wav", "text": "喺工作嘅時候，唔好忽視自己嘅health，good health係highest wealth嘅。”", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/444.wav", "text": "今日嘅天气真係amazing，全日都係明朗嘅太阳。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/445.wav", "text": "繼續keep住呢种好天气就最好唔过喇。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/446.wav", "text": "近排嘅气温畀人感覺有啲unstable，大家千祈记得带好衣服。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/447.wav", "text": "天氣話预报tornado，大家要stay safe喔！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/448.wav", "text": "又话今朝可能有會heavy rain，唔好忘记帶伞出門。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/449.wav", "text": "暑假嘅时候通常都会变得非常hot，晒太阳咁都要注意put sunscreen防晒。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/450.wav", "text": "瞓果陣窗户记得关好，因为晚晚都会有一阵子大风blow。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/451.wav", "text": "今天可能有會thunderstorm，出门最好配备得完整一啲。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/452.wav", "text": "冬天嚟咗，寒冷天氣带来嘅snow好麻煩喔。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/453.wav", "text": "今天嘅humidity有啲high，可能会使人感觉有啲sticky咁。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/454.wav", "text": "我鍾意煮個spaghetti carbonara，夠 creamy 又唔會太肥，簡直太perfect!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/455.wav", "text": "我最鍾意嘅chocolate fudge cake, 甜膩當中帶有一絲bitter，味道unique到呆!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/456.wav", "text": "我就喜歡煮個home-made burger，堆疊嘅滋味配合到無得輸，滋味正到爆!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/457.wav", "text": "我最愛嘅steak tartare，喺raw嘅感覺同新鮮嘅taste之間做到一個完美嘅balance!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/458.wav", "text": "我一定會bake一個蘋果撻，crisp pastry同甜甜的apple filling，實在係太delicious!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/459.wav", "text": "午餐時間我都鍾意一個fresh salad，healthy又清新，真係highlight of my day!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/460.wav", "text": "我嘅ultimate comfort food就係chicken pot pie，creamy filling同flaky crust，就係一個word－satisfying!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/461.wav", "text": "我總會烤一個sourdough loaf，香噴噴的bread smell，fresh出烤箱嘅時候最吸引人!\"  ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/462.wav", "text": "當然唔少得disco fries，cheesy同crispy，夜晚食嘅時候最正!\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/463.wav", "text": "最鍾意嘅零食就係popcorn，salty sweet嘅taste，追劇嘅時候最開胃!", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/464.wav", "text": "我上次去咗New Zealand嘅Auckland，那边嘅自然景色真系真系好stunning，超级worth it！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/465.wav", "text": "我打算下个month就去咗France嘅Paris，去欣赏下Eiffel Tower咯！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/466.wav", "text": "我好想去Australia嘅Sydney，dive under the Great Barrier Reef，应该会系一个unforgettable experience嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/467.wav", "text": "Australia嘅Perth真系好relaxing，感觉好似走入laid-back的paradise一样。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/468.wav", "text": "去年喺Japan嘅Tokyo shopping真系玩得好过癮，今年我想再去一次咋！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/469.wav", "text": "我几想喺Winter去Finland 看看Northern Lights，应该会系个magical experience嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/470.wav", "text": "我准备喺Canada嘅Vancouver做一个road trip，沿途嘅风景应该会好美嘅！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/471.wav", "text": "我已经计划好喺Spring 去Korea嘅Busan赏花啦，期待极啦！\" ", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/472.wav", "text": "去年喺Italy嘅Rome 玩得真系好开心，吃咗好多delicious嘅pizza和pasta，今年再去一次哈哈！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/473.wav", "text": "我特别喜欢Thai嘅Bangkok, shopping paradise啊，又便宜，又多款，最重要嘅系好好玩！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/474.wav", "text": "我真係好鍾意嘅遊戲就係‘The Legend of Zelda’,每次解puzzle都覺得自己好smart！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/475.wav", "text": "周末嘅時候，我鐘意去影院睇電影，特別係Marvel嘅superhero電影，係我嘅favourite！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/476.wav", "text": "我最鍾意嘅band就係Coldplay，而家嘅歌都好屬意，聽佢地嘅音樂會make my day！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/477.wav", "text": "我鍾意嘅舞台劇就係‘Phantom of the Opera’，當主角一唱出‘The Music of the Night’我整個人都全身chill！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/478.wav", "text": "我超鍾意追劇，尤其係Netflix出嘅韓劇，充滿suspense，令我睇得眼都冇合過！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/479.wav", "text": "我好鍾意音樂節，尤其係Coachella，那種feel真係無法比擬，每次去都好exciting！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/480.wav", "text": "我喺Instagram上面follow左好多artists，每次佢地post新嘅artworks，我都會超級exciting！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/481.wav", "text": "我超鍾意打電動，尤其係‘Overwatch’，每次都會跟隨著game的rhythm，極度投入！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/482.wav", "text": "我覺得畫畫能夠relax亦令人happy，噉我每次有空閒時都會揸起畫筆，揮灑自己嘅creativity！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/483.wav", "text": "我好鐘意睇網絡劇，尤其係YouTuber出嘅原創短片，點解呢？因為佢地嘅ideas都好unique，每次睇都會覺得好inspired！", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/484.wav", "text": "即使天氣唔係咁好，我都會堅持去gym做workout，可唔可以有個fit body就睇依個persistence。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/485.wav", "text": "我每晚都会跑步keep fit，對我嚟講,有active lifestyle真係well-being嘅一部分。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/486.wav", "text": "我覺得玩badminton好有趣，唔止可以improve coordination，亦都可以boost up energy level.", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/487.wav", "text": "周末去咗攀岩嘅experience真係好exciting，我之前未試過喺這種altitude and difficulty上push自己嘅limits。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/488.wav", "text": "嚟緊想去參加一個yoga class，相信會係一個好relaxing嘅body and mind嘅exercise。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/489.wav", "text": "太陽曬個時候去游水，果種感覺真係great，同時亦都好有benefit to cardiovascular health.", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/490.wav", "text": "去踩單車唔單止可以scenery俾眼光，而且亦都可以increase stamina.", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/491.wav", "text": "我好欣賞足球嘅teamwork，每個人嘅contribution都好essential去決定比賽嘅outcome。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/492.wav", "text": "晨早跑馬拉松，果種freshness同得來嘅achievement感，人生中都難以忘記。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/493.wav", "text": "學游泳唔止可以enhance muscular strength，亦都可以學到rescue skills，真係一項好有價值嘅sport。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/494.wav", "text": "塑膠污染問題日益严重，我哋需要推行更有效嘅plastic waste management strategies。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/495.wav", "text": "公共交通費用不停上升，可以考慮introducing more fare concessions吾洗大家咁辛苦。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/496.wav", "text": "本地消費物價一直上揚，我哋需要更有效嘅price control measures。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/497.wav", "text": "巿區人口密度過高，政府應考虑implement sustainable urban planning。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/498.wav", "text": "民族歧視問題仍未被完全解決，我們需要更強烈的anti-discrimination campaigns。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
+{"audio": "./audio/499.wav", "text": "食品安全问题越来越严重，我哋需要一个更透明的food quality monitoring system。", "ref_audio": "./audio/ref_voice/warm_reporter_well_paced_steady_friendly.wav"}
