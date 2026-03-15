@@ -19,7 +19,7 @@ import json
 
 from qwen_tts import Qwen3TTSTokenizer
 
-BATCH_INFER_NUM = 32
+BATCH_INFER_NUM = 16 #32  # reduce batch size 
 
 def main():
     parser = argparse.ArgumentParser()

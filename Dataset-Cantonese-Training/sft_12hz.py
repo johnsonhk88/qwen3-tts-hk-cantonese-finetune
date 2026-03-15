@@ -48,8 +48,8 @@ def train():
     qwen3tts = Qwen3TTSModel.from_pretrained(
         MODEL_PATH,
         torch_dtype=torch.bfloat16,
-        # attn_implementation="flash_attention_2",
-         attn_implementation= "sdpa", # for V100 GPU
+        attn_implementation="flash_attention_2",
+         # attn_implementation= "sdpa", # for not flash attention
     )
     config = AutoConfig.from_pretrained(MODEL_PATH)
 
