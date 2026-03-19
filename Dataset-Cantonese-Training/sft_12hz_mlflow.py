@@ -34,76 +34,64 @@ def train():
     global target_speaker_embedding
 
     parser = argparse.ArgumentParser(description="Fine-tune Qwen3-TTS with MLflow tracking")
-    parser.add_argument("--init_model_path", type=str, default="Qwen/Qwen3-TTS-12Hz-1.7B-Base")
+    parser.add_argument("--init_model_path", type=str, default="Qwen/Qwen3-TTS-12Hz-0.6B-Base")
     parser.add_argument("--output_model_path", type=str, default="output")
     parser.add_argument("--train_jsonl", type=str, required=True)
-    parser.add_argument("--batch_size", type=int, default=2)
-    parser.add_argument("--lr", type=float, default=2e-5)
-    parser.add_argument("--num_epochs", type=int, default=3)
+    parser.add_argument("--batch_size", type=int, default=1)
+    parser.add_argument("--lr", type=float, default=2e-6)
+    parser.add_argument("--num_epochs", type=int, default=10)
     parser.add_argument("--speaker_name", type=str, default="speaker_test")
     
-    # NEW: Allow passing MLflow tracking URI via command line
     parser.add_argument(
         "--mlflow_tracking_uri",
         type=str,
-        default=None,
-        help="MLflow tracking server URI (e.g. http://127.0.0.1:5000 or sqlite:///mlruns.db). "
-             "If not set, uses default local file store (./mlruns)"
+        default="http://localhost:5000",
+        help="MLflow tracking server URI (default: http://localhost:5000)"
     )
     
     args = parser.parse_args()
 
-    # ── MLflow configuration ─────────────────────────────────────────────────────
-    if args.mlflow_tracking_uri:
-        mlflow.set_tracking_uri(args.mlflow_tracking_uri)
-        print(f"Using MLflow tracking URI: {args.mlflow_tracking_uri}")
-    else:
-        print("Using default local MLflow tracking (./mlruns)")
+    # MLflow setup
+    mlflow.set_tracking_uri(args.mlflow_tracking_uri)
+    print(f"Using MLflow tracking URI: {args.mlflow_tracking_uri}")
 
     mlflow.set_experiment("Qwen3-TTS-Finetune")
-    # mlflow.config.enable_async_logging()
-    # Enable autologging
-    mlflow.pytorch.autolog()
+    mlflow.config.enable_async_logging()  # Reduce blocking on remote calls
+
+    accelerator = Accelerator(
+        gradient_accumulation_steps=4,
+        mixed_precision="bf16",
+    )
 
     with mlflow.start_run(run_name=f"finetune-{args.speaker_name}-bs{args.batch_size}-lr{args.lr}"):
-        # Log hyperparameters
-        mlflow.log_params({
-            "init_model_path": args.init_model_path,
-            "output_model_path": args.output_model_path,
-            "train_jsonl": args.train_jsonl,
-            "batch_size": args.batch_size,
-            "lr": args.lr,
-            "num_epochs": args.num_epochs,
-            "speaker_name": args.speaker_name,
-            "gradient_accumulation_steps": 4,
-            "mixed_precision": "bf16",
-            "mlflow_tracking_uri": args.mlflow_tracking_uri or "default (file:./mlruns)",
-        })
-
-        accelerator = Accelerator(
-            gradient_accumulation_steps=4,
-            mixed_precision="bf16",
-            # log_with="tensorboard"  # optional: keep if you want TensorBoard too
-        )
+        if accelerator.is_main_process:
+            mlflow.log_params({
+                "init_model_path": args.init_model_path,
+                "output_model_path": args.output_model_path,
+                "train_jsonl": args.train_jsonl,
+                "batch_size": args.batch_size,
+                "lr": args.lr,
+                "num_epochs": args.num_epochs,
+                "speaker_name": args.speaker_name,
+                "gradient_accumulation_steps": 4,
+                "mixed_precision": "bf16",
+            })
 
         MODEL_PATH = args.init_model_path
         qwen3tts = Qwen3TTSModel.from_pretrained(
             MODEL_PATH,
             torch_dtype=torch.bfloat16,
-            # torch_dtype=torch.float16, # for v100
-            # attn_implementation="flash_attention_2",
-            attn_implementation="sdpa",  # uncomment if flash not available
+            attn_implementation="sdpa",  # change to "flash_attention_2" if available
         )
         config = AutoConfig.from_pretrained(MODEL_PATH)
 
-        train_data = open(args.train_jsonl).readlines()
-        train_data = [json.loads(line) for line in train_data]
+        train_data = [json.loads(line) for line in open(args.train_jsonl).readlines()]
         dataset = TTSDataset(train_data, qwen3tts.processor, config)
         train_dataloader = DataLoader(
             dataset,
             batch_size=args.batch_size,
             shuffle=True,
-            collate_fn=dataset.collate_fn
+            collate_fn=dataset.collate_fn,
         )
 
         optimizer = AdamW(qwen3tts.model.parameters(), lr=args.lr, weight_decay=0.01)
@@ -117,6 +105,9 @@ def train():
         global_step = 0
 
         for epoch in range(args.num_epochs):
+            if accelerator.is_main_process:
+                print(f"\n=== Starting Epoch {epoch} ===")
+
             epoch_loss = 0.0
             num_batches = 0
 
@@ -188,15 +179,19 @@ def train():
 
                 if step % 10 == 0:
                     accelerator.print(f"Epoch {epoch} | Step {step} | Loss: {current_loss:.4f}")
-                    mlflow.log_metric("train_loss", current_loss, step=global_step)
+                    if accelerator.is_main_process:
+                        mlflow.log_metric("train_loss", current_loss, step=global_step)
 
             if num_batches > 0:
                 avg_epoch_loss = epoch_loss / num_batches
-                mlflow.log_metric("epoch_avg_loss", avg_epoch_loss, step=epoch)
+                if accelerator.is_main_process:
+                    mlflow.log_metric("epoch_avg_loss", avg_epoch_loss, step=epoch)
                 accelerator.print(f"Epoch {epoch} completed | Avg Loss: {avg_epoch_loss:.4f}")
 
+            # Save checkpoint locally (no upload during training to avoid hang)
             if accelerator.is_main_process:
                 output_dir = os.path.join(args.output_model_path, f"checkpoint-epoch-{epoch}")
+                print(f"Saving checkpoint to: {output_dir}")
                 shutil.copytree(MODEL_PATH, output_dir, dirs_exist_ok=True)
 
                 input_config_file = os.path.join(MODEL_PATH, "config.json")
@@ -229,10 +224,15 @@ def train():
                 save_path = os.path.join(output_dir, "model.safetensors")
                 save_file(state_dict, save_path)
 
-                # Log checkpoint as artifact
-                mlflow.log_artifacts(output_dir, artifact_path=f"checkpoint-epoch-{epoch}")
+                print(f"Checkpoint epoch-{epoch} saved locally successfully")
 
-    print("Training finished. Check MLflow UI for logs.")
+        # Optional: upload final checkpoint only (uncomment if you want it)
+        # if accelerator.is_main_process:
+        #     final_dir = os.path.join(args.output_model_path, f"checkpoint-epoch-{args.num_epochs-1}")
+        #     mlflow.log_artifacts(final_dir, artifact_path="final_checkpoint")
+
+    if accelerator.is_main_process:
+        print("Training finished successfully. Checkpoints saved locally.")
 
 if __name__ == "__main__":
     train()
