@@ -41,6 +41,7 @@ def train():
     parser.add_argument("--lr", type=float, default=2e-6)
     parser.add_argument("--num_epochs", type=int, default=10)
     parser.add_argument("--speaker_name", type=str, default="speaker_test")
+    parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
     
     parser.add_argument(
         "--mlflow_tracking_uri",
@@ -59,7 +60,7 @@ def train():
     mlflow.config.enable_async_logging()  # Reduce blocking on remote calls
 
     accelerator = Accelerator(
-        gradient_accumulation_steps=4,
+        gradient_accumulation_steps=args.gradient_accumulation_steps,
         mixed_precision="bf16",
     )
 
@@ -73,7 +74,7 @@ def train():
                 "lr": args.lr,
                 "num_epochs": args.num_epochs,
                 "speaker_name": args.speaker_name,
-                "gradient_accumulation_steps": 4,
+                "gradient_accumulation_steps": args.gradient_accumulation_steps,
                 "mixed_precision": "bf16",
             })
 
