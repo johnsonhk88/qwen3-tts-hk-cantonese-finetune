@@ -10,7 +10,7 @@ Dataset-Cantonese-Training/output/
 Dataset-Cantonese-Training/output_custom_voice.wav
 Dataset-Cantonese-Training/mlflow.db
 Dataset-Cantonese-Training/mlruns/
-
+Dataset-Cantonese-Training/audio/*
 # data files
 *.parquet
 
