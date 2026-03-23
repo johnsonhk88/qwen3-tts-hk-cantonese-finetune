@@ -1,6 +1,5 @@
 # evaluate_qwen3_tts.py
-# Standalone post-training evaluation for Qwen3-TTS Hong Kong Cantonese custom voice
-# Run after training: python evaluate_qwen3_tts.py --checkpoint_dir ...
+# FINAL STABLE VERSION — Fixed torchcodec error + tqdm + detailed logging
 
 import argparse
 import json
@@ -9,12 +8,15 @@ import torch
 import pandas as pd
 import soundfile as sf
 import torchaudio
+import warnings
 from transformers import pipeline
-from speechbrain.pretrained import EncoderClassifier
 import evaluate
 from qwen_tts.inference.qwen3_tts_model import Qwen3TTSModel
+from tqdm.auto import tqdm
 
-# ====================== Lazy load evaluation tools ======================
+warnings.filterwarnings("ignore")
+
+# ====================== Lazy-loaded tools ======================
 cer_metric = evaluate.load("cer")
 asr_pipeline = None
 speaker_encoder = None
@@ -24,12 +26,12 @@ utmos_model = None
 def get_asr_pipeline():
     global asr_pipeline
     if asr_pipeline is None:
-        print("Loading SenseVoiceSmall (best for HK Cantonese)...")
+        print("🔄 Loading Whisper-large-v3-turbo (excellent for HK Cantonese)...")
         asr_pipeline = pipeline(
             "automatic-speech-recognition",
-            model="FunAudioLLM/SenseVoiceSmall",
-            trust_remote_code=True,
-            device="cuda" if torch.cuda.is_available() else "cpu"
+            model="openai/whisper-large-v3-turbo",
+            device="cuda" if torch.cuda.is_available() else "cpu",
+            torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
         )
     return asr_pipeline
 
@@ -37,54 +39,71 @@ def get_asr_pipeline():
 def get_speaker_encoder():
     global speaker_encoder
     if speaker_encoder is None:
-        print("Loading ECAPA-TDNN speaker encoder...")
-        speaker_encoder = EncoderClassifier.from_hparams(
-            source="speechbrain/spkrec-ecapa-voxceleb",
-            savedir="pretrained_models/spkrec-ecapa-voxceleb",
-            run_opts={"device": "cuda" if torch.cuda.is_available() else "cpu"}
-        )
+        try:
+            print("🔄 Loading ECAPA-TDNN speaker encoder...")
+            from speechbrain.pretrained import EncoderClassifier
+            speaker_encoder = EncoderClassifier.from_hparams(
+                source="speechbrain/spkrec-ecapa-voxceleb",
+                savedir="pretrained_models/spkrec-ecapa-voxceleb",
+                run_opts={"device": "cuda" if torch.cuda.is_available() else "cpu"}
+            )
+        except Exception as e:
+            print(f"⚠️ Speaker similarity skipped: {e}")
+            return None
     return speaker_encoder
 
 
 def get_utmos_model():
     global utmos_model
     if utmos_model is None:
-        print("Loading UTMOS (naturalness scorer)...")
-        utmos_model = torch.hub.load("tarepan/SpeechMOS", "utmos22_strong", trust_repo=True)
+        print("🔄 Loading UTMOS (first time only, may take 20-60s)...")
+        try:
+            utmos_model = torch.hub.load("tarepan/SpeechMOS", "utmos22_strong", trust_repo=True)
+            print("✅ UTMOS loaded!")
+        except Exception as e:
+            print(f"⚠️ UTMOS failed: {e}")
+            return None
     return utmos_model
 
 
-def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, language="yue", max_samples=None):
+def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, language="chinese", 
+                       max_samples=None, skip_speaker_sim=False, skip_utmos=False):
     os.makedirs(output_dir, exist_ok=True)
 
     print(f"Loading fine-tuned model from: {checkpoint_dir}")
     model = Qwen3TTSModel.from_pretrained(
         checkpoint_dir,
-        torch_dtype=torch.bfloat16,
+        dtype=torch.bfloat16,
         device_map="auto" if torch.cuda.is_available() else None
     )
 
-    # Load test data
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
     with open(test_jsonl, "r", encoding="utf-8") as f:
         test_data = [json.loads(line) for line in f.readlines()]
     if max_samples:
         test_data = test_data[:max_samples]
-    print(f"Evaluating {len(test_data)} test samples...")
+    print(f"✅ Loaded {len(test_data)} test samples")
+
+    asr = get_asr_pipeline()
+    spk_enc = get_speaker_encoder() if not skip_speaker_sim else None
+    utmos = get_utmos_model() if not skip_utmos else None
+
+    print("✅ All models ready!")
+    print("🚀 Starting evaluation...\n")
 
     results = []
     total_cer = total_sim = total_utmos = 0.0
+    sim_available = not skip_speaker_sim
+    utmos_available = utmos is not None
 
-    asr = get_asr_pipeline()
-    spk_enc = get_speaker_encoder()
-    utmos = get_utmos_model()
+    for i, sample in tqdm(enumerate(test_data), total=len(test_data),
+                          desc="Generating & Evaluating", unit="sample"):
+        text = sample["text"]
+        ref_audio_path = sample["audio"]
 
-    for i, sample in enumerate(test_data):
-        text = sample["text"]          # ← change key if your jsonl uses different name
-        ref_audio_path = sample["audio"]  # ← change key if needed
-
-        print(f"[{i+1}/{len(test_data)}] Generating: {text[:60]}...")
-
-        # === Generate with custom Hong Kong voice ===
+        # === Generate with custom voice ===
         wavs, sr = model.generate_custom_voice(
             text=text,
             language=language,
@@ -98,21 +117,38 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
         sf.write(gen_path, gen_wav, sr)
 
         # === CER ===
-        transcription = asr(gen_path, return_timestamps=False, generate_kwargs={"language": "yue"})["text"]
+        transcription = asr(gen_path, generate_kwargs={"language": "yue"})["text"]
         cer = cer_metric.compute(predictions=[transcription], references=[text])
 
-        # === Speaker Similarity ===
-        ref_sig, _ = torchaudio.load(ref_audio_path)
-        ref_emb = spk_enc.encode_batch(ref_sig.unsqueeze(0).to(spk_enc.device))
-        gen_sig = torch.from_numpy(gen_wav).unsqueeze(0).to(spk_enc.device)
-        gen_emb = spk_enc.encode_batch(gen_sig)
-        sim = torch.nn.functional.cosine_similarity(ref_emb.mean(1), gen_emb.mean(1)).item()
+        # === Speaker Similarity (fixed loading with soundfile) ===
+        if spk_enc is not None:
+            try:
+                # Use soundfile instead of torchaudio.load to avoid torchcodec error
+                audio_data, orig_sr = sf.read(ref_audio_path)
+                if len(audio_data.shape) == 1:
+                    audio_data = audio_data[None, :]  # add channel dim
+                ref_sig = torch.from_numpy(audio_data).float().to(spk_enc.device)
+                ref_emb = spk_enc.encode_batch(ref_sig)
+                
+                gen_sig = torch.from_numpy(gen_wav).unsqueeze(0).float().to(spk_enc.device)
+                gen_emb = spk_enc.encode_batch(gen_sig)
+                
+                sim = torch.nn.functional.cosine_similarity(ref_emb.mean(1), gen_emb.mean(1)).item()
+            except Exception as e:
+                print(f"⚠️ Speaker sim failed for sample {i}: {e}")
+                sim = 0.0
+        else:
+            sim = 0.0
+            sim_available = False
 
-        # === UTMOS (resample to 16kHz as required by model) ===
-        waveform_16k = torchaudio.functional.resample(
-            torch.from_numpy(gen_wav).unsqueeze(0), orig_freq=sr, new_freq=16000
-        )
-        utmos_score = utmos(waveform_16k, 16000).item()
+        # === UTMOS ===
+        if utmos is not None:
+            waveform_16k = torchaudio.functional.resample(
+                torch.from_numpy(gen_wav).unsqueeze(0), orig_freq=sr, new_freq=16000
+            )
+            utmos_score = utmos(waveform_16k, 16000).item()
+        else:
+            utmos_score = 0.0
 
         results.append({
             "index": i,
@@ -120,8 +156,8 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
             "ref_audio": ref_audio_path,
             "gen_audio": gen_path,
             "cer": round(cer, 4),
-            "speaker_sim": round(sim, 4),
-            "utmos": round(utmos_score, 3)
+            "speaker_sim": round(sim, 4) if spk_enc else "N/A",
+            "utmos": round(utmos_score, 3) if utmos_available else "N/A"
         })
 
         total_cer += cer
@@ -130,56 +166,47 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
 
     # === Summary ===
     avg_cer = total_cer / len(results)
-    avg_sim = total_sim / len(results)
-    avg_utmos = total_utmos / len(results)
+    avg_sim = total_sim / len(results) if sim_available else "N/A"
+    avg_utmos = total_utmos / len(results) if utmos_available else "N/A"
 
     df = pd.DataFrame(results)
-    csv_path = os.path.join(output_dir, "results.csv")
-    df.to_csv(csv_path, index=False, encoding="utf-8")
+    df.to_csv(os.path.join(output_dir, "results.csv"), index=False, encoding="utf-8")
 
     summary = {
         "checkpoint": checkpoint_dir,
         "test_samples": len(results),
         "avg_cer": round(avg_cer, 4),
-        "avg_speaker_similarity": round(avg_sim, 4),
-        "avg_utmos": round(avg_utmos, 3),
+        "avg_speaker_similarity": avg_sim,
+        "avg_utmos": avg_utmos,
         "language": language,
-        "speaker_name": speaker_name
+        "speaker_name": speaker_name,
+        "asr_model": "whisper-large-v3-turbo"
     }
     with open(os.path.join(output_dir, "summary.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
 
-    print("\n" + "="*60)
+    print("\n" + "="*80)
     print("✅ EVALUATION COMPLETE")
-    print("="*60)
+    print("="*80)
     print(f"Checkpoint       : {checkpoint_dir}")
     print(f"Test samples     : {len(results)}")
     print(f"Avg CER          : {avg_cer:.4f}  (lower = better)")
-    print(f"Avg Speaker SIM  : {avg_sim:.4f}  (higher = better)")
-    print(f"Avg UTMOS        : {avg_utmos:.3f}  (higher = better)")
+    print(f"Avg Speaker SIM  : {avg_sim}  (higher = better)")
+    print(f"Avg UTMOS        : {avg_utmos}  (higher = better)")
     print(f"Results saved to : {output_dir}/")
-    print("   • results.csv      (full table)")
-    print("   • summary.json     (summary)")
-    print("   • sample_000.wav   (all generated audios)")
-    print("="*60)
-
-    return summary
+    print("="*80)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Post-training evaluation for Qwen3-TTS custom voice")
-    parser.add_argument("--checkpoint_dir", type=str, required=True,
-                        help="Path to checkpoint (e.g. output/checkpoint-epoch-9)")
-    parser.add_argument("--test_jsonl", type=str, required=True,
-                        help="Path to test jsonl (can be larger than validation)")
-    parser.add_argument("--speaker_name", type=str, required=True,
-                        help="Your speaker name (same as training)")
-    parser.add_argument("--output_dir", type=str, default="evaluation_results",
-                        help="Folder to save audios + report")
-    parser.add_argument("--language", type=str, default="yue",
-                        help="Language code (yue for HK Cantonese)")
-    parser.add_argument("--max_samples", type=int, default=None,
-                        help="Limit number of test samples (for quick test)")
+    parser = argparse.ArgumentParser(description="Qwen3-TTS Evaluation (stable version)")
+    parser.add_argument("--checkpoint_dir", type=str, required=True)
+    parser.add_argument("--test_jsonl", type=str, required=True)
+    parser.add_argument("--speaker_name", type=str, required=True)
+    parser.add_argument("--output_dir", type=str, default="evaluation_results")
+    parser.add_argument("--language", type=str, default="chinese")
+    parser.add_argument("--max_samples", type=int, default=None)
+    parser.add_argument("--skip_speaker_sim", action="store_true")
+    parser.add_argument("--skip_utmos", action="store_true")
 
     args = parser.parse_args()
     evaluate_checkpoint(
@@ -188,5 +215,7 @@ if __name__ == "__main__":
         args.speaker_name,
         args.output_dir,
         args.language,
-        args.max_samples
+        args.max_samples,
+        args.skip_speaker_sim,
+        args.skip_utmos
     )

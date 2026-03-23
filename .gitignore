@@ -11,6 +11,8 @@ Dataset-Cantonese-Training/output_custom_voice.wav
 Dataset-Cantonese-Training/mlflow.db
 Dataset-Cantonese-Training/mlruns/
 Dataset-Cantonese-Training/audio/*
+Dataset-Cantonese-Training/evaluation_results/
+Dataset-Cantonese-Training/pretrained_models/
 # data files
 *.parquet
 
