@@ -1,5 +1,5 @@
 # evaluate_qwen3_tts.py
-# FINAL STABLE VERSION — Fixed torchcodec error + tqdm + detailed logging
+# FINAL STABLE VERSION — Fixed torchcodec + WER + dtype + speaker sim
 
 import argparse
 import json
@@ -18,6 +18,7 @@ warnings.filterwarnings("ignore")
 
 # ====================== Lazy-loaded tools ======================
 cer_metric = evaluate.load("cer")
+wer_metric = evaluate.load("wer")          # ← NEW: Word Error Rate
 asr_pipeline = None
 speaker_encoder = None
 utmos_model = None
@@ -31,7 +32,7 @@ def get_asr_pipeline():
             "automatic-speech-recognition",
             model="openai/whisper-large-v3-turbo",
             device="cuda" if torch.cuda.is_available() else "cpu",
-            torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+            dtype=torch.float16 if torch.cuda.is_available() else torch.float32,  # fixed deprecation
         )
     return asr_pipeline
 
@@ -40,10 +41,10 @@ def get_speaker_encoder():
     global speaker_encoder
     if speaker_encoder is None:
         try:
-            # === MONKEY-PATCH for new torchaudio (fixes the error) ===
+            # === MONKEY-PATCH for new torchaudio ===
             import torchaudio
             if not hasattr(torchaudio, "list_audio_backends"):
-                torchaudio.list_audio_backends = lambda: ["soundfile"]  # ← this line fixes it
+                torchaudio.list_audio_backends = lambda: ["soundfile"]
             
             print("🔄 Loading ECAPA-TDNN speaker encoder...")
             from speechbrain.pretrained import EncoderClassifier
@@ -100,7 +101,7 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
     print("🚀 Starting evaluation...\n")
 
     results = []
-    total_cer = total_sim = total_utmos = 0.0
+    total_cer = total_wer = total_sim = total_utmos = 0.0
     sim_available = not skip_speaker_sim
     utmos_available = utmos is not None
 
@@ -122,22 +123,21 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
         gen_path = os.path.join(output_dir, f"sample_{i:03d}.wav")
         sf.write(gen_path, gen_wav, sr)
 
-        # === CER ===
-        transcription = asr(gen_path, generate_kwargs={"language": "yue"})["text"]
-        # Use the in-memory waveform we already have — no file loading needed
-        # transcription = asr(
-        #     {"array": gen_wav, "sampling_rate": sr},   # ← this avoids torchcodec
-        #     generate_kwargs={"language": "yue"}
-        # )["text"]
-        cer = cer_metric.compute(predictions=[transcription], references=[text])
+        # === CER + WER (in-memory — no torchcodec risk) ===
+        transcription = asr(
+            {"array": gen_wav, "sampling_rate": sr},
+            generate_kwargs={"language": "yue"}
+        )["text"]
 
-        # === Speaker Similarity (fixed loading with soundfile) ===
+        cer = cer_metric.compute(predictions=[transcription], references=[text])
+        wer = wer_metric.compute(predictions=[transcription], references=[text])
+
+        # === Speaker Similarity ===
         if spk_enc is not None:
             try:
-                # Use soundfile instead of torchaudio.load to avoid torchcodec error
                 audio_data, orig_sr = sf.read(ref_audio_path)
                 if len(audio_data.shape) == 1:
-                    audio_data = audio_data[None, :]  # add channel dim
+                    audio_data = audio_data[None, :]
                 ref_sig = torch.from_numpy(audio_data).float().to(spk_enc.device)
                 ref_emb = spk_enc.encode_batch(ref_sig)
                 
@@ -167,16 +167,19 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
             "ref_audio": ref_audio_path,
             "gen_audio": gen_path,
             "cer": round(cer, 4),
+            "wer": round(wer, 4),                    # ← NEW
             "speaker_sim": round(sim, 4) if spk_enc else "N/A",
             "utmos": round(utmos_score, 3) if utmos_available else "N/A"
         })
 
         total_cer += cer
+        total_wer += wer
         total_sim += sim
         total_utmos += utmos_score
 
     # === Summary ===
     avg_cer = total_cer / len(results)
+    avg_wer = total_wer / len(results)
     avg_sim = total_sim / len(results) if sim_available else "N/A"
     avg_utmos = total_utmos / len(results) if utmos_available else "N/A"
 
@@ -187,6 +190,7 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
         "checkpoint": checkpoint_dir,
         "test_samples": len(results),
         "avg_cer": round(avg_cer, 4),
+        "avg_wer": round(avg_wer, 4),               # ← NEW
         "avg_speaker_similarity": avg_sim,
         "avg_utmos": avg_utmos,
         "language": language,
@@ -202,6 +206,7 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
     print(f"Checkpoint       : {checkpoint_dir}")
     print(f"Test samples     : {len(results)}")
     print(f"Avg CER          : {avg_cer:.4f}  (lower = better)")
+    print(f"Avg WER          : {avg_wer:.4f}  (lower = better)")   # ← NEW
     print(f"Avg Speaker SIM  : {avg_sim}  (higher = better)")
     print(f"Avg UTMOS        : {avg_utmos}  (higher = better)")
     print(f"Results saved to : {output_dir}/")
@@ -209,7 +214,7 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Qwen3-TTS Evaluation (stable version)")
+    parser = argparse.ArgumentParser(description="Qwen3-TTS Evaluation (stable + WER)")
     parser.add_argument("--checkpoint_dir", type=str, required=True)
     parser.add_argument("--test_jsonl", type=str, required=True)
     parser.add_argument("--speaker_name", type=str, required=True)
