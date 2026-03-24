@@ -40,13 +40,19 @@ def get_speaker_encoder():
     global speaker_encoder
     if speaker_encoder is None:
         try:
+            # === MONKEY-PATCH for new torchaudio (fixes the error) ===
+            import torchaudio
+            if not hasattr(torchaudio, "list_audio_backends"):
+                torchaudio.list_audio_backends = lambda: ["soundfile"]  # ← this line fixes it
+            
             print("🔄 Loading ECAPA-TDNN speaker encoder...")
             from speechbrain.pretrained import EncoderClassifier
             speaker_encoder = EncoderClassifier.from_hparams(
                 source="speechbrain/spkrec-ecapa-voxceleb",
                 savedir="pretrained_models/spkrec-ecapa-voxceleb",
-                run_opts={"device": "cuda" if torch.cuda.is_available() else "cpu"}
+                run_opts={"device": "cuda:0" if torch.cuda.is_available() else "cpu"}
             )
+            print("✅ Speaker encoder loaded!")
         except Exception as e:
             print(f"⚠️ Speaker similarity skipped: {e}")
             return None
@@ -74,7 +80,7 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
     model = Qwen3TTSModel.from_pretrained(
         checkpoint_dir,
         dtype=torch.bfloat16,
-        device_map="auto" if torch.cuda.is_available() else None
+        device_map="cuda:0" if torch.cuda.is_available() else None
     )
 
     if torch.cuda.is_available():
@@ -118,6 +124,11 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
 
         # === CER ===
         transcription = asr(gen_path, generate_kwargs={"language": "yue"})["text"]
+        # Use the in-memory waveform we already have — no file loading needed
+        # transcription = asr(
+        #     {"array": gen_wav, "sampling_rate": sr},   # ← this avoids torchcodec
+        #     generate_kwargs={"language": "yue"}
+        # )["text"]
         cer = cer_metric.compute(predictions=[transcription], references=[text])
 
         # === Speaker Similarity (fixed loading with soundfile) ===
