@@ -1,5 +1,6 @@
 # evaluate_qwen3_tts.py
-# FINAL STABLE VERSION — Fixed torchcodec + WER + dtype + speaker sim
+# FINAL STABLE VERSION — Manual WER/CER for Cantonese + English code-mixing
+# Adapted for new eval_prepared.jsonl format: uses "ref_audio" for speaker similarity
 
 import argparse
 import json
@@ -9,19 +10,33 @@ import pandas as pd
 import soundfile as sf
 import torchaudio
 import warnings
+import re
 from transformers import pipeline
-import evaluate
 from qwen_tts.inference.qwen3_tts_model import Qwen3TTSModel
 from tqdm.auto import tqdm
+import jiwer
 
 warnings.filterwarnings("ignore")
 
+
 # ====================== Lazy-loaded tools ======================
-cer_metric = evaluate.load("cer")
-wer_metric = evaluate.load("wer")          # ← NEW: Word Error Rate
 asr_pipeline = None
 speaker_encoder = None
 utmos_model = None
+
+
+def clean_reference_text(text_field: str) -> str:
+    """Remove training prefix if present (for compatibility with ASR-style data)"""
+    if "<asr_text>" in text_field:
+        return text_field.split("<asr_text>", 1)[1].strip()
+    return text_field.strip()
+
+
+def tokenize_mixed_text(text: str):
+    """Custom tokenizer for Cantonese + English code-mixing"""
+    text = re.sub(r'([a-zA-Z0-9\'\-]+)', r' \1 ', text)   # space around English words
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text.split()
 
 
 def get_asr_pipeline():
@@ -32,7 +47,7 @@ def get_asr_pipeline():
             "automatic-speech-recognition",
             model="openai/whisper-large-v3-turbo",
             device="cuda" if torch.cuda.is_available() else "cpu",
-            dtype=torch.float16 if torch.cuda.is_available() else torch.float32,  # fixed deprecation
+            dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
         )
     return asr_pipeline
 
@@ -91,14 +106,14 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
         test_data = [json.loads(line) for line in f.readlines()]
     if max_samples:
         test_data = test_data[:max_samples]
-    print(f"✅ Loaded {len(test_data)} test samples")
+    print(f"✅ Loaded {len(test_data)} test samples (new format with ref_audio)")
 
     asr = get_asr_pipeline()
     spk_enc = get_speaker_encoder() if not skip_speaker_sim else None
     utmos = get_utmos_model() if not skip_utmos else None
 
     print("✅ All models ready!")
-    print("🚀 Starting evaluation...\n")
+    print("🚀 Starting evaluation with MANUAL WER/CER (custom tokenizer for code-mixing)...\n")
 
     results = []
     total_cer = total_wer = total_sim = total_utmos = 0.0
@@ -108,7 +123,8 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
     for i, sample in tqdm(enumerate(test_data), total=len(test_data),
                           desc="Generating & Evaluating", unit="sample"):
         text = sample["text"]
-        ref_audio_path = sample["audio"]
+        # === NEW: use "ref_audio" from the dataset (not "audio") ===
+        ref_audio_path = sample["ref_audio"]
 
         # === Generate with custom voice ===
         wavs, sr = model.generate_custom_voice(
@@ -123,14 +139,45 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
         gen_path = os.path.join(output_dir, f"sample_{i:03d}.wav")
         sf.write(gen_path, gen_wav, sr)
 
-        # === CER + WER (in-memory — no torchcodec risk) ===
+        # === ASR Transcription (in-memory — torchcodec-free) ===
         transcription = asr(
             {"array": gen_wav, "sampling_rate": sr},
             generate_kwargs={"language": "yue"}
         )["text"]
+        pred_text = transcription.strip()
 
-        cer = cer_metric.compute(predictions=[transcription], references=[text])
-        wer = wer_metric.compute(predictions=[transcription], references=[text])
+        # === Clean reference & compute MANUAL WER / CER ===
+        ref_text = clean_reference_text(text)
+
+        # WORD-LEVEL (WER) — custom tokenizer for Cantonese + English code-mixing
+        ref_tokens = tokenize_mixed_text(ref_text)
+        pred_tokens = tokenize_mixed_text(pred_text)
+
+        ref_str = " ".join(ref_tokens)
+        pred_str = " ".join(pred_tokens)
+
+        wer_output = jiwer.process_words(ref_str, pred_str)
+        wer_sub = wer_output.substitutions
+        wer_del = wer_output.deletions
+        wer_ins = wer_output.insertions
+        wer_errors = wer_sub + wer_del + wer_ins
+        ref_words = len(ref_tokens) or 1
+        wer = wer_errors / ref_words if ref_words > 0 else 0.0
+
+        ref_words_array = ", ".join(ref_tokens)
+        pred_words_array = ", ".join(pred_tokens)
+
+        # CHARACTER-LEVEL (CER) — manual
+        cer_output = jiwer.process_characters(ref_text, pred_text)
+        cer_sub = cer_output.substitutions
+        cer_del = cer_output.deletions
+        cer_ins = cer_output.insertions
+        cer_errors = cer_sub + cer_del + cer_ins
+        ref_chars = len(cer_output.references[0]) if cer_output.references else 1
+        cer = cer_errors / ref_chars if ref_chars > 0 else 0.0
+
+        ref_chars_array = ", ".join(cer_output.references[0]) if cer_output.references else ""
+        pred_chars_array = ", ".join(cer_output.hypotheses[0]) if cer_output.hypotheses else ""
 
         # === Speaker Similarity ===
         if spk_enc is not None:
@@ -164,12 +211,29 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
         results.append({
             "index": i,
             "text": text,
+            "ref_text": ref_text,
+            "pred_text": pred_text,
             "ref_audio": ref_audio_path,
             "gen_audio": gen_path,
             "cer": round(cer, 4),
-            "wer": round(wer, 4),                    # ← NEW
+            "wer": round(wer, 4),
             "speaker_sim": round(sim, 4) if spk_enc else "N/A",
-            "utmos": round(utmos_score, 3) if utmos_available else "N/A"
+            "utmos": round(utmos_score, 3) if utmos_available else "N/A",
+            # === Debug columns (same as ASR evaluator) ===
+            "ref_words_array": ref_words_array,
+            "pred_words_array": pred_words_array,
+            "ref_words": ref_words,
+            "wer_substitutions": wer_sub,
+            "wer_deletions": wer_del,
+            "wer_insertions": wer_ins,
+            "wer_errors_(S+D+I)": wer_errors,
+            "ref_chars_array": ref_chars_array,
+            "pred_chars_array": pred_chars_array,
+            "ref_chars": ref_chars,
+            "cer_substitutions": cer_sub,
+            "cer_deletions": cer_del,
+            "cer_insertions": cer_ins,
+            "cer_errors_(S+D+I)": cer_errors,
         })
 
         total_cer += cer
@@ -178,35 +242,37 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
         total_utmos += utmos_score
 
     # === Summary ===
-    avg_cer = total_cer / len(results)
-    avg_wer = total_wer / len(results)
-    avg_sim = total_sim / len(results) if sim_available else "N/A"
-    avg_utmos = total_utmos / len(results) if utmos_available else "N/A"
+    n = len(results)
+    avg_cer = total_cer / n if n > 0 else 0
+    avg_wer = total_wer / n if n > 0 else 0
+    avg_sim = total_sim / n if sim_available else "N/A"
+    avg_utmos = total_utmos / n if utmos_available else "N/A"
 
     df = pd.DataFrame(results)
     df.to_csv(os.path.join(output_dir, "results.csv"), index=False, encoding="utf-8")
 
     summary = {
         "checkpoint": checkpoint_dir,
-        "test_samples": len(results),
+        "test_samples": n,
         "avg_cer": round(avg_cer, 4),
-        "avg_wer": round(avg_wer, 4),               # ← NEW
+        "avg_wer": round(avg_wer, 4),
         "avg_speaker_similarity": avg_sim,
         "avg_utmos": avg_utmos,
         "language": language,
         "speaker_name": speaker_name,
-        "asr_model": "whisper-large-v3-turbo"
+        "asr_model": "whisper-large-v3-turbo",
+        "calculation_method": "manual_jiwer_code_mixing"
     }
     with open(os.path.join(output_dir, "summary.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
 
     print("\n" + "="*80)
-    print("✅ EVALUATION COMPLETE")
+    print("✅ EVALUATION COMPLETE — MANUAL WER/CER with custom tokenizer")
     print("="*80)
     print(f"Checkpoint       : {checkpoint_dir}")
-    print(f"Test samples     : {len(results)}")
+    print(f"Test samples     : {n}")
     print(f"Avg CER          : {avg_cer:.4f}  (lower = better)")
-    print(f"Avg WER          : {avg_wer:.4f}  (lower = better)")   # ← NEW
+    print(f"Avg WER          : {avg_wer:.4f}  (lower = better) ← accurate for Cantonese+English code-mixing")
     print(f"Avg Speaker SIM  : {avg_sim}  (higher = better)")
     print(f"Avg UTMOS        : {avg_utmos}  (higher = better)")
     print(f"Results saved to : {output_dir}/")
@@ -214,7 +280,7 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Qwen3-TTS Evaluation (stable + WER)")
+    parser = argparse.ArgumentParser(description="Qwen3-TTS Evaluation (manual WER/CER for code-mixing + new dataset format)")
     parser.add_argument("--checkpoint_dir", type=str, required=True)
     parser.add_argument("--test_jsonl", type=str, required=True)
     parser.add_argument("--speaker_name", type=str, required=True)
