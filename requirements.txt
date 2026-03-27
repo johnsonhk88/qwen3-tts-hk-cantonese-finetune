@@ -12,3 +12,4 @@ speechbrain
 evaluate
 jiwer
 tqdm
+gradio
