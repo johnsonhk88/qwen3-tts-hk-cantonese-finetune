@@ -3,14 +3,14 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-
+Dataset-Cantonese-Training/Qwen3-ASR-0.6B/
 Dataset-Cantonese-Training/Qwen3-TTS-12Hz-0.6B-Base/
 Dataset-Cantonese-Training/Qwen3-TTS-12Hz-0.6B-CustomVoice/
 Dataset-Cantonese-Training/output/
 Dataset-Cantonese-Training/output_custom_voice.wav
 Dataset-Cantonese-Training/mlflow.db
 Dataset-Cantonese-Training/mlruns/
-Dataset-Cantonese-Training/audio/*
+Dataset-Cantonese-Training/audio/
 Dataset-Cantonese-Training/evaluation_results/
 Dataset-Cantonese-Training/pretrained_models/
 # data files
