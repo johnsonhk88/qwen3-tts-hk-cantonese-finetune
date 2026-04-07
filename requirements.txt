@@ -13,3 +13,4 @@ evaluate
 jiwer
 tqdm
 gradio
+peft
