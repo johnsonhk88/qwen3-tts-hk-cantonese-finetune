@@ -20,6 +20,20 @@ from peft import LoraConfig, get_peft_model
 
 target_speaker_embedding = None
 
+
+def clean_merged_state_dict(peft_model):
+    """After merge_adapter(), extract clean state_dict without base_layer / lora_ keys"""
+    raw_state = peft_model.state_dict()
+    clean_dict = {}
+    for k, v in raw_state.items():
+        if "lora_" in k:  # drop lora_A, lora_B, etc.
+            continue
+        # rename ...base_layer.weight → ...weight
+        clean_k = k.replace(".base_layer.weight", ".weight")
+        clean_dict[clean_k] = v.detach().to("cpu")
+    return clean_dict
+
+
 def train():
     global target_speaker_embedding
 
@@ -55,7 +69,7 @@ def train():
         qwen3tts = Qwen3TTSModel.from_pretrained(
             args.init_model_path,
             dtype=torch.bfloat16,
-            attn_implementation="sdpa",          # change to "flash_attention_2" if installed
+            attn_implementation="sdpa",
         )
         config = AutoConfig.from_pretrained(args.init_model_path)
 
@@ -168,13 +182,26 @@ def train():
                     if accelerator.is_main_process:
                         mlflow.log_metric("train_loss", current_loss, step=global_step)
 
-            # ==================== SAVE LoRA ADAPTER EVERY EPOCH ====================
+            # === Calculate and log average loss ===
+            if num_batches > 0:
+                epoch_avg_loss = epoch_loss / num_batches
+                if accelerator.is_main_process:
+                    print(f"✅ Epoch {epoch} finished | Avg Loss: {epoch_avg_loss:.4f}")
+                    mlflow.log_metric("epoch_avg_loss", epoch_avg_loss, step=epoch)
+
+            # ==================== SAVE FULL MERGED CHECKPOINT EVERY EPOCH ====================
             if accelerator.is_main_process and num_batches > 0:
                 output_dir = os.path.join(args.output_model_path, f"checkpoint-epoch-{epoch}")
-                print(f"Saving checkpoint to: {output_dir}")
+                print(f"Saving full merged checkpoint to: {output_dir}")
                 shutil.copytree(args.init_model_path, output_dir, dirs_exist_ok=True)
 
-                # Update config for custom voice
+                unwrapped = accelerator.unwrap_model(model)
+                unwrapped.merge_adapter()
+
+                # === CLEAN MERGED STATE DICT (removes base_layer + lora keys) ===
+                state_dict = clean_merged_state_dict(unwrapped)
+
+                # Update config
                 with open(os.path.join(args.init_model_path, "config.json"), 'r', encoding='utf-8') as f:
                     config_dict = json.load(f)
                 config_dict["tts_model_type"] = "custom_voice"
@@ -185,23 +212,41 @@ def train():
                 with open(os.path.join(output_dir, "config.json"), 'w', encoding='utf-8') as f:
                     json.dump(config_dict, f, indent=2, ensure_ascii=False)
 
-                # Save LoRA adapter (small & safe)
-                unwrapped = accelerator.unwrap_model(model)
-                adapter_path = os.path.join(output_dir, "lora_adapter")
-                unwrapped.save_pretrained(adapter_path)
-                print(f"✅ Saved LoRA adapter at {adapter_path}")
+                # Drop speaker_encoder
+                keys_to_drop = [k for k in state_dict if k.startswith("speaker_encoder")]
+                for k in keys_to_drop:
+                    del state_dict[k]
 
-        # ==================== FINAL MERGE AFTER ALL EPOCHS ====================
+                # Inject speaker embedding
+                codec_key = None
+                for k in state_dict:
+                    if k.endswith("codec_embedding.weight"):
+                        codec_key = k
+                        break
+                if codec_key:
+                    weight = state_dict[codec_key]
+                    state_dict[codec_key][3000] = target_speaker_embedding[0].detach().to(weight.device).to(weight.dtype)
+                    print(f"✓ Speaker embedding injected at index 3000")
+
+                save_path = os.path.join(output_dir, "model.safetensors")
+                save_file(state_dict, save_path)
+                print(f"✅ Full merged model saved at {save_path}")
+
+                # Restore adapter for next epoch
+                unwrapped.unmerge_adapter()
+
+        # ==================== FINAL MERGED FOLDER (perfect clean merge) ====================
         if accelerator.is_main_process:
-            print("\n=== Final Merge & Create Clean Checkpoint ===")
+            print("\n=== Creating final_merged folder ===")
             final_dir = os.path.join(args.output_model_path, "final_merged")
             shutil.copytree(args.init_model_path, final_dir, dirs_exist_ok=True)
 
             unwrapped = accelerator.unwrap_model(model)
-            unwrapped.merge_and_unload()
-            qwen3tts.model.load_state_dict(unwrapped.state_dict(), strict=False)
+            # Use merge_and_unload for the final model → guaranteed clean keys
+            clean_model = unwrapped.merge_and_unload()
 
-            # Update final config
+            state_dict = {k: v.detach().to("cpu") for k, v in clean_model.state_dict().items()}
+
             with open(os.path.join(args.init_model_path, "config.json"), 'r', encoding='utf-8') as f:
                 config_dict = json.load(f)
             config_dict["tts_model_type"] = "custom_voice"
@@ -211,8 +256,6 @@ def train():
             config_dict["talker_config"] = talker_config
             with open(os.path.join(final_dir, "config.json"), 'w', encoding='utf-8') as f:
                 json.dump(config_dict, f, indent=2, ensure_ascii=False)
-
-            state_dict = {k: v.detach().to("cpu") for k, v in qwen3tts.model.state_dict().items()}
 
             # Drop speaker_encoder
             keys_to_drop = [k for k in state_dict if k.startswith("speaker_encoder")]
@@ -230,13 +273,11 @@ def train():
                 state_dict[codec_key][3000] = target_speaker_embedding[0].detach().to(weight.device).to(weight.dtype)
                 print(f"✓ Speaker embedding injected at index 3000")
 
-            save_path = os.path.join(final_dir, "model.safetensors")
-            save_file(state_dict, save_path)
-            print(f"✅ Final merged model saved at {save_path}")
+            save_file(state_dict, os.path.join(final_dir, "model.safetensors"))
+            print(f"✅ Final merged model saved at {final_dir}")
 
-            # Also keep the last LoRA adapter
-            last_adapter = os.path.join(final_dir, "lora_adapter")
-            unwrapped.save_pretrained(last_adapter)
+            # Keep LoRA adapter for future fine-tuning if needed
+            unwrapped.save_pretrained(os.path.join(final_dir, "lora_adapter"))
 
 if __name__ == "__main__":
     train()
