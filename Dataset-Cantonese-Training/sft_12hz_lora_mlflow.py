@@ -13,7 +13,7 @@ from qwen_tts.inference.qwen3_tts_model import Qwen3TTSModel
 from safetensors.torch import save_file
 from torch.optim import AdamW
 from torch.utils.data import DataLoader
-from transformers import AutoConfig
+from transformers import AutoConfig, get_linear_schedule_with_warmup
 import mlflow
 
 from peft import LoraConfig, get_peft_model
@@ -25,20 +25,18 @@ def clean_merged_state_dict(peft_model):
     """After merge_adapter(), extract COMPLETELY clean state_dict
     - removes ALL lora_* keys
     - removes base_layer.weight → .weight
-    - removes base_model.model. prefix (this was the cause of checkpoint warnings)
+    - removes base_model.model. prefix (fixes checkpoint warnings)
     """
     raw_state = peft_model.state_dict()
     clean_dict = {}
     for k, v in raw_state.items():
-        # Drop any remaining LoRA keys
         if "lora_" in k:
             continue
 
         clean_k = k
-        # Strip PEFT wrapper prefix (this was causing the checkpoint warnings)
+        # Strip PEFT wrapper prefix
         if clean_k.startswith("base_model.model."):
             clean_k = clean_k[len("base_model.model."):]
-        # In case there's a stray "model." prefix left
         if clean_k.startswith("model."):
             clean_k = clean_k[6:]
 
@@ -52,7 +50,7 @@ def clean_merged_state_dict(peft_model):
 def train():
     global target_speaker_embedding
 
-    parser = argparse.ArgumentParser(description="LoRA fine-tune Qwen3-TTS with MLflow")
+    parser = argparse.ArgumentParser(description="LoRA fine-tune Qwen3-TTS with MLflow + Warmup")
     parser.add_argument("--init_model_path", type=str, default="Qwen/Qwen3-TTS-12Hz-0.6B-Base")
     parser.add_argument("--output_model_path", type=str, default="output")
     parser.add_argument("--train_jsonl", type=str, required=True)
@@ -63,6 +61,8 @@ def train():
     parser.add_argument("--gradient_accumulation_steps", type=int, default=8)
     parser.add_argument("--lora_rank", type=int, default=8)
     parser.add_argument("--lora_alpha", type=int, default=16)
+    parser.add_argument("--warmup_ratio", type=float, default=0.1,
+                        help="Fraction of total steps to use for linear LR warmup (default: 0.1 = 10%)")
     parser.add_argument("--mlflow_tracking_uri", type=str, default="http://localhost:5000")
 
     args = parser.parse_args()
@@ -76,7 +76,7 @@ def train():
         mixed_precision="bf16",
     )
 
-    with mlflow.start_run(run_name=f"lora-r{args.lora_rank}-{args.speaker_name}-bs{args.batch_size}"):
+    with mlflow.start_run(run_name=f"lora-r{args.lora_rank}-{args.speaker_name}-bs{args.batch_size}-warmup{args.warmup_ratio}"):
         if accelerator.is_main_process:
             mlflow.log_params(vars(args))
 
@@ -113,9 +113,21 @@ def train():
 
         optimizer = AdamW(peft_model.parameters(), lr=args.lr, weight_decay=0.01)
 
+        # === Prepare with Accelerator ===
         model, optimizer, train_dataloader = accelerator.prepare(
             peft_model, optimizer, train_dataloader
         )
+
+        # === Linear Warmup Scheduler (prevents early divergence) ===
+        total_steps = len(train_dataloader) * args.num_epochs
+        warmup_steps = int(args.warmup_ratio * total_steps)
+        scheduler = get_linear_schedule_with_warmup(
+            optimizer,
+            num_warmup_steps=warmup_steps,
+            num_training_steps=total_steps
+        )
+        scheduler = accelerator.prepare(scheduler)
+
         model.train()
 
         global_step = 0
@@ -183,9 +195,9 @@ def train():
 
                     if accelerator.sync_gradients:
                         accelerator.clip_grad_norm_(model.parameters(), 1.0)
-
-                    optimizer.step()
-                    optimizer.zero_grad()
+                        optimizer.step()
+                        scheduler.step()          # ← Warmup happens here
+                        optimizer.zero_grad()
 
                 current_loss = loss.item()
                 epoch_loss += current_loss
@@ -193,9 +205,11 @@ def train():
                 global_step += 1
 
                 if step % 10 == 0:
-                    accelerator.print(f"Epoch {epoch} | Step {step} | Loss: {current_loss:.4f}")
+                    current_lr = scheduler.get_last_lr()[0]
+                    accelerator.print(f"Epoch {epoch} | Step {step} | Loss: {current_loss:.4f} | LR: {current_lr:.2e}")
                     if accelerator.is_main_process:
                         mlflow.log_metric("train_loss", current_loss, step=global_step)
+                        mlflow.log_metric("learning_rate", current_lr, step=global_step)
 
             # === Calculate and log average loss ===
             if num_batches > 0:
@@ -213,7 +227,6 @@ def train():
                 unwrapped = accelerator.unwrap_model(model)
                 unwrapped.merge_adapter()
 
-                # === CLEAN MERGED STATE DICT (now also removes base_model.model. prefix) ===
                 state_dict = clean_merged_state_dict(unwrapped)
 
                 # Update config
@@ -250,14 +263,14 @@ def train():
                 # Restore adapter for next epoch
                 unwrapped.unmerge_adapter()
 
-        # ==================== FINAL MERGED FOLDER (already working perfectly) ====================
+        # ==================== FINAL MERGED FOLDER ====================
         if accelerator.is_main_process:
             print("\n=== Creating final_merged folder ===")
             final_dir = os.path.join(args.output_model_path, "final_merged")
             shutil.copytree(args.init_model_path, final_dir, dirs_exist_ok=True)
 
             unwrapped = accelerator.unwrap_model(model)
-            clean_model = unwrapped.merge_and_unload()          # guaranteed clean keys
+            clean_model = unwrapped.merge_and_unload()
 
             state_dict = {k: v.detach().to("cpu") for k, v in clean_model.state_dict().items()}
 
@@ -290,7 +303,6 @@ def train():
             save_file(state_dict, os.path.join(final_dir, "model.safetensors"))
             print(f"✅ Final merged model saved at {final_dir}")
 
-            # Keep LoRA adapter for future fine-tuning if needed
             unwrapped.save_pretrained(os.path.join(final_dir, "lora_adapter"))
 
 if __name__ == "__main__":
