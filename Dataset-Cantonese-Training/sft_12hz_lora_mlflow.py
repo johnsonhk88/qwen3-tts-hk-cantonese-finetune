@@ -22,14 +22,29 @@ target_speaker_embedding = None
 
 
 def clean_merged_state_dict(peft_model):
-    """After merge_adapter(), extract clean state_dict without base_layer / lora_ keys"""
+    """After merge_adapter(), extract COMPLETELY clean state_dict
+    - removes ALL lora_* keys
+    - removes base_layer.weight → .weight
+    - removes base_model.model. prefix (this was the cause of checkpoint warnings)
+    """
     raw_state = peft_model.state_dict()
     clean_dict = {}
     for k, v in raw_state.items():
-        if "lora_" in k:  # drop lora_A, lora_B, etc.
+        # Drop any remaining LoRA keys
+        if "lora_" in k:
             continue
-        # rename ...base_layer.weight → ...weight
-        clean_k = k.replace(".base_layer.weight", ".weight")
+
+        clean_k = k
+        # Strip PEFT wrapper prefix (this was causing the checkpoint warnings)
+        if clean_k.startswith("base_model.model."):
+            clean_k = clean_k[len("base_model.model."):]
+        # In case there's a stray "model." prefix left
+        if clean_k.startswith("model."):
+            clean_k = clean_k[6:]
+
+        # Convert base_layer.weight → weight
+        clean_k = clean_k.replace(".base_layer.weight", ".weight")
+
         clean_dict[clean_k] = v.detach().to("cpu")
     return clean_dict
 
@@ -198,7 +213,7 @@ def train():
                 unwrapped = accelerator.unwrap_model(model)
                 unwrapped.merge_adapter()
 
-                # === CLEAN MERGED STATE DICT (removes base_layer + lora keys) ===
+                # === CLEAN MERGED STATE DICT (now also removes base_model.model. prefix) ===
                 state_dict = clean_merged_state_dict(unwrapped)
 
                 # Update config
@@ -235,15 +250,14 @@ def train():
                 # Restore adapter for next epoch
                 unwrapped.unmerge_adapter()
 
-        # ==================== FINAL MERGED FOLDER (perfect clean merge) ====================
+        # ==================== FINAL MERGED FOLDER (already working perfectly) ====================
         if accelerator.is_main_process:
             print("\n=== Creating final_merged folder ===")
             final_dir = os.path.join(args.output_model_path, "final_merged")
             shutil.copytree(args.init_model_path, final_dir, dirs_exist_ok=True)
 
             unwrapped = accelerator.unwrap_model(model)
-            # Use merge_and_unload for the final model → guaranteed clean keys
-            clean_model = unwrapped.merge_and_unload()
+            clean_model = unwrapped.merge_and_unload()          # guaranteed clean keys
 
             state_dict = {k: v.detach().to("cpu") for k, v in clean_model.state_dict().items()}
 
