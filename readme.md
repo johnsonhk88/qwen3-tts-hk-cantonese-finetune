@@ -51,11 +51,20 @@ pip install -r requirements.txt
 ```
 
 ### 3. Download Base Models
-```bash
-# Recommended: Start with 0.6B (faster training)
-huggingface-cli download Qwen/Qwen3-TTS-12Hz-0.6B-Base --local-dir models/Qwen3-TTS-12Hz-0.6B-Base
 
-huggingface-cli download Qwen/Qwen3-TTS-Tokenizer-12Hz --local-dir models/Qwen3-TTS-Tokenizer-12Hz
+All scripts run from inside `Dataset-Cantonese-Training/`, so download the models there:
+
+```bash
+cd Dataset-Cantonese-Training
+
+# Recommended: Start with 0.6B (faster training)
+huggingface-cli download Qwen/Qwen3-TTS-12Hz-0.6B-Base --local-dir Qwen3-TTS-12Hz-0.6B-Base
+
+# Optional: larger model
+huggingface-cli download Qwen/Qwen3-TTS-12Hz-1.7B-Base --local-dir Qwen3-TTS-12Hz-1.7B-Base
+
+# Audio tokenizer (required for data preparation)
+huggingface-cli download Qwen/Qwen3-TTS-Tokenizer-12Hz --local-dir Qwen3-TTS-Tokenizer-12Hz
 ```
 
 
@@ -66,12 +75,23 @@ cd Dataset-Cantonese-Training
 
 # Put your clean .wav files in audio/
 # Create train_raw.jsonl (see example inside folder)
-# Run data preparation
+
+# Option A: single training file (adds audio_codes)
 python prepare_data.py \
   --device cuda:0 \
-  --tokenizer_model_path ../../models/Qwen3-TTS-Tokenizer-12Hz \
+  --tokenizer_model_path Qwen3-TTS-Tokenizer-12Hz \
   --input_jsonl train_raw.jsonl \
   --output_jsonl train_with_codes.jsonl
+
+# Option B: auto train/eval split (recommended)
+python prepare_train_evaluate_data.py \
+  --device cuda:0 \
+  --tokenizer_model_path Qwen3-TTS-Tokenizer-12Hz \
+  --input_jsonl train_raw.jsonl \
+  --output_train_jsonl train_prepared.jsonl \
+  --output_eval_jsonl eval_prepared.jsonl \
+  --eval_ratio 0.1 \
+  --speaker_name hk_cantonese_speaker
 ```
 
 ### Important for HK Cantonese:
@@ -84,17 +104,19 @@ python prepare_data.py \
 #### Option A: LoRA (Recommended for 8–12 GB GPUs)
 
 ```bash
+# Run from inside Dataset-Cantonese-Training/
 python sft_12hz_lora_mlflow.py \
   --init_model_path ./Qwen3-TTS-12Hz-0.6B-Base \
   --output_model_path ./output_hk_cantonese_lora \
-  --train_jsonl train_with_codes.jsonl \
+  --train_jsonl train_prepared.jsonl \
   --batch_size 1 \
-  --lr 2e-6 \
+  --lr 2e-4 \
   --num_epochs 10 \
   --speaker_name hk_cantonese_speaker \
   --gradient_accumulation_steps 8 \
   --lora_rank 8
 
+# Add --attn_implementation flash_attention_2 if you installed Flash Attention-2
 ```
 
 #### Option B: Full Fine-Tuning (16+ GB VRAM)
@@ -103,7 +125,7 @@ python sft_12hz_lora_mlflow.py \
 python sft_12hz_mlflow.py \
   --init_model_path ./Qwen3-TTS-12Hz-0.6B-Base \
   --output_model_path ./output_hk_cantonese \
-  --train_jsonl train_with_codes.jsonl \
+  --train_jsonl train_prepared.jsonl \
   --batch_size 2 \
   --lr 2e-6 \
   --num_epochs 8 \
@@ -154,17 +176,17 @@ cd Dataset-Cantonese-Training
 
 # Evaluate original pre-trained model
 python evaluate_qwen3_tts.py \
-  --checkpoint_dir ../../models/Qwen3-TTS-12Hz-0.6B-Base \
+  --checkpoint_dir ./Qwen3-TTS-12Hz-0.6B-Base \
   --test_jsonl eval_prepared.jsonl \
   --speaker_name hk_cantonese_speaker \
-  --output_dir ../evaluation_results_original
+  --output_dir ./evaluation_results_original
 
 # Evaluate your fine-tuned model (LoRA or full)
 python evaluate_qwen3_tts.py \
-  --checkpoint_dir ../output_hk_cantonese_lora/checkpoint-epoch-9 \
+  --checkpoint_dir ./output_hk_cantonese_lora/checkpoint-epoch-9 \
   --test_jsonl eval_prepared.jsonl \
   --speaker_name hk_cantonese_speaker \
-  --output_dir ../evaluation_results_finetuned
+  --output_dir ./evaluation_results_finetuned
 
 ```
 
@@ -179,21 +201,26 @@ python evaluate_qwen3_tts.py \
 ## 📁 Project Structure (April 2026)
 ```text
 qwen3-tts-hk-cantonese-finetune/
-├── Dataset-Cantonese-Training/
-│   ├── evaluate_qwen3_tts.py          ← Model evaluation (pre-trained + fine-tuned)
-│   ├── eval_prepared.jsonl
-│   ├── sft_12hz_lora_mlflow.py
-│   ├── sft_12hz_mlflow.py
-│   ├── voice_clone_server.py
-│   ├── prepare_data.py
-│   ├── audio/
-│   └── ...
-├── models/
-├── output_hk_cantonese_lora/
-├── output_hk_cantonese/
+├── Dataset-Cantonese-Training/         ← all scripts + data + models live here
+│   ├── prepare_data.py                 ← extract audio_codes (single file)
+│   ├── prepare_train_evaluate_data.py  ← extract codes + train/eval split
+│   ├── dataset.py                      ← TTSDataset + collate_fn
+│   ├── sft_12hz_lora_mlflow.py         ← LoRA fine-tuning (recommended)
+│   ├── sft_12hz_mlflow.py              ← full fine-tuning
+│   ├── evaluate_qwen3_tts.py           ← WER/CER, speaker sim, UTMOS
+│   ├── voice_clone_server.py           ← Gradio web UI / API
+│   ├── qwen3_voice_clone_cli.py        ← CLI inference
+│   ├── train_raw.jsonl / train_prepared.jsonl / eval_prepared.jsonl
+│   ├── audio/                          ← training + reference wavs
+│   ├── Qwen3-TTS-12Hz-0.6B-Base/       ← downloaded base model
+│   ├── Qwen3-TTS-12Hz-1.7B-Base/
+│   ├── Qwen3-TTS-Tokenizer-12Hz/       ← downloaded audio tokenizer
+│   ├── output_hk_cantonese_lora/       ← LoRA checkpoints
+│   └── output/
+├── Qwen3-TTS/                          ← official upstream submodule
 ├── flash-attent-install.sh
 ├── requirements.txt
-└── README.md
+└── readme.md
 ```
 
 
@@ -219,7 +246,8 @@ Pull requests and pre-trained models welcome!
 #### ⚙️ Hyperparameter Recommendations
 
 - batch_size: 1–4 (depending on VRAM)
-- lr: 2e-5 – 5e-4 (start low)
+- lr (LoRA): 1e-4 – 3e-4 (LoRA needs a higher LR than full fine-tuning)
+- lr (full fine-tuning): 2e-6 – 2e-5 (keep it low to avoid divergence)
 - num_epochs: 3–10 (more data → fewer epochs)
 - Use smaller 0.6B-Base if VRAM-limited
 

@@ -10,6 +10,7 @@ sudo apt install -y build-essential python3-dev ninja-build
 source  ./venv-qwen3tts/bin/activate   # ← change to your venv path if different
 
 pip install --upgrade pip wheel setuptools packaging psutil
+pip install --upgrade pip setuptools wheel
 
 # Force reinstall ninja (very important)
 pip uninstall -y ninja
@@ -26,3 +27,8 @@ pip install "https://github.com/lesj0610/flash-attention/releases/download/v2.8.
 
 # check install 
 python -c "import flash_attn; print(flash_attn.__version__)"
+
+
+
+pip install xformers==0.0.35 ---no-deps
+pip install flash-attn==2.8.3 --no-deps

@@ -63,6 +63,9 @@ def train():
     parser.add_argument("--lora_alpha", type=int, default=16)
     parser.add_argument("--warmup_ratio", type=float, default=0.1,
                         help="Fraction of total steps to use for linear LR warmup (default: 0.1 = 10%)")
+    parser.add_argument("--attn_implementation", type=str, default="sdpa",
+                        choices=["sdpa", "flash_attention_2", "eager"],
+                        help="Attention backend. Use flash_attention_2 if installed (see flash-attent-install.sh)")
     parser.add_argument("--mlflow_tracking_uri", type=str, default="http://localhost:5000")
 
     args = parser.parse_args()
@@ -84,7 +87,7 @@ def train():
         qwen3tts = Qwen3TTSModel.from_pretrained(
             args.init_model_path,
             dtype=torch.bfloat16,
-            attn_implementation="sdpa",
+            attn_implementation=args.attn_implementation,
         )
         config = AutoConfig.from_pretrained(args.init_model_path)
 
