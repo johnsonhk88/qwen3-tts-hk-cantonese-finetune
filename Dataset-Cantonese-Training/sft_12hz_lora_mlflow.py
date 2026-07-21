@@ -55,7 +55,8 @@ def train():
     parser.add_argument("--output_model_path", type=str, default="output")
     parser.add_argument("--train_jsonl", type=str, required=True)
     parser.add_argument("--batch_size", type=int, default=1)
-    parser.add_argument("--lr", type=float, default=2e-6)
+    parser.add_argument("--lr", type=float, default=2e-4,
+                        help="Learning rate (LoRA typically needs 1e-4–3e-4; full FT uses ~2e-6)")
     parser.add_argument("--num_epochs", type=int, default=10)
     parser.add_argument("--speaker_name", type=str, default="hk_cantonese_speaker")
     parser.add_argument("--gradient_accumulation_steps", type=int, default=8)

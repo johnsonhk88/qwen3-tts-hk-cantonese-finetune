@@ -42,7 +42,9 @@ def train():
     parser.add_argument("--num_epochs", type=int, default=10)
     parser.add_argument("--speaker_name", type=str, default="speaker_test")
     parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
-    
+    parser.add_argument("--attn_implementation", type=str, default="sdpa",
+                        choices=["sdpa", "flash_attention_2", "eager"],
+                        help="Attention backend. Use flash_attention_2 if installed")
     parser.add_argument(
         "--mlflow_tracking_uri",
         type=str,
@@ -75,6 +77,7 @@ def train():
                 "num_epochs": args.num_epochs,
                 "speaker_name": args.speaker_name,
                 "gradient_accumulation_steps": args.gradient_accumulation_steps,
+                "attn_implementation": args.attn_implementation,
                 "mixed_precision": "bf16",
             })
 
@@ -82,7 +85,7 @@ def train():
         qwen3tts = Qwen3TTSModel.from_pretrained(
             MODEL_PATH,
             torch_dtype=torch.bfloat16,
-            attn_implementation="sdpa",  # change to "flash_attention_2" if available
+            attn_implementation=args.attn_implementation,
         )
         config = AutoConfig.from_pretrained(MODEL_PATH)
 

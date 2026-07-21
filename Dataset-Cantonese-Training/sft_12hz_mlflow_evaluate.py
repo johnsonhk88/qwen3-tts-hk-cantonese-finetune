@@ -127,7 +127,9 @@ def train():
                         help="Run full CER+SIM evaluation every N epochs")
     parser.add_argument("--num_eval_samples", type=int, default=8,
                         help="Number of validation samples to evaluate")
-    
+    parser.add_argument("--attn_implementation", type=str, default="sdpa",
+                        choices=["sdpa", "flash_attention_2", "eager"],
+                        help="Attention backend. Use flash_attention_2 if installed")
     parser.add_argument(
         "--mlflow_tracking_uri",
         type=str,
@@ -163,6 +165,7 @@ def train():
                 "gradient_accumulation_steps": args.gradient_accumulation_steps,
                 "eval_every": args.eval_every,
                 "num_eval_samples": args.num_eval_samples,
+                "attn_implementation": args.attn_implementation,
                 "mixed_precision": "bf16",
             })
 
@@ -170,7 +173,7 @@ def train():
         qwen3tts = Qwen3TTSModel.from_pretrained(
             MODEL_PATH,
             torch_dtype=torch.bfloat16,
-            attn_implementation="sdpa",
+            attn_implementation=args.attn_implementation,
         )
         config = AutoConfig.from_pretrained(MODEL_PATH)
 

@@ -1,13 +1,11 @@
-## Fine Tuning Qwen3-TTS-12Hz-1.7B/0.6B-Base
+## Fine Tuning Qwen3-TTS-12Hz-1.7B/0.6B-Base (HK Cantonese)
 
-The Qwen3-TTS-12Hz-1.7B/0.6B-Base model series currently supports single-speaker fine-tuning. Please run `pip install qwen-tts` first, then run the command below:
+Single-speaker fine-tuning for Hong Kong Cantonese. Run all commands from this directory
+(`Dataset-Cantonese-Training/`). See the root `../readme.md` for the full project workflow.
 
+```bash
+pip install -r ../requirements.txt
 ```
-git clone https://github.com/QwenLM/Qwen3-TTS.git
-cd Qwen3-TTS/finetuning
-```
-
-Then follow the steps below to complete the entire fine-tuning workflow. Multi-speaker fine-tuning and other advanced fine-tuning features will be supported in future releases.
 
 ### 1) Input JSONL format
 
@@ -33,34 +31,63 @@ Example:
 Convert `train_raw.jsonl` into a training JSONL that includes `audio_codes`:
 
 ```bash
+# Option A: training file only
 python prepare_data.py \
   --device cuda:0 \
-  --tokenizer_model_path Qwen/Qwen3-TTS-Tokenizer-12Hz \
+  --tokenizer_model_path Qwen3-TTS-Tokenizer-12Hz \
   --input_jsonl train_raw.jsonl \
   --output_jsonl train_with_codes.jsonl
+
+# Option B: train + eval split (recommended)
+python prepare_train_evaluate_data.py \
+  --device cuda:0 \
+  --tokenizer_model_path Qwen3-TTS-Tokenizer-12Hz \
+  --input_jsonl train_raw.jsonl \
+  --output_train_jsonl train_prepared.jsonl \
+  --output_eval_jsonl eval_prepared.jsonl \
+  --eval_ratio 0.1 \
+  --speaker_name hk_cantonese_speaker
 ```
 
 
 ### 3) Fine-tune
 
-Run SFT using the prepared JSONL:
+**LoRA (recommended, 8–12 GB VRAM):**
 
 ```bash
-python sft_12hz.py \
-  --init_model_path Qwen/Qwen3-TTS-12Hz-1.7B-Base \
-  --output_model_path output \
-  --train_jsonl train_with_codes.jsonl \
-  --batch_size 32 \
-  --lr 2e-6 \
+python sft_12hz_lora_mlflow.py \
+  --init_model_path ./Qwen3-TTS-12Hz-0.6B-Base \
+  --output_model_path ./output_hk_cantonese_lora \
+  --train_jsonl train_prepared.jsonl \
+  --batch_size 1 \
+  --lr 2e-4 \
   --num_epochs 10 \
-  --speaker_name speaker_test
+  --speaker_name hk_cantonese_speaker \
+  --gradient_accumulation_steps 8 \
+  --lora_rank 8
 ```
 
-Checkpoints will be written to:
-- `output/checkpoint-epoch-0`
-- `output/checkpoint-epoch-1`
-- `output/checkpoint-epoch-2`
+**Full fine-tuning (16+ GB VRAM):**
+
+```bash
+python sft_12hz_mlflow.py \
+  --init_model_path ./Qwen3-TTS-12Hz-0.6B-Base \
+  --output_model_path ./output_hk_cantonese \
+  --train_jsonl train_prepared.jsonl \
+  --batch_size 2 \
+  --lr 2e-6 \
+  --num_epochs 8 \
+  --speaker_name hk_cantonese_speaker \
+  --gradient_accumulation_steps 4
+```
+
+Optional: `--attn_implementation flash_attention_2` if Flash Attention-2 is installed.
+
+Checkpoints are written to:
+- `output_*/checkpoint-epoch-0`
+- `output_*/checkpoint-epoch-1`
 - ...
+- `output_hk_cantonese_lora/final_merged` (LoRA only)
 
 
 ### 4) Quick inference test
@@ -72,15 +99,15 @@ from qwen_tts import Qwen3TTSModel
 
 device = "cuda:0"
 tts = Qwen3TTSModel.from_pretrained(
-    "output/checkpoint-epoch-2",
+    "output_hk_cantonese_lora/checkpoint-epoch-9",
     device_map=device,
     dtype=torch.bfloat16,
-    attn_implementation="flash_attention_2",
+    attn_implementation="sdpa",
 )
 
 wavs, sr = tts.generate_custom_voice(
-    text="She said she would be here by noon.",
-    speaker="speaker_test",
+    text="喂，你食咗飯未呀？今晚想唔想去打邊爐？",
+    speaker="hk_cantonese_speaker",
 )
 sf.write("output.wav", wavs[0], sr)
 ```
@@ -92,30 +119,36 @@ sf.write("output.wav", wavs[0], sr)
 set -e
 
 DEVICE="cuda:0"
-TOKENIZER_MODEL_PATH="Qwen/Qwen3-TTS-Tokenizer-12Hz"
-INIT_MODEL_PATH="Qwen/Qwen3-TTS-12Hz-1.7B-Base"
+TOKENIZER_MODEL_PATH="Qwen3-TTS-Tokenizer-12Hz"
+INIT_MODEL_PATH="./Qwen3-TTS-12Hz-0.6B-Base"
 
 RAW_JSONL="train_raw.jsonl"
-TRAIN_JSONL="train_with_codes.jsonl"
-OUTPUT_DIR="output"
+TRAIN_JSONL="train_prepared.jsonl"
+EVAL_JSONL="eval_prepared.jsonl"
+OUTPUT_DIR="output_hk_cantonese_lora"
 
-BATCH_SIZE=2
-LR=2e-5
-EPOCHS=3
-SPEAKER_NAME="speaker_1"
+BATCH_SIZE=1
+LR=2e-4
+EPOCHS=10
+SPEAKER_NAME="hk_cantonese_speaker"
 
-python prepare_data.py \
+python prepare_train_evaluate_data.py \
   --device ${DEVICE} \
   --tokenizer_model_path ${TOKENIZER_MODEL_PATH} \
   --input_jsonl ${RAW_JSONL} \
-  --output_jsonl ${TRAIN_JSONL}
+  --output_train_jsonl ${TRAIN_JSONL} \
+  --output_eval_jsonl ${EVAL_JSONL} \
+  --eval_ratio 0.1 \
+  --speaker_name ${SPEAKER_NAME}
 
-python sft_12hz.py \
+python sft_12hz_lora_mlflow.py \
   --init_model_path ${INIT_MODEL_PATH} \
   --output_model_path ${OUTPUT_DIR} \
   --train_jsonl ${TRAIN_JSONL} \
   --batch_size ${BATCH_SIZE} \
   --lr ${LR} \
   --num_epochs ${EPOCHS} \
-  --speaker_name ${SPEAKER_NAME}
+  --speaker_name ${SPEAKER_NAME} \
+  --gradient_accumulation_steps 8 \
+  --lora_rank 8
 ```

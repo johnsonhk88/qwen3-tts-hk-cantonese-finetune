@@ -139,16 +139,19 @@ mlflow ui
 ```
 
 ### 6. Inference (works with both LoRA & full checkpoints)
+
+Run from inside `Dataset-Cantonese-Training/`:
+
 ```python
 import torch
 import soundfile as sf
 from qwen_tts import Qwen3TTSModel
 
 model = Qwen3TTSModel.from_pretrained(
-    "../output_hk_cantonese_lora/checkpoint-epoch-9",
+    "./output_hk_cantonese_lora/checkpoint-epoch-9",
     device_map="cuda:0",
     dtype=torch.bfloat16,
-    attn_implementation="flash_attention_2"
+    attn_implementation="sdpa",  # or "flash_attention_2"
 )
 
 wavs, sr = model.generate_custom_voice(
@@ -160,11 +163,10 @@ sf.write("output_hk.wav", wavs[0], sr)
 
 ## 7. Voice Clone Server (Web UI / API)
 ```bash
-# Run from project root
+# Run from inside Dataset-Cantonese-Training/
 python voice_clone_server.py \
   --model_path output_hk_cantonese_lora/checkpoint-epoch-9 \
   --port 7860
-
 ```
 ### Open http://localhost:7860 
 

@@ -9,16 +9,26 @@ Dataset-Cantonese-Training/Qwen3-TTS-12Hz-1.7B-Base/
 Dataset-Cantonese-Training/Qwen3-TTS-12Hz-1.7B-VoiceDesign/
 Dataset-Cantonese-Training/Qwen3-TTS-12Hz-0.6B-Base/
 Dataset-Cantonese-Training/Qwen3-TTS-12Hz-0.6B-CustomVoice/
+Dataset-Cantonese-Training/Qwen3-TTS-Tokenizer-12Hz/
 Dataset-Cantonese-Training/output/
 Dataset-Cantonese-Training/output_hk_cantonese_lora/
 Dataset-Cantonese-Training/output_custom_voice.wav
+Dataset-Cantonese-Training/output_voice_clone.wav
+Dataset-Cantonese-Training/chinese_cloned.wav
 Dataset-Cantonese-Training/mlflow.db
 Dataset-Cantonese-Training/mlruns/
 Dataset-Cantonese-Training/audio/*
+!Dataset-Cantonese-Training/audio/ref_voice/
+!Dataset-Cantonese-Training/audio/ref_voice/**
 Dataset-Cantonese-Training/evaluation_results/
+Dataset-Cantonese-Training/evaluation_results_*/
 Dataset-Cantonese-Training/pretrained_models/
+# prepared data with audio_codes (large); keep raw jsonl in git
+Dataset-Cantonese-Training/train_prepared.jsonl
+Dataset-Cantonese-Training/train_with_codes.jsonl
 # data files
 *.parquet
+models/
 
 # C extensions
 *.so
