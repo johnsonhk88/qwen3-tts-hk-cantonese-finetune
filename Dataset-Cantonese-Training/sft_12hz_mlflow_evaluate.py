@@ -84,10 +84,16 @@ def compute_cer_and_sim(eval_model, val_data, num_samples, speaker_name, output_
         sample_audio_paths.append(sample_path)
 
         # === CER (Character Error Rate) ===
+        # Resample to 16 kHz for Whisper (TTS is typically 24 kHz)
+        gen_wav_16k = torchaudio.functional.resample(
+            torch.from_numpy(gen_wav).float().unsqueeze(0),
+            orig_freq=sr,
+            new_freq=16000,
+        ).squeeze(0).numpy()
         transcription = asr_pipeline(
-            sample_path,
-            return_timestamps=False,
-            generate_kwargs={"language": "yue"}
+            {"array": gen_wav_16k, "sampling_rate": 16000},
+            return_timestamps=True,
+            generate_kwargs={"language": "yue", "task": "transcribe"},
         )["text"]
         cer = cer_metric.compute(predictions=[transcription], references=[text])
         cers.append(cer)

@@ -140,9 +140,18 @@ def evaluate_checkpoint(checkpoint_dir, test_jsonl, speaker_name, output_dir, la
         sf.write(gen_path, gen_wav, sr)
 
         # === ASR Transcription (in-memory — torchcodec-free) ===
+        # Whisper expects 16 kHz; TTS output is typically 24 kHz. Without
+        # resampling, mel length is overstated and >~20s audio hits the
+        # 3000-frame / 30s long-form limit.
+        gen_wav_16k = torchaudio.functional.resample(
+            torch.from_numpy(gen_wav).float().unsqueeze(0),
+            orig_freq=sr,
+            new_freq=16000,
+        ).squeeze(0).numpy()
         transcription = asr(
-            {"array": gen_wav, "sampling_rate": sr},
-            generate_kwargs={"language": "yue"}
+            {"array": gen_wav_16k, "sampling_rate": 16000},
+            return_timestamps=True,
+            generate_kwargs={"language": "yue", "task": "transcribe"},
         )["text"]
         pred_text = transcription.strip()
 

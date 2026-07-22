@@ -47,6 +47,13 @@ cd qwen3-tts-hk-cantonese-finetune
 
 ### 2. Install Dependencies
 ```bash
+# System FFmpeg (required by pydub for mp3 and other compressed formats)
+sudo apt update && sudo apt install -y ffmpeg
+# If sudo is unavailable, install a static binary into your venv instead:
+#   curl -L -o /tmp/ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+#   tar -xJf /tmp/ffmpeg.tar.xz -C /tmp
+#   cp /tmp/ffmpeg-*-amd64-static/ffmpeg /tmp/ffmpeg-*-amd64-static/ffprobe "$VIRTUAL_ENV/bin/"
+
 pip install -r requirements.txt
 ```
 
@@ -81,7 +88,9 @@ python prepare_data.py \
   --device cuda:0 \
   --tokenizer_model_path Qwen3-TTS-Tokenizer-12Hz \
   --input_jsonl train_raw.jsonl \
-  --output_jsonl train_with_codes.jsonl
+  --output_jsonl train_with_codes.jsonl \
+  --min_duration 5.0 \
+  --max_duration 30.0
 
 # Option B: auto train/eval split (recommended)
 python prepare_train_evaluate_data.py \
@@ -91,12 +100,19 @@ python prepare_train_evaluate_data.py \
   --output_train_jsonl train_prepared.jsonl \
   --output_eval_jsonl eval_prepared.jsonl \
   --eval_ratio 0.1 \
-  --speaker_name hk_cantonese_speaker
+  --speaker_name hk_cantonese_speaker \
+  --min_duration 5.0 \
+  --max_duration 30.0 \
+  --batch_size 2
 ```
+
+`--batch_size` controls tokenizer encode batching (default **4**). Use `1`–`2` if VRAM is tight; higher values need more GPU memory.
+
+Prep scripts **filter audio to 5–30 seconds** (Qwen3-TTS fine-tune requirement), add `duration_sec` on each kept sample, and write a CSV report (e.g. `train_prepared_audio_lengths.csv`) with columns: `index`, `audio`, `ref_audio`, `text`, `duration_sec`, `status`, `split`, `reason`.
 
 ### Important for HK Cantonese:
 
-- Use clean 5–15 second mono WAVs
+- Use clean **5–30 second** mono WAVs (clips outside this range are dropped during prep)
 - Use one fixed reference audio (ref.wav) for all samples
 - Include natural HK slang and expressions
 

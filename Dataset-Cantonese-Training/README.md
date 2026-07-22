@@ -28,7 +28,9 @@ Example:
 
 ### 2) Prepare data (extract `audio_codes`)
 
-Convert `train_raw.jsonl` into a training JSONL that includes `audio_codes`:
+Convert `train_raw.jsonl` into a training JSONL that includes `audio_codes`.
+
+Audio length is checked first: only clips in **[5, 30] seconds** are kept (Qwen3-TTS fine-tune requirement). Each kept sample gets `duration_sec`. A CSV report is written with columns `index`, `audio`, `ref_audio`, `text`, `duration_sec`, `status`, `split`, `reason`.
 
 ```bash
 # Option A: training file only
@@ -36,7 +38,10 @@ python prepare_data.py \
   --device cuda:0 \
   --tokenizer_model_path Qwen3-TTS-Tokenizer-12Hz \
   --input_jsonl train_raw.jsonl \
-  --output_jsonl train_with_codes.jsonl
+  --output_jsonl train_with_codes.jsonl \
+  --min_duration 5.0 \
+  --max_duration 30.0 \
+  --duration_report train_with_codes_audio_lengths.csv
 
 # Option B: train + eval split (recommended)
 python prepare_train_evaluate_data.py \
@@ -46,8 +51,14 @@ python prepare_train_evaluate_data.py \
   --output_train_jsonl train_prepared.jsonl \
   --output_eval_jsonl eval_prepared.jsonl \
   --eval_ratio 0.1 \
-  --speaker_name hk_cantonese_speaker
+  --speaker_name hk_cantonese_speaker \
+  --min_duration 5.0 \
+  --max_duration 30.0 \
+  --duration_report train_prepared_audio_lengths.csv \
+  --batch_size 2
 ```
+
+`--batch_size` (default **4**) is the tokenizer encode batch size. Lower it (`1`–`2`) to reduce peak VRAM; the old hardcoded value was 16 and could use ~20–24 GB.
 
 
 ### 3) Fine-tune
