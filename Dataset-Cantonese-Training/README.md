@@ -92,6 +92,24 @@ python sft_12hz_mlflow.py \
   --gradient_accumulation_steps 4
 ```
 
+**Multi-speaker LoRA** (when `train_prepared.jsonl` already includes `speaker_id`):
+
+Use this path for multi-speaker datasets (e.g. produced by `cluster_speakers.py`). Do **not** use `--speaker_name`; each sample must already have a `speaker_id` field.
+
+```bash
+python sft_12hz_lora_mlflow_multi_speaker.py \
+  --init_model_path ./Qwen3-TTS-12Hz-0.6B-Base \
+  --output_model_path ./output_hk_cantonese_multi_lora \
+  --train_jsonl train_prepared.jsonl \
+  --batch_size 1 \
+  --lr 2e-4 \
+  --num_epochs 10 \
+  --gradient_accumulation_steps 8 \
+  --lora_rank 8
+```
+
+`train_prepared.jsonl` must already include `speaker_id` on every line.
+
 Optional: `--attn_implementation flash_attention_2` if Flash Attention-2 is installed.
 
 Checkpoints are written to:

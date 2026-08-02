@@ -149,6 +149,22 @@ python sft_12hz_mlflow.py \
   --gradient_accumulation_steps 4
 ```
 
+#### Option C: Multi-speaker LoRA
+
+Use `sft_12hz_lora_mlflow_multi_speaker.py` for multi-speaker datasets produced by `cluster_speakers.py`. `train_prepared.jsonl` must already include `speaker_id` on every line.
+
+```bash
+python sft_12hz_lora_mlflow_multi_speaker.py \
+  --init_model_path ./Qwen3-TTS-12Hz-0.6B-Base \
+  --output_model_path ./output_hk_cantonese_multi_lora \
+  --train_jsonl train_prepared.jsonl \
+  --batch_size 1 \
+  --lr 2e-4 \
+  --num_epochs 10 \
+  --gradient_accumulation_steps 8 \
+  --lora_rank 8
+```
+
 #### Start MLflow dashboard:
 ```bash
 mlflow ui
@@ -224,6 +240,7 @@ qwen3-tts-hk-cantonese-finetune/
 │   ├── prepare_train_evaluate_data.py  ← extract codes + train/eval split
 │   ├── dataset.py                      ← TTSDataset + collate_fn
 │   ├── sft_12hz_lora_mlflow.py         ← LoRA fine-tuning (recommended)
+│   ├── sft_12hz_lora_mlflow_multi_speaker.py  ← multi-speaker LoRA (speaker_id JSONL)
 │   ├── sft_12hz_mlflow.py              ← full fine-tuning
 │   ├── evaluate_qwen3_tts.py           ← WER/CER, speaker sim, UTMOS
 │   ├── voice_clone_server.py           ← Gradio web UI / API
