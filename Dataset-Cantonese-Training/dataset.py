@@ -203,8 +203,27 @@ class TTSDataset(Dataset):
             codec_mask[i,   8+text_ids_len-1:8+text_ids_len-1+codec_ids_len] = True
             attention_mask[i, :8+text_ids_len+codec_ids_len] = True
         
-        ref_mels = [data['ref_mel'] for data in batch]
-        ref_mels = torch.cat(ref_mels,dim=0)
+        # Collect reference mel spectrograms and pad them to a common length
+        # Each ref_mel may be shaped (1, T, mel_dim) or (T, mel_dim)
+        ref_mels_list = []
+        for r in (data['ref_mel'] for data in batch):
+            if r.dim() == 3 and r.size(0) == 1:
+                r2 = r.squeeze(0)
+            elif r.dim() == 2:
+                r2 = r
+            else:
+                raise RuntimeError(f"Unexpected ref_mel shape: {r.shape}")
+            ref_mels_list.append(r2)
+
+        lengths = [r.size(0) for r in ref_mels_list]
+        max_len = max(lengths)
+        mel_dim = ref_mels_list[0].size(1)
+
+        # Stack into (batch, max_len, mel_dim) with zero-padding
+        ref_mels = torch.zeros((b, max_len, mel_dim), dtype=ref_mels_list[0].dtype)
+        for i, r in enumerate(ref_mels_list):
+            L = r.size(0)
+            ref_mels[i, :L, :] = r
 
         return {
             'input_ids':input_ids,

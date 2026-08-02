@@ -17,6 +17,7 @@ Dataset-Cantonese-Training/output_voice_clone.wav
 Dataset-Cantonese-Training/chinese_cloned.wav
 Dataset-Cantonese-Training/mlflow.db
 Dataset-Cantonese-Training/mlruns/
+.worktrees/
 Dataset-Cantonese-Training/audio/*
 !Dataset-Cantonese-Training/audio/ref_voice/
 !Dataset-Cantonese-Training/audio/ref_voice/**
